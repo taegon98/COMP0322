@@ -192,7 +192,7 @@ public class MemberService {
         String updatePw = sc.next();
         System.out.println();
 
-        String sql = "UPDATE USERS set Password = ? WHERE User_id = ? AND Password = ?";
+        String sql = "UPDATE CUSTOMER set Password = ? WHERE User_id = ? AND Password = ?";
         try {
             PreparedStatement psmt = conn.prepareStatement(sql);
             psmt.setString(1, updatePw);
@@ -204,6 +204,8 @@ public class MemberService {
             } else {
                 System.out.println("The password change was not completed.");
             }
+
+            conn.commit();
         } catch (SQLException e) {
             System.err.println("SQL error = " + e.getMessage());
             e.printStackTrace();
@@ -212,20 +214,24 @@ public class MemberService {
 
     public static void getUpdateCustomerSize(Connection conn, Statement stmt) {// 2. 신체 사이즈 업데이트
 
-        System.out.print("Please enter the ID:");
-        String id = sc.next();
-        System.out.print("Please enter the Top_length:");
-        String top_length = sc.next();
-        System.out.print("Please enter the Waist:");
-        String waist = sc.next();
+        System.out.print("Please enter the User_id:");
+        String name = sc.next();
         System.out.println();
 
-        String sql = "UPDATE CUSTOMER_SIZE set Top_Length = ?, Waist = ? WHERE User_id = ?";
+        System.out.print("Please enter the Top_length:");
+        int top_length = sc.nextInt();
+
+        System.out.print("Please enter the Waist:");
+        int waist = sc.nextInt();
+        System.out.println();
+
+        String sql = "UPDATE CUSTOMER_SIZE SET Top_Length = ?, Waist = ? WHERE Customer_id = (SELECT Customer_id FROM customer WHERE customer.user_Id = ?)";
+
         try {
             PreparedStatement psmt = conn.prepareStatement(sql);
-            psmt.setString(1, top_length);
-            psmt.setString(2, waist);
-            psmt.setString(3, id);
+            psmt.setInt(1, top_length);
+            psmt.setInt(2, waist);
+            psmt.setString(3,name);
 
             int canChange = psmt.executeUpdate();
             if (canChange != 0) {
@@ -238,4 +244,5 @@ public class MemberService {
             e.printStackTrace();
         }
     }
+
 }

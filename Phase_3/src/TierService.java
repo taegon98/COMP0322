@@ -9,24 +9,17 @@ public class TierService {
 //        Coupon_id       NUMBER      NOT NULL,
         try {
 
-            System.out.print("Enter the coupon Id: ");
-            int couponId = sc.nextInt();
-
-            System.out.println(couponId);
-
-            String query = "SELECT Percentage FROM COUPON WHERE Coupon_id = ?";
-
+            System.out.print("Enter the level: ");
+            int tierId = sc.nextInt();
+            String query = "SELECT t.BENEFIT FROM TIER t WHERE t.TIER_ID = ?";
 
             PreparedStatement psmt = conn.prepareStatement(query);
-            psmt.setInt(1, couponId);
-
-
+            psmt.setInt(1, tierId);
             ResultSet rs = psmt.executeQuery();
 
-
             if (rs.next()) {
-                double discountPercentage = rs.getDouble("Percentage");
-                System.out.println("Coupon discount percentage: " + discountPercentage + "%");
+                double discountPercentage = rs.getDouble("BENEFIT");
+                System.out.println("level : " + tierId + " discount percentage: " + discountPercentage + "%");
             } else {
                 System.out.println("No corresponding coupon found.");
             }
@@ -36,32 +29,26 @@ public class TierService {
         }
     }
 
-    public static void getTierCustomer(Connection conn, Statement stmt) {// 5. 특정 티어 이상의 회원 찾기
-        System.out.print("Please enter the Tier:");
-        String tier = sc.next();
-        System.out.println();
+    public static void getTierCustomer(Connection conn, Statement stmt) {
+        System.out.print("Please enter the level: ");
+        int tier_Id=sc.nextInt();
 
-        String sql = "SELECT C.Customer_id FROM CUSTOMER C WHERE Tier_id >= (SELECT Tier_id FROM TIER WHERE Name = ?)";
+        String sql = "SELECT C.user_id, C.name FROM CUSTOMER C WHERE c.tier_id=?";
 
         try {
             PreparedStatement psmt = conn.prepareStatement(sql);
-            psmt.setString(1, tier);
-
+            psmt.setInt(1,tier_Id);
             ResultSet rs = psmt.executeQuery();
 
-            boolean hasResults = false;
             while (rs.next()) {
-                hasResults = true;
-                int customerId = rs.getInt("Customer_id");
-                System.out.println("Customer ID: " + customerId);
-            }
-
-            if (!hasResults) {
-                System.out.println("No customers found for the given tier.");
+                String user_id=rs.getString("user_id");
+                String user_Name=rs.getString("Name");
+                System.out.println("User_ID: " + user_id + ", Name: " + user_Name);
             }
         } catch (SQLException e) {
             System.err.println("SQL error = " + e.getMessage());
             e.printStackTrace();
         }
+
     }
 }

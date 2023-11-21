@@ -22,10 +22,11 @@ public class OrderService {
             Date endDate = dateFormat.parse(endDateStr);
 
 
-            String sql = "SELECT * FROM ORDERS O " +
-                    "INNER JOIN ORDER_DETAIL OD ON O.Order_id = OD.Order_id " +
+            String sql="SELECT O.Order_date,C.NAME,P.Name AS Product_name, OD.Quantity,OD.total_price " +
+                    "FROM ORDERS O JOIN CUSTOMER C ON O.CUSTOMER_ID=C.CUSTOMER_ID " +
+                    "JOIN ORDER_DETAIL OD ON O.Order_id = OD.Order_id " +
+                    "JOIN PRODUCT P ON OD.Product_id = P.Product_id " +
                     "WHERE O.Order_date BETWEEN ? AND ?";
-
 
             PreparedStatement psmt = conn.prepareStatement(sql);
             psmt.setDate(1, new java.sql.Date(startDate.getTime()));
@@ -37,11 +38,14 @@ public class OrderService {
             boolean hasResults = false;
             while (rs.next()) {
                 hasResults = true;
-                int orderId = rs.getInt("Order_id");
-                int customerId = rs.getInt("Customer_id");
                 Date orderDate = rs.getDate("Order_date");
+                String user_Name=rs.getString("Name");
+                String product_Name=rs.getString("Product_Name");
+                int Quantity=rs.getInt("Quantity");
+                int total_Price=rs.getInt("total_Price");
 
-                System.out.println("Order ID: " + orderId + ", Customer ID: " + customerId + ", Order Date: " + orderDate);
+                System.out.println("Order Date : "+orderDate+" || Name : "+user_Name
+                +" || Product Name : "+product_Name+" || Quantity : "+Quantity+" || total Price : "+total_Price);
             }
 
             if (!hasResults) {
@@ -53,6 +57,7 @@ public class OrderService {
             e.printStackTrace();
         }
     }
+
 
     //금액을 입력 받고 Order_Detail에서 총 구매액이 입력 금액 보다 큰 값 반환
     public static void getOrderDetail(Connection conn, Statement stmt) {
