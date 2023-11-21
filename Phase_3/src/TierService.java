@@ -5,13 +5,14 @@ public class TierService {
     static Scanner sc = new Scanner(System.in);
     static ResultSet rs;
 
-    private static void query10(Connection conn, Statement stmt) {// 티어 입력 할인율
-
+    public static void getTierDiscount(Connection conn, Statement stmt) {// 10. 티어 입력 할인율
+//        Coupon_id       NUMBER      NOT NULL,
         try {
 
             System.out.print("Enter the coupon Id: ");
             int couponId = sc.nextInt();
 
+            System.out.println(couponId);
 
             String query = "SELECT Percentage FROM COUPON WHERE Coupon_id = ?";
 
@@ -19,12 +20,12 @@ public class TierService {
             PreparedStatement psmt = conn.prepareStatement(query);
             psmt.setInt(1, couponId);
 
-            // 쿼리 실행
+
             ResultSet rs = psmt.executeQuery();
 
-            // 결과 출력
+
             if (rs.next()) {
-                int discountPercentage = rs.getInt("Percentage");
+                double discountPercentage = rs.getDouble("Percentage");
                 System.out.println("Coupon discount percentage: " + discountPercentage + "%");
             } else {
                 System.out.println("No corresponding coupon found.");
@@ -35,7 +36,7 @@ public class TierService {
         }
     }
 
-    private static void query5(Connection conn, Statement stmt) {// 특정 티어 이상의 회원 찾기
+    public static void getTierCustomer(Connection conn, Statement stmt) {// 5. 특정 티어 이상의 회원 찾기
         System.out.print("Please enter the Tier:");
         String tier = sc.next();
         System.out.println();

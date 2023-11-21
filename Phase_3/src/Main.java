@@ -1,16 +1,16 @@
 import java.sql.*;
 
-public class Main{
+public class Main {
     public static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
     public static final String USER_ID = "fift";
     public static final String USER_PASSWD = "comp322";
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
         Connection conn = null;
         Statement stmt = null;
 
         try {
-           Class.forName("oracle.jdbc.driver.OracleDriver");
+            Class.forName("oracle.jdbc.driver.OracleDriver");
             System.out.println("Success!");
         } catch (ClassNotFoundException e) {
             System.err.println("error = " + e.getMessage());
@@ -36,7 +36,6 @@ public class Main{
             System.exit(1);
         }
 
-        FiftService.start_Service(conn,stmt);
 
         try {
             stmt.close();
