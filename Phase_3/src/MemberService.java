@@ -94,33 +94,75 @@ public class MemberService {
 
     //어깨 사이즈 & 허리 사이즈 입력 → 해당하는 사이즈 보다 크거나 같은 사이즈를 같은 회원 수 반환
     private static void getMemberCountBySize(Connection conn, Statement stmt) {
+        try {
+            Scanner sc = new Scanner(System.in);
 
-        System.out.print("어깨 사이즈: ");
-        String shoulder = sc.next();
-        System.out.println();
+            System.out.print("Shoulder size: ");
+            String shoulder = sc.next();
+            System.out.println();
 
-        System.out.print("허리 사이즈: ");
-        String waist = sc.next();
-        System.out.println();
+            System.out.print("Waist size: ");
+            String waist = sc.next();
+            System.out.println();
 
-        String query = "SELECT COUNT(*) AS \"THE NUMBER OF MEMBERS\" " +
-                "FROM CUSTOMER C " +
-                "INNER JOIN CUSTOMER_SIZE S ON C.CUSTOMER_ID = S.CUSTOMER_ID " +
-                "WHERE S.SHOULDER >= '" + shoulder + "' AND S.WAIST >= '" + waist + "'";
+            String query = "SELECT COUNT(*) AS \"THE NUMBER OF MEMBERS\" " +
+                    "FROM CUSTOMER C " +
+                    "INNER JOIN CUSTOMER_SIZE S ON C.CUSTOMER_ID = S.CUSTOMER_ID " +
+                    "WHERE S.SHOULDER >= ? AND S.WAIST >= ?";
+
+            PreparedStatement psmt = conn.prepareStatement(query);
+            psmt.setString(1, shoulder);
+            psmt.setString(2, waist);
+
+            ResultSet rs = psmt.executeQuery();
+
+            if (rs.next()) {
+                int memberCount = rs.getInt("THE NUMBER OF MEMBERS");
+                System.out.println("Number of members with sizes greater than or equal to the input: " + memberCount);
+            }
+
+            rs.close();
+            psmt.close();
+        } catch (SQLException e) {
+            System.err.println("SQL error = " + e.getMessage());
+            e.printStackTrace();
+        }
     }
+
 
     //구매한 금액을 입력 받고 해당 금액보다 같거나 큰 회원 정보 반환
     private static void getMembersByAmount(Connection conn, Statement stmt) {
+        try {
+            Scanner sc = new Scanner(System.in);
 
-        System.out.print("구매 금액: ");
-        int price = sc.nextInt();
-        System.out.println();
+            System.out.print("Purchase amount: ");
+            int price = sc.nextInt();
+            System.out.println();
 
-        String query = "SELECT C.NAME, C.AMOUNT, T.NAME " +
-                "FROM CUSTOMER C " +
-                "INNER JOIN TIER T ON C.TIER_ID = T.TIER_ID " +
-                "WHERE C.AMOUNT >= " + price +
-                "ORDER BY C.PRICE ASC";
+            String query = "SELECT C.NAME, C.AMOUNT, T.NAME " +
+                    "FROM CUSTOMER C " +
+                    "INNER JOIN TIER T ON C.TIER_ID = T.TIER_ID " +
+                    "WHERE C.AMOUNT >= ? " +
+                    "ORDER BY C.AMOUNT ASC";
+
+            PreparedStatement psmt = conn.prepareStatement(query);
+            psmt.setInt(1, price);
+
+            ResultSet rs = psmt.executeQuery();
+
+            while (rs.next()) {
+                String memberName = rs.getString("NAME");
+                int amount = rs.getInt("AMOUNT");
+                String tierName = rs.getString("NAME");
+
+                System.out.println("Member Name: " + memberName + ", Purchase Amount: " + amount + ", Tier: " + tierName);
+            }
+
+            rs.close();
+            psmt.close();
+        } catch (SQLException e) {
+            System.err.println("SQL error = " + e.getMessage());
+            e.printStackTrace();
+        }
     }
-
 }
