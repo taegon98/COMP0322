@@ -2,7 +2,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class memberService {
+public class MemberService {
 
     static Scanner sc = new Scanner(System.in);
 
