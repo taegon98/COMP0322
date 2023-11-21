@@ -36,6 +36,7 @@ public class Main {
             System.exit(1);
         }
 
+        init.init_(conn,stmt);
         FiftService.start_Service(conn,stmt);
 
         try {
