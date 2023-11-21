@@ -1,4 +1,5 @@
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
@@ -6,7 +7,7 @@ public class FiftService {
     
     static Scanner sc = new Scanner(System.in);
 
-    public static void start_Service(Connection conn, Statement stmt) {
+    public static void start_Service(Connection conn, Statement stmt) throws SQLException {
         System.out.println("Welcome to Our Shopping Mall");
 
         while(true) {
@@ -41,7 +42,7 @@ public class FiftService {
                 System.out.println("8) ");
                 System.out.println("9) ");
                 System.out.println("10) ");
-                System.out.println("Any Num) ");
+                System.out.println("Any Num) QUIT");
                 System.out.println("---------------------------");
 
                 serviceCom=sc.nextInt();

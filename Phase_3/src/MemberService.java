@@ -1,12 +1,13 @@
-import java.sql.Connection;
-import java.sql.Statement;
+import java.io.IOException;
+import java.sql.*;
 import java.util.Scanner;
 
 public class MemberService {
 
     static Scanner sc = new Scanner(System.in);
 
-    public static void register(Connection conn, Statement stmt) {
+    public static void register(Connection conn,Statement stmt) throws SQLException {
+
 
         String user_name,user_Id,user_Pw,phone_Number,Address;
         int postal_code;
@@ -31,11 +32,49 @@ public class MemberService {
 
         System.out.println("Postal_Code: ");
         postal_code=sc.nextInt();
+        sc.nextLine();
 
         // 쿼리 들어갈 부분
+        ResultSet rs=null;
+
+        // 현재 Customer 수
+        String sql="";
+        sql="SELECT COUNT(*) FROM CUSTOMER";
+        rs=stmt.executeQuery(sql);
+        int curr_Count = 0;
+
+        if (rs.next()) {
+            // Retrieve the value of the first column from the current row
+            curr_Count = rs.getInt(1);
+        } else {
+            System.out.println("No rows found in the result set.");
+        }
+        //rs.close();
 
 
-        System.out.println("I have registered as a member");
+        PreparedStatement pstmt=null;
+        sql="INSERT INTO CUSTOMER (CUSTOMER_ID,TIER_ID,NAME,USER_ID,PASSWORD,PHONE_NUMBER,ADDRESS,POSTAL_CODE,AMOUNT,COUPON_ID) VALUES (?,?,?,?,?,?,?,?,?,?)";
+
+        try {
+            pstmt=conn.prepareStatement(sql);
+            pstmt.setInt(1,(curr_Count+1));
+            pstmt.setInt(2,1);
+            pstmt.setString(3,user_name);
+            pstmt.setString(4,user_Id);
+            pstmt.setString(5,user_Pw);
+            pstmt.setString(6,phone_Number);
+            pstmt.setString(7,Address);
+            pstmt.setInt(8,postal_code);
+            pstmt.setInt(9,0);
+            pstmt.setInt(10,0);
+            pstmt.executeUpdate();
+
+            System.out.println("You have registered as a member");
+        }
+        catch (SQLException e) {
+            System.err.println("SQL error = " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     public static void login(Connection conn,Statement stmt) {

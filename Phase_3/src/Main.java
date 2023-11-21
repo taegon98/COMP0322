@@ -1,11 +1,11 @@
 import java.sql.*;
 
 public class Main{
-    public static final String URL = "jdbc:oracle:thin:@localhost:1521:orcl";
+    public static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
     public static final String USER_ID = "fift";
     public static final String USER_PASSWD = "comp322";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         Connection conn = null;
         Statement stmt = null;
 

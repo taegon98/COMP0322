@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class ProductService {
     static Scanner sc = new Scanner(System.in);
 
-
     //금액을 입력받고 해당 금액보다 큰 물품 반환
     private static void getProductByPrice(Connection conn, Statement stmt) {
 
