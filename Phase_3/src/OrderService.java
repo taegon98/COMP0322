@@ -55,7 +55,7 @@ public class OrderService {
     }
 
     //금액을 입력 받고 Order_Detail에서 총 구매액이 입력 금액 보다 큰 값 반환
-    private static void getOrderDetail(Connection conn, Statement stmt) {
+    public static void getOrderDetail(Connection conn, Statement stmt) {
         try {
             Scanner sc = new Scanner(System.in);
 

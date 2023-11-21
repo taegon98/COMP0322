@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ProductService {
 
     //금액을 입력받고 해당 금액보다 큰 물품 반환
-    private static void getProductByPrice(Connection conn, Statement stmt) {
+    public static void getProductByPrice(Connection conn, Statement stmt) {
         try {
             Scanner sc = new Scanner(System.in);
 
@@ -39,7 +39,7 @@ public class ProductService {
     }
 
     // 물품 이름의 일부를 입력 받고 해당 글자가 포함된 물품 반환
-    private static void getProductByName(Connection conn, Statement stmt) {
+    public static void getProductByName(Connection conn, Statement stmt) {
         try {
             Scanner sc = new Scanner(System.in);
 
