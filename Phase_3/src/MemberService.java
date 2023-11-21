@@ -138,6 +138,8 @@ public class MemberService {
                 // 쿼리 실행
                 int rowsAffected = pstmt.executeUpdate();
             }
+
+            conn.commit();
         } catch (SQLException e) {
             System.err.println("SQL 오류 = " + e.getMessage());
             e.printStackTrace();
