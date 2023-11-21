@@ -5,8 +5,8 @@ import java.sql.Statement;
 
 public class Main{
     public static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
-    public static final String USER_ID = "project";// id:
-    public static final String USER_PASSWD = "project";// pw:
+    public static final String USER_ID = "fift";// id:
+    public static final String USER_PASSWD = "comp322";// pw:
 
     public static void main(String[] args) {
         Connection conn = null;    // Connection object
