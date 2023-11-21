@@ -75,35 +75,35 @@ public class MemberService {
 
 
     public static void login(Connection conn,Statement stmt) throws SQLException {
-        String memberId,memberPw;
-        System.out.println("-------------------");
-        System.out.print("ID : ");
-        memberId=sc.next();
-        System.out.print("PW : ");
-        memberPw=sc.next();
-        System.out.println("-------------------");
+        while(true) {
+            String memberId,memberPw;
+            System.out.println("-------------------");
+            System.out.print("ID : ");
+            memberId=sc.next();
+            System.out.print("PW : ");
+            memberPw=sc.next();
+            System.out.println("-------------------");
 
-        // 쿼리 들어갈 부분
+            // 쿼리 들어갈 부분
 
 
-        ResultSet rs = stmt.executeQuery("SELECT c.user_id, c.password FROM customer c WHERE c.user_id = '" + memberId + "'");
-        String tempId = null,tempPw = null;
+            ResultSet rs = stmt.executeQuery("SELECT c.user_id, c.password FROM customer c WHERE c.user_id = '" + memberId + "'");
+            String tempId = null,tempPw = null;
 
-        if (rs.next()) {
-            // 현재 행의 첫 번째 열 값 가져오기
-            tempId = rs.getString(1);
-            tempPw=rs.getString(2);
-        } else {
-            System.out.println("결과 집합에서 행을 찾을 수 없습니다.");
-        }
-        // ResultSet 닫기
-        rs.close();
+            if (rs.next()) {
+                // 현재 행의 첫 번째 열 값 가져오기
+                tempId = rs.getString(1);
+                tempPw=rs.getString(2);
+            } else {
+                System.out.println("결과 집합에서 행을 찾을 수 없습니다.");
+            }
+            // ResultSet 닫기
+            rs.close();
 
-        if(memberId.equals(tempId) && memberPw.equals(tempPw)) {
-            System.out.println("You have been logged in.");
-        }
-        else {
-
+            if(memberId.equals(tempId) && memberPw.equals(tempPw)) {
+                System.out.println("You have been logged in.");
+                break;
+            }
         }
     }
 
