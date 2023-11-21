@@ -15,6 +15,7 @@ public class FiftService {
             System.out.println("Are you an existing member?");
             System.out.println("1.Yes");
             System.out.println("2.No");
+            System.out.println("---------------------------");
 
             while(true) {
                 int isMember=sc.nextInt();
@@ -77,6 +78,7 @@ public class FiftService {
                         break;
                     case 10:
                         System.out.println(1010);
+                        check_Flag=true;
                         break;
                 }
                 if(check_Flag){

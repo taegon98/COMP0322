@@ -10,7 +10,7 @@ public class Main{
         Statement stmt = null;
 
         try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
+           Class.forName("oracle.jdbc.driver.OracleDriver");
             System.out.println("Success!");
         } catch (ClassNotFoundException e) {
             System.err.println("error = " + e.getMessage());
