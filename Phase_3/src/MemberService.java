@@ -89,23 +89,23 @@ public class MemberService {
             System.out.println("각 항목을 입력해주세요.");
 
             System.out.print("이름: ");
-            user_name = sc.next();
+            user_name = sc.nextLine();
 
             System.out.print("아이디: ");
-            user_Id = sc.next();
+            user_Id = sc.nextLine();
 
             System.out.print("비밀번호: ");
-            user_Pw = sc.next();
+            user_Pw = sc.nextLine();
 
             System.out.print("전화번호: ");
-            phone_Number = sc.next();
+            phone_Number = sc.nextLine();
 
             System.out.print("주소: ");
-            Address = sc.next();
+            Address = sc.nextLine();
 
             System.out.print("우편번호: ");
             postal_code = sc.nextInt();
-            sc.nextLine();  // 개행 문자 소비
+            sc.nextLine();
 
             // 현재 Customer 수를 가져오는 쿼리
             ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM CUSTOMER");
