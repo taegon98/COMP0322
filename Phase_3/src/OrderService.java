@@ -53,4 +53,42 @@ public class OrderService {
             e.printStackTrace();
         }
     }
+
+    //금액을 입력 받고 Order_Detail에서 총 구매액이 입력 금액 보다 큰 값 반환
+    private static void getOrderDetail(Connection conn, Statement stmt) {
+        try {
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("Price: ");
+            int price = sc.nextInt();
+            System.out.println();
+
+            String query = "SELECT C.NAME, O.ORDER_DATE, D.TOTAL_PRICE " +
+                    "FROM ORDER_DETAIL D " +
+                    "INNER JOIN PRODUCT P ON P.PRODUCT_ID = D.PRODUCT_ID " +
+                    "INNER JOIN CUSTOMER C ON C.CUSTOMER_ID = D.CUSTOMER_ID " +
+                    "WHERE D.TOTAL_PRICE >= ? " +
+                    "ORDER BY C.NAME ASC";
+
+            PreparedStatement psmt = conn.prepareStatement(query);
+            psmt.setInt(1, price);
+
+            ResultSet rs = psmt.executeQuery();
+
+            while (rs.next()) {
+                String customerName = rs.getString("NAME");
+                Date orderDate = rs.getDate("ORDER_DATE");
+                double totalPrice = rs.getDouble("TOTAL_PRICE");
+
+                System.out.println("Customer Name: " + customerName + ", Order Date: " + orderDate + ", Total Price: " + totalPrice);
+            }
+
+            rs.close();
+            psmt.close();
+        } catch (SQLException e) {
+            System.err.println("SQL error = " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
 }

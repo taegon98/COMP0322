@@ -1,13 +1,13 @@
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
 public class FiftService {
-
-
+    
     static Scanner sc = new Scanner(System.in);
 
-    public static void start_Service(Connection conn, Statement stmt) {
+    public static void start_Service(Connection conn, Statement stmt) throws SQLException {
         System.out.println("Welcome to Our Shopping Mall");
 
         while(true) {
@@ -15,6 +15,7 @@ public class FiftService {
             System.out.println("Are you an existing member?");
             System.out.println("1.Yes");
             System.out.println("2.No");
+            System.out.println("---------------------------");
 
             while(true) {
                 int isMember=sc.nextInt();
@@ -42,7 +43,7 @@ public class FiftService {
                 System.out.println("8) ");
                 System.out.println("9) ");
                 System.out.println("10) ");
-                System.out.println("Any Num) ");
+                System.out.println("Any Num) QUIT");
                 System.out.println("---------------------------");
 
                 serviceCom=sc.nextInt();
@@ -77,6 +78,7 @@ public class FiftService {
                         break;
                     case 10:
                         System.out.println(1010);
+                        check_Flag=true;
                         break;
                 }
                 if(check_Flag){
