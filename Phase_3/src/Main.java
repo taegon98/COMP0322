@@ -1,5 +1,4 @@
 import java.sql.*;
-import java.util.Scanner;
 
 public class Main{
     public static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -37,7 +36,7 @@ public class Main{
             System.exit(1);
         }
 
-        fiftService.start_Service(conn,stmt);
+        FiftService.start_Service(conn,stmt);
 
         try {
             stmt.close();

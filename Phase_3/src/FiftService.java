@@ -3,7 +3,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class fiftService {
+public class FiftService {
 
 
     static Scanner sc = new Scanner(System.in);
@@ -20,11 +20,11 @@ public class fiftService {
             while(true) {
                 int isMember=sc.nextInt();
                 if(isMember==1) {
-                    memberService.login(conn,stmt);
+                    MemberService.login(conn,stmt);
                     break;
                 }
                 else {
-                    memberService.register(conn,stmt);
+                    MemberService.register(conn,stmt);
                 }
             }
 
@@ -78,10 +78,6 @@ public class fiftService {
                         break;
                     case 10:
                         System.out.println(1010);
-                        break;
-                    case default:
-                        System.out.println("Good bye");
-                        check_Flag=true;
                         break;
                 }
                 if(check_Flag){

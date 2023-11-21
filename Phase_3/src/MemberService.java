@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.Scanner;
 
-public class memberService {
+public class MemberService {
 
     static Scanner sc = new Scanner(System.in);
 
