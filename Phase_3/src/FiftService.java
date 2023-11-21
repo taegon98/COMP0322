@@ -42,8 +42,7 @@ public class FiftService {
                 System.out.println("7) ");
                 System.out.println("8) ");
                 System.out.println("9) ");
-                System.out.println("10) ");
-                System.out.println("Any Num) QUIT");
+                System.out.println("10) QUIT");
                 System.out.println("---------------------------");
 
                 serviceCom=sc.nextInt();

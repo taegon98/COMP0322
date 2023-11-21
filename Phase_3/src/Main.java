@@ -5,7 +5,7 @@ public class Main {
     public static final String USER_ID = "fift";
     public static final String USER_PASSWD = "comp322";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         Connection conn = null;
         Statement stmt = null;
 
@@ -36,6 +36,7 @@ public class Main {
             System.exit(1);
         }
 
+        FiftService.start_Service(conn,stmt);
 
         try {
             stmt.close();

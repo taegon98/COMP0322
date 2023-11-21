@@ -80,50 +80,101 @@ public class MemberService {
     }
 
     public static void register(Connection conn, Statement stmt) {
+        try {
+            String user_name, user_Id, user_Pw, phone_Number, Address;
+            int postal_code;
 
-        String user_name,user_Id,user_Pw,phone_Number,Address;
-        int postal_code;
+            System.out.println("-------------------");
+            System.out.println("회원으로 가입합니다.");
+            System.out.println("각 항목을 입력해주세요.");
 
-        System.out.println("-------------------");
-        System.out.println("I'll sign up as a member");
-        System.out.println("Please enter each item");
-        System.out.println("User_Name: ");
-        user_name=sc.next();
+            System.out.print("이름: ");
+            user_name = sc.next();
 
-        System.out.println("User_Id: ");
-        user_Id=sc.next();
+            System.out.print("아이디: ");
+            user_Id = sc.next();
 
-        System.out.println("user_Pw: ");
-        user_Pw=sc.next();
+            System.out.print("비밀번호: ");
+            user_Pw = sc.next();
 
-        System.out.println("phone_Number: ");
-        phone_Number=sc.next();
+            System.out.print("전화번호: ");
+            phone_Number = sc.next();
 
-        System.out.println("Address: ");
-        Address=sc.next();
+            System.out.print("주소: ");
+            Address = sc.next();
 
-        System.out.println("Postal_Code: ");
-        postal_code=sc.nextInt();
+            System.out.print("우편번호: ");
+            postal_code = sc.nextInt();
+            sc.nextLine();  // 개행 문자 소비
 
-        // 쿼리 들어갈 부분
+            // 현재 Customer 수를 가져오는 쿼리
+            ResultSet rs = stmt.executeQuery("SELECT COUNT(*) FROM CUSTOMER");
+            int curr_Count = 0;
 
+            if (rs.next()) {
+                // 현재 행의 첫 번째 열 값 가져오기
+                curr_Count = rs.getInt(1);
+            } else {
+                System.out.println("결과 집합에서 행을 찾을 수 없습니다.");
+            }
 
-        System.out.println("I have registered as a member");
+            // ResultSet 닫기
+            rs.close();
+
+            // PreparedStatement를 사용하여 회원 정보를 삽입하는 쿼리 실행
+            String sql = "INSERT INTO CUSTOMER (CUSTOMER_ID, TIER_ID, NAME, USER_ID, PASSWORD, PHONE_NUMBER, ADDRESS, POSTAL_CODE, AMOUNT, COUPON_ID) VALUES (?,?,?,?,?,?,?,?,?,?)";
+            try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+                pstmt.setInt(1, curr_Count + 1);
+                pstmt.setInt(2, 1);
+                pstmt.setString(3, user_name);
+                pstmt.setString(4, user_Id);
+                pstmt.setString(5, user_Pw);
+                pstmt.setString(6, phone_Number);
+                pstmt.setString(7, Address);
+                pstmt.setInt(8, postal_code);
+                pstmt.setInt(9, 100);
+                pstmt.setNull(10, java.sql.Types.NUMERIC);
+
+                // 쿼리 실행
+                int rowsAffected = pstmt.executeUpdate();
+            }
+        } catch (SQLException e) {
+            System.err.println("SQL 오류 = " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
-    public static void login(Connection conn,Statement stmt) {
-        String memberId;
-        String memberPw;
+    public static void login(Connection conn,Statement stmt) throws SQLException {
+        String memberId,memberPw;
         System.out.println("-------------------");
-        System.out.println("ID : ");
+        System.out.print("ID : ");
         memberId=sc.next();
-        System.out.println("PW : ");
+        System.out.print("PW : ");
         memberPw=sc.next();
         System.out.println("-------------------");
 
         // 쿼리 들어갈 부분
 
-        System.out.println("You have been logged in.");
+
+        ResultSet rs = stmt.executeQuery("SELECT c.user_id, c.password FROM customer c WHERE c.user_id = '" + memberId + "'");
+        String tempId = null,tempPw = null;
+
+        if (rs.next()) {
+            // 현재 행의 첫 번째 열 값 가져오기
+            tempId = rs.getString(1);
+            tempPw=rs.getString(2);
+        } else {
+            System.out.println("결과 집합에서 행을 찾을 수 없습니다.");
+        }
+        // ResultSet 닫기
+        rs.close();
+
+        if(memberId.equals(tempId) && memberPw.equals(tempPw)) {
+            System.out.println("You have been logged in.");
+        }
+        else {
+
+        }
     }
 
     public static void getUpdatePassword(Connection conn, Statement stmt) {// 1. 비밀번호 변경
