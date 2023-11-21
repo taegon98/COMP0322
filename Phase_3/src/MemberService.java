@@ -52,4 +52,36 @@ public class MemberService {
 
         System.out.println("You have been logged in.");
     }
+
+    //어깨 사이즈 & 허리 사이즈 입력 → 해당하는 사이즈 보다 크거나 같은 사이즈를 같은 회원 수 반환
+    private static void getMemberCountBySize(Connection conn, Statement stmt) {
+
+        System.out.print("어깨 사이즈: ");
+        String shoulder = sc.next();
+        System.out.println();
+
+        System.out.print("허리 사이즈: ");
+        String waist = sc.next();
+        System.out.println();
+
+        String query = "SELECT COUNT(*) AS \"THE NUMBER OF MEMBERS\" " +
+                "FROM CUSTOMER C " +
+                "INNER JOIN CUSTOMER_SIZE S ON C.CUSTOMER_ID = S.CUSTOMER_ID " +
+                "WHERE S.SHOULDER >= '" + shoulder + "' AND S.WAIST >= '" + waist + "'";
+    }
+
+    //구매한 금액을 입력 받고 해당 금액보다 같거나 큰 회원 정보 반환
+    private static void getMembersByAmount(Connection conn, Statement stmt) {
+
+        System.out.print("구매 금액: ");
+        int price = sc.nextInt();
+        System.out.println();
+
+        String query = "SELECT C.NAME, C.AMOUNT, T.NAME " +
+                "FROM CUSTOMER C " +
+                "INNER JOIN TIER T ON C.TIER_ID = T.TIER_ID " +
+                "WHERE C.AMOUNT >= " + price +
+                "ORDER BY C.PRICE ASC";
+    }
+
 }

@@ -3,8 +3,7 @@ import java.sql.Statement;
 import java.util.Scanner;
 
 public class FiftService {
-
-
+    
     static Scanner sc = new Scanner(System.in);
 
     public static void start_Service(Connection conn, Statement stmt) {
