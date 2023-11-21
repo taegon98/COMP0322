@@ -66,7 +66,8 @@ public class OrderService {
             String query = "SELECT C.NAME, O.ORDER_DATE, D.TOTAL_PRICE " +
                     "FROM ORDER_DETAIL D " +
                     "INNER JOIN PRODUCT P ON P.PRODUCT_ID = D.PRODUCT_ID " +
-                    "INNER JOIN CUSTOMER C ON C.CUSTOMER_ID = D.CUSTOMER_ID " +
+                    "INNER JOIN ORDERS O ON O.ORDER_ID = D.ORDER_ID " +
+                    "INNER JOIN CUSTOMER C ON C.CUSTOMER_ID = O.CUSTOMER_ID " +
                     "WHERE D.TOTAL_PRICE >= ? " +
                     "ORDER BY C.NAME ASC";
 

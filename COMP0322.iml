@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ojdbc8" level="project" />
+    <orderEntry type="library" name="orai18n" level="project" />
   </component>
 </module>
