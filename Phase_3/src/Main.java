@@ -42,8 +42,7 @@ public class Main{
             System.exit(1);
         }
 
-        // execute code and query
-//        Togaether.startService(conn, stmt);
+        fiftService.start_Service(conn,stmt);
 
         // close stmt and conn
         try {
