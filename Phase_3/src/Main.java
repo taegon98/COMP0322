@@ -5,6 +5,7 @@ public class Main{
     public static final String URL = "jdbc:oracle:thin:@localhost:1521:orcl";
     public static final String USER_ID = "fift";
     public static final String USER_PASSWD = "comp322";
+
     public static void main(String[] args) {
         Connection conn = null;
         Statement stmt = null;
@@ -35,6 +36,9 @@ public class Main{
             System.err.println("sql error = " + ex2.getMessage());
             System.exit(1);
         }
+
+        fiftService.start_Service(conn,stmt);
+
         try {
             stmt.close();
             conn.close();
