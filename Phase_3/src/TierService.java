@@ -5,7 +5,7 @@ public class TierService {
     static Scanner sc = new Scanner(System.in);
     static ResultSet rs;
 
-    public static void getTierDiscount(Connection conn, Statement stmt) {// 10. 티어 입력 할인율
+    public static void getTierDiscount(Connection conn, Statement stmt) {// 11. 티어 입력 할인율
 //        Coupon_id       NUMBER      NOT NULL,
         try {
 
