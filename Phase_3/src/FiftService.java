@@ -40,7 +40,7 @@ public class FiftService {
             System.out.println("4) 신체 사이즈 업데이트");
             System.out.println("5) 금액을 입력받고 해당 금액보다 큰 물품 검색");
             System.out.println("6) 물품 이름의 일부를 입력 받고 해당 글자가 포함된 물품 검색");
-            System.out.println("7) 주문일에 있는 오더 디테일 검색");
+            System.out.println("7) 기간 입력시 해당 기간의 오더 디테일 검색");
             System.out.println("8) 금액을 입력 받고 Order_Detail에서 총 구매액이 입력 금액 보다 큰 값 검색");
             System.out.println("9) 티어 입력 할인율");
             System.out.println("10) 특정 티어 이상의 회원 검색");
