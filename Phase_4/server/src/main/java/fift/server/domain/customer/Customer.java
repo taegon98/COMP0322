@@ -6,7 +6,6 @@ import fift.server.domain.tier.Tier;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +26,9 @@ public class Customer {
     @OneToMany(mappedBy = "customer")
     List<Order> orderList=new ArrayList<>();
 
+    @OneToMany(mappedBy = "customer")
+    private List<Gifticon> gifticons = new ArrayList<>();
+
     @Column(name = "name")
     private String name;
 
@@ -45,7 +47,6 @@ public class Customer {
     @Column(name = "postal_code")
     private Long postalCode;
 
-
     @Column(name = "coupon_id")
     private Long couponId;
 
@@ -54,7 +55,4 @@ public class Customer {
 
     @Column(name = "amount")
     private Double amount;
-
-    @OneToMany(mappedBy = "customer")
-    private List<Gifticon> gifticons = new ArrayList<>();
 }
