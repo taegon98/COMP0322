@@ -44,7 +44,7 @@ public class ProductService {
     }
 
     /**
-     * 상품 검색
+     * 상품 검가
      * @param keyword
      * @return
      */
