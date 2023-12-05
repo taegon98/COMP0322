@@ -1,5 +1,6 @@
 package fift.server.domain.customer;
 
+import fift.server.domain.gifticon.Gifticon;
 import fift.server.domain.order.Order;
 import fift.server.domain.tier.Tier;
 import jakarta.persistence.*;
@@ -49,4 +50,10 @@ public class Customer {
 
     @Column(name = "coupon_id")
     private Long couponId;
+
+    @Column(name = "money")
+    private Long money;
+
+    @OneToMany(mappedBy = "customer")
+    private List<Gifticon> gifticons = new ArrayList<>();
 }

@@ -41,7 +41,7 @@ public class AuthController {
         session.invalidate();
 
         Cookie sessionCookie = new Cookie("sessionId", null);
-        sessionCookie.setMaxAge(0); // 쿠키 만료
+        sessionCookie.setMaxAge(0);
         response.addCookie(sessionCookie);
 
         return "redirect:/login";
