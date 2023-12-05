@@ -14,3 +14,6 @@ function openLoginForm() {
 function goToMain() {
     location.href = "mainpage.html";
 }
+function openProduct() {
+    location.href = "productpage.html";
+}
