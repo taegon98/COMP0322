@@ -1,6 +1,8 @@
 package fift.server.domain.order;
 
+import fift.server.domain.customer.Customer;
 import fift.server.domain.orderdetail.OrderDetail;
+import fift.server.domain.product.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +25,9 @@ public class Order {
     @OneToMany(mappedBy = "order")
     private List<OrderDetail> orderDetailList = new ArrayList<>();
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="customer_id")
+    private Customer customer;
 
     private Date order_Date;
     private Date expected_Date;
