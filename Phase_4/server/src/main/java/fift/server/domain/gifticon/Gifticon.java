@@ -1,7 +1,7 @@
 package fift.server.domain.gifticon;
 
 import fift.server.domain.customer.Customer;
-import fift.server.domain.products.Products;
+import fift.server.domain.product.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,7 +23,7 @@ public class Gifticon {
 
     @ManyToOne
     @JoinColumn(name = "productid")
-    private Products products;
+    private Product product;
 
     @Column(name = "expirationdate")
     @Temporal(TemporalType.DATE)

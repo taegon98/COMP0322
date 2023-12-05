@@ -2,7 +2,7 @@ package fift.server.domain.orderdetail;
 
 import fift.server.domain.cartItem.CartItem;
 import fift.server.domain.orders.Orders;
-import fift.server.domain.products.Products;
+import fift.server.domain.product.Product;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,7 +21,7 @@ public class OrderDetail {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="productId")
-    private Products products;
+    private Product product;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="orderId")
@@ -31,13 +31,13 @@ public class OrderDetail {
     private double totalPrice;
 
     @Builder
-    public OrderDetail(Products product, CartItem cartItem) {
-        this.products = product;
+    public OrderDetail(Product product, CartItem cartItem) {
+        this.product = product;
         this.Quantity=cartItem.getCount();
-        this.totalPrice=cartItem.getCount()*cartItem.getProducts().getPrice();
+        this.totalPrice=cartItem.getCount()*cartItem.getProduct().getPrice();
     }
 
-    public static OrderDetail createOrderDetail(Products product, CartItem cartItem) {
+    public static OrderDetail createOrderDetail(Product product, CartItem cartItem) {
         OrderDetail build = OrderDetail.builder()
                 .product(product)
                 .cartItem(cartItem)

@@ -3,7 +3,7 @@ package fift.server.service.cart;
 import fift.server.domain.cart.Cart;
 import fift.server.domain.cartItem.CartItem;
 import fift.server.domain.customer.Customer;
-import fift.server.domain.products.Products;
+import fift.server.domain.product.Product;
 import fift.server.repository.cart.CartRepository;
 import fift.server.repository.cartItem.CartItemRepository;
 import fift.server.repository.product.ProductRepository;
@@ -23,7 +23,7 @@ public class CartService {
 
     private final CartItemRepository cartItemRepository;
 
-    public void addCart(Customer customer, Products newProduct, int amount) {
+    public void addCart(Customer customer, Product newProduct, int amount) {
 
         Cart cart = cartRepository.findByCustomer(customer);
 
@@ -32,8 +32,8 @@ public class CartService {
             cartRepository.save(cart);
         }
 
-        Products product = productRepository.findByProductId(newProduct.getProductId());
-        CartItem cartItem = cartItemRepository.findByCartAndProducts(cart, product);
+        Product product = productRepository.findByProductId(newProduct.getProductId());
+        CartItem cartItem = cartItemRepository.findByCartAndProduct(cart, product);
 
         if(cartItem==null) {
             cartItem = CartItem.createCartItem(cart, product, amount);
@@ -41,9 +41,9 @@ public class CartService {
         }
         else {
             CartItem update = CartItem.createCartItem(cartItem.getCart(),
-                    cartItem.getProducts(),
+                    cartItem.getProduct(),
                     cartItem.getCount());
-            cart.setTotalPrice(cart.getTotalPrice()+cartItem.getCount()*cartItem.getProducts().getPrice());
+            cart.setTotalPrice(cart.getTotalPrice()+cartItem.getCount()*cartItem.getProduct().getPrice());
             cart.setCount(cart.getCount()+cartItem.getCount());
             cartItemRepository.save(update);
         }

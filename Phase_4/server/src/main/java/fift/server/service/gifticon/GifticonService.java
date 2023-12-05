@@ -2,7 +2,7 @@ package fift.server.service.gifticon;
 
 import fift.server.domain.customer.Customer;
 import fift.server.domain.gifticon.Gifticon;
-import fift.server.domain.products.Products;
+import fift.server.domain.product.Product;
 import fift.server.repository.customer.CustomerRepository;
 import fift.server.repository.gifticon.GifticonRepository;
 import fift.server.repository.product.ProductRepository;
@@ -25,7 +25,7 @@ public class GifticonService {
         Customer customer = customerRepository.findById(userId)
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
 
-        Products product = productRepository.findById(productId)
+        Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new IllegalArgumentException("Product not found"));
 
         LocalDate currentDate = LocalDate.now();
@@ -43,7 +43,7 @@ public class GifticonService {
 
                 Gifticon gifticon = new Gifticon();
                 gifticon.setCustomer(customer);
-                gifticon.setProducts(product);
+                gifticon.setProduct(product);
                 gifticon.setExpirationDate(java.sql.Date.valueOf(expirationDate));
                 gifticon.setStatus(1);
 

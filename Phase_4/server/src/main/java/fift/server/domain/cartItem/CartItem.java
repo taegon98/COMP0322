@@ -1,7 +1,7 @@
 package fift.server.domain.cartItem;
 
 import fift.server.domain.cart.Cart;
-import fift.server.domain.products.Products;
+import fift.server.domain.product.Product;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,19 +21,19 @@ public class CartItem {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="productid")
-    private Products products;
+    private Product product;
 
     private int count; // 상품 개수
 
 
     @Builder
-    public CartItem(Products product, Cart cart, Integer quantity) {
-        this.products = product;
+    public CartItem(Product product, Cart cart, Integer quantity) {
+        this.product = product;
         this.cart = cart;
         this.count = quantity;
     }
 
-    public static CartItem createCartItem(Cart setCart, Products setProduct, int setAmount) {
+    public static CartItem createCartItem(Cart setCart, Product setProduct, int setAmount) {
         CartItem build = CartItem.builder()
                 .cart(setCart)
                 .product(setProduct)

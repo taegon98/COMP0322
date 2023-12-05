@@ -1,4 +1,4 @@
-package fift.server.domain.products;
+package fift.server.domain.product;
 
 import fift.server.domain.gifticon.Gifticon;
 import fift.server.domain.orderdetail.OrderDetail;
@@ -14,16 +14,16 @@ import java.util.List;
 @RequiredArgsConstructor
 @Getter
 @Setter
-public class Products {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
 
-    @OneToMany(mappedBy = "products",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "product",cascade = CascadeType.ALL)
     private List<OrderDetail> orderDetailList=new ArrayList<>();
 
-    @OneToMany(mappedBy = "products")
+    @OneToMany(mappedBy = "product")
     private List<Gifticon> gifticons = new ArrayList<>();
 
     private String productName;
