@@ -50,11 +50,10 @@ public class CartService {
 
     }
 
-    public void subCart(Customer customer,Product newProduct) {
+    public void subCart(Customer customer) {
         Cart cart = cartRepository.findByUserId(customer.getUserId());
         List<CartItem> cartItemsByCart = cartItemRepository.findCartItemsByCart(cart);
         cartItemRepository.deleteAll(cartItemsByCart);
         cartRepository.delete(cart);
-
     }
 }
