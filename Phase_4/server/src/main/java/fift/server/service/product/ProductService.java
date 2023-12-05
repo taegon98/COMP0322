@@ -33,6 +33,10 @@ public class ProductService {
                 .orElseThrow(()->new RuntimeException("Product Not Found"));
     }
 
+    public List<Product> getTOP10Products() {
+        return productRepository.findTop10ByOrderByProductIdDesc();
+    }
+
     /**
      * 상품 삭제
      * @param product_Id
