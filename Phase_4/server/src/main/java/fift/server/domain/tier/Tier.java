@@ -4,7 +4,6 @@ import fift.server.domain.customer.Customer;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +17,7 @@ public class Tier {
     @Column(name = "tier_id")
     private Long tierId;
 
-    @Column(name = "tier_id")
+    @Column(name = "name")
     private String name;
 
     @Column(name = "amount")

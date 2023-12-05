@@ -37,7 +37,7 @@ public class GifticonService {
         if (currentMoney >= productPrice) {
             double updatedMoney = currentMoney - productPrice;
             if (updatedMoney >= 0) {
-                customer.setMoney((long) updatedMoney);
+                customer.setMoney((double) updatedMoney);
                 customer.setAmount(customer.getAmount() + productPrice);
                 customerRepository.save(customer);
 
