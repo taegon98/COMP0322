@@ -1,20 +1,45 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href= "login.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="login.css" />
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .login-wrapper {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-<div class="login-wrapper">
-  <h2>Login</h2>
-  <form method="post" action="서버의url" id="login-form">
-    <input type="text" name="userName" placeholder="Email" />
-    <input type="password" name="userPassword" placeholder="Password" />
-    <label for="remember-check">
-      <input type="checkbox" id="remember-check" />아이디 저장하기
-    </label>
-    <input type="submit" value="Login" />
-  </form>
+<div class="container">
+  <div class="login-wrapper">
+    <h2>Login</h2>
+    <form method="post" action="서버의url" id="login-form">
+      <input type="text" name="userName" placeholder="Email" />
+      <br />
+      <input type="password" name="userPassword" placeholder="Password" />
+      <br />
+      <label for="remember-check">
+        <input type="checkbox" id="remember-check" /> 아이디 저장하기
+      </label>
+      <br />
+      <input type="submit" value="Login" />
+    </form>
+  </div>
 </div>
 </body>
-
 </html>
