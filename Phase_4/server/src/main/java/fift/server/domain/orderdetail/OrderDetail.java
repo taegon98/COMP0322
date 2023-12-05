@@ -3,6 +3,7 @@ package fift.server.domain.orderdetail;
 import fift.server.domain.order.Order;
 import fift.server.domain.product.Product;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -25,7 +26,8 @@ public class OrderDetail {
     @JoinColumn(name="order_Id")
     private Order order;
 
-    private Long Quantity;
-    private Long total_Price;
+    private Integer Quantity;
+    private Integer total_Price;
+
 
 }
