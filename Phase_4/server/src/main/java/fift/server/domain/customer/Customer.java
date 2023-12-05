@@ -1,6 +1,7 @@
 package fift.server.domain.customer;
 
 import fift.server.domain.gifticon.Gifticon;
+import fift.server.domain.order.Order;
 import fift.server.domain.tier.Tier;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -22,6 +23,9 @@ public class Customer {
     @ManyToOne
     @JoinColumn(name = "tier_id")
     private Tier tier;
+
+    @OneToMany(mappedBy = "customer")
+    List<Order> orderList=new ArrayList<>();
 
     @Column(name = "name")
     private String name;

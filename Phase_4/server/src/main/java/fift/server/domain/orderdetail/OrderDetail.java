@@ -1,8 +1,10 @@
 package fift.server.domain.orderdetail;
 
+import fift.server.domain.cartItem.CartItem;
 import fift.server.domain.order.Order;
 import fift.server.domain.product.Product;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -25,7 +27,22 @@ public class OrderDetail {
     @JoinColumn(name="order_Id")
     private Order order;
 
-    private Long Quantity;
+    private Integer Quantity;
     private Long total_Price;
+
+    @Builder
+    public OrderDetail(Product product,CartItem cartItem) {
+        this.product = product;
+        this.Quantity=cartItem.getCount();
+        this.total_Price=cartItem.getCount()*cartItem.getProduct().getPrice();
+    }
+
+    public static OrderDetail createOrderDetail(Product product, CartItem cartItem) {
+        OrderDetail build = OrderDetail.builder()
+                .product(product)
+                .cartItem(cartItem)
+                .build();
+        return build;
+    }
 
 }
