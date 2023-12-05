@@ -11,6 +11,8 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -45,6 +47,14 @@ public class CartService {
             cartItemRepository.save(update);
         }
         cart.setCount(cart.getCount()+amount);
+
+    }
+
+    public void subCart(Customer customer,Product newProduct) {
+        Cart cart = cartRepository.findByUserId(customer.getUserId());
+        List<CartItem> cartItemsByCart = cartItemRepository.findCartItemsByCart(cart);
+        cartItemRepository.deleteAll(cartItemsByCart);
+        cartRepository.delete(cart);
 
     }
 }
