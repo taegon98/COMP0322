@@ -4,6 +4,7 @@ import fift.server.domain.customer.Customer;
 import fift.server.domain.orderdetail.OrderDetail;
 import fift.server.domain.product.Product;
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -33,4 +34,5 @@ public class Order {
     private Date expected_Date;
     private Date shipped_Date;
     private Boolean Status;
+
 }
