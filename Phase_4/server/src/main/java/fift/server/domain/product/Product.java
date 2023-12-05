@@ -1,5 +1,6 @@
 package fift.server.domain.product;
 
+import fift.server.domain.gifticon.Gifticon;
 import fift.server.domain.orderdetail.OrderDetail;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -21,6 +22,9 @@ public class Product {
 
     @OneToMany(mappedBy = "product",cascade = CascadeType.ALL)
     private List<OrderDetail> orderDetailList=new ArrayList<>();
+
+    @OneToMany(mappedBy = "product")
+    private List<Gifticon> gifticons = new ArrayList<>();
 
     private String Name;
     private String Description;
