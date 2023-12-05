@@ -17,3 +17,9 @@ function goToMain() {
 function openProduct() {
     location.href = "productpage.html";
 }
+function openSizeChange() {
+    location.href = "sizepage.html";
+}
+function openPassword() {
+    location.href = "passwordpage.html";
+}
