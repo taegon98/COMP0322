@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
-
 import java.util.Optional;
 
 @Controller
@@ -24,7 +23,7 @@ public class AuthController {
     @GetMapping("/login")
     public String showLoginForm(Model model) {
         model.addAttribute("loginDto", new LoginDto());
-        return "login";
+        return "loginpage";
     }
 
     //로그인
@@ -35,7 +34,7 @@ public class AuthController {
 
         if (customerId == null || customerId.trim().isEmpty() || password == null || password.trim().isEmpty()) {
             model.addAttribute("error", "Please provide valid credentials.");
-            return "login";
+            return "mainpage";
         }
 
         Optional<Customer> id = customerRepository.findByUserId(customerId);

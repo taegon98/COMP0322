@@ -17,15 +17,15 @@ public class CustomerController {
     //회원가입 (GET)
     @GetMapping("/register")
     public String showRegisterForm(Model model) {
-        model.addAttribute("customerDto", new Customer());
-        return "register";
+        model.addAttribute("customer", new Customer());
+        return "register/registerpage";
     }
 
     //회원가입 (POST)
     @PostMapping("/register")
     public String registerCustomer(@ModelAttribute("customerDto") Customer customerDto) {
         customerService.registerCustomer(customerDto);
-        return "string";
+        return "login/loginpage";
     }
 
     //사이즈 등록(GET)
