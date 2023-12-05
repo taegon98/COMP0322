@@ -28,7 +28,8 @@ public class Cart {
     @JoinColumn(name="customer_id")
     private Customer customer;
 
-    private int count; // 카트에 담긴 총 상품 개수
+    private Double total_price;
+    private Integer count; // 카트에 담긴 총 상품 개수
 
     @OneToMany(mappedBy = "cart")
     private List<CartItem> cartItems = new ArrayList<>();
@@ -45,11 +46,16 @@ public class Cart {
     @Builder
     public Cart(Customer customer) {
         this.customer = customer;
+        this.total_price= Double.valueOf(0);
     }
 
 
     public static Cart createCart(Customer setCustomer) {
         Cart build = Cart.builder().customer(setCustomer).build();
         return build;
+    }
+
+    public void add_Price(int price) {
+        this.total_price+=price;
     }
 }

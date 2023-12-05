@@ -46,19 +46,25 @@ public class OrderService {
     }
 
     public Long order_Cart(Customer customer) {
+
         Cart byUserId = cartRepository.findByUserId(customer.getUserId());
         List<CartItem> cartItemsByCart = cartItemRepository.findCartItemsByCart(byUserId);
 
-        List<OrderDetail> orderDetailList=new ArrayList<>();
+        if(byUserId.getTotal_price()<=customer.getMoney()) {
+            List<OrderDetail> orderDetailList=new ArrayList<>();
 
-        for(CartItem cartItem:cartItemsByCart) {
-            OrderDetail orderDetail = add_Cart_Item(cartItem.getProduct(), cartItem);
-            orderDetailList.add(orderDetail);
+            for(CartItem cartItem:cartItemsByCart) {
+                OrderDetail orderDetail = add_Cart_Item(cartItem.getProduct(), cartItem);
+                orderDetailList.add(orderDetail);
+                customer.setAmount(customer.getAmount()+orderDetail.getTotal_Price());
+            }
+
+            Long aLong = add_Cart_Order(customer, orderDetailList);
+            cartService.subCart(customer);
+            return aLong;
         }
-
-        Long aLong = add_Cart_Order(customer, orderDetailList);
-        cartService.subCart(customer);
-
-        return aLong;
+        else {
+            return byUserId.getCart_Id();
+        }
     }
 }

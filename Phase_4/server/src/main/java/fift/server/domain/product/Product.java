@@ -28,6 +28,6 @@ public class Product {
 
     private String Name;
     private String Description;
-    private Long Price;
+    private Double Price;
     private String Photo;
 }
