@@ -1,4 +1,4 @@
-package fift.server.repository;
+package fift.server.repository.gifticon;
 
 import fift.server.domain.gifticon.Gifticon;
 import org.springframework.data.jpa.repository.JpaRepository;

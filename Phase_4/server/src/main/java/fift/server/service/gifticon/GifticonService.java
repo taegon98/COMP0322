@@ -3,9 +3,10 @@ package fift.server.service.gifticon;
 import fift.server.domain.customer.Customer;
 import fift.server.domain.gifticon.Gifticon;
 import fift.server.domain.product.Product;
-import fift.server.repository.GifticonRepository;
 import fift.server.repository.customer.CustomerRepository;
+import fift.server.repository.gifticon.GifticonRepository;
 import fift.server.repository.product.ProductRepository;
+import fift.server.service.tier.TierService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,8 +18,8 @@ public class GifticonService {
     private final GifticonRepository gifticonRepository;
     private final CustomerRepository customerRepository;
     private final ProductRepository productRepository;
+    private final TierService tierService;
 
-    // Gifticon 선물 기능
     @Transactional
     public Gifticon giftGifticonToUser(Long userId, Long productId) {
         Customer customer = customerRepository.findById(userId)
@@ -36,7 +37,8 @@ public class GifticonService {
         if (currentMoney >= productPrice) {
             double updatedMoney = currentMoney - productPrice;
             if (updatedMoney >= 0) {
-                customer.setMoney((long) (currentMoney - productPrice));
+                customer.setMoney((long) updatedMoney);
+                customer.setAmount(customer.getAmount() + productPrice);
                 customerRepository.save(customer);
 
                 Gifticon gifticon = new Gifticon();
@@ -45,7 +47,11 @@ public class GifticonService {
                 gifticon.setExpirationDate(java.sql.Date.valueOf(expirationDate));
                 gifticon.setStatus(1);
 
-                return gifticonRepository.save(gifticon);
+                gifticonRepository.save(gifticon);
+
+                tierService.updateTierByAmount(customer);
+
+                return gifticon;
             } else {
                 throw new IllegalStateException("Insufficient funds to purchase this product");
             }
