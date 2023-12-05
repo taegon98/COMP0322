@@ -5,12 +5,12 @@ function openMypage() {
 }
 function openSignupForm() {
     // mypage.html로 이동
-    location.href = "register.html";
+    location.href = "registerpage.html";
 }
 function openLoginForm() {
     // mypage.html로 이동
-    location.href = "login.html";
+    location.href = "loginpage.html";
 }
 function goToMain() {
-    location.href = "main.html";
+    location.href = "mainpage.html";
 }
