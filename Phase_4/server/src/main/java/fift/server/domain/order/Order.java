@@ -35,4 +35,27 @@ public class Order {
     private Date shipped_Date;
     private Boolean Status;
 
+    @Builder
+    public Order(Customer customer, Boolean status) {
+        this.customer = customer;
+        Status = status;
+    }
+
+    public void addOrderDetail(OrderDetail orderDetail) {
+        orderDetailList.add(orderDetail);
+        orderDetail.setOrder(this);
+    }
+
+    public static Order createOrder(Customer customer,List<OrderDetail> orderDetailList) {
+        Order build = Order.builder()
+                .customer(customer)
+                .status(false)
+                .build();
+        for(OrderDetail orderDetail:orderDetailList) {
+            build.addOrderDetail(orderDetail);
+        }
+        return build;
+    }
+
+
 }

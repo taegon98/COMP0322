@@ -29,5 +29,26 @@ public class OrderDetail {
     private Integer Quantity;
     private Integer total_Price;
 
+    @Builder
+    public OrderDetail(Product product, Order order, Integer quantity, Integer total_Price) {
+        this.product = product;
+        this.order = order;
+        Quantity = quantity;
+        this.total_Price = total_Price;
+    }
 
+    public static OrderDetail createOrderItem(Product product,Order order,Integer Quantity,Integer price) {
+        OrderDetail build = OrderDetail.builder()
+                .product(product)
+                .order(order)
+                .quantity(Quantity)
+                .total_Price(price)
+                .build();
+        return build;
+    }
+
+    public void addDetail(Integer price) {
+        this.Quantity+=1;
+        this.total_Price+=price;
+    }
 }
