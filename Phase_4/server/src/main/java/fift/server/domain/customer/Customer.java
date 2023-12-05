@@ -24,7 +24,7 @@ public class Customer {
     private Tier tier;
 
     @OneToMany(mappedBy = "customer")
-    List<Orders> orderList=new ArrayList<>();
+    List<Orders> orderList = new ArrayList<>();
 
     @Column(name = "name")
     private String name;
@@ -43,7 +43,6 @@ public class Customer {
 
     @Column(name = "postalCode")
     private Long postalCode;
-
 
     @Column(name = "couponid")
     private Long couponId;

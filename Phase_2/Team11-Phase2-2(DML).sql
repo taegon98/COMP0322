@@ -12,106 +12,106 @@
 
 -- TIER
 
-INSERT INTO TIER VALUES(1, 'level_1', 50000, 0.5);
-INSERT INTO TIER VALUES(2, 'level_2', 100000, 1.0);
-INSERT INTO TIER VALUES(3, 'level_3', 150000, 1.5);
-INSERT INTO TIER VALUES(4, 'level_4', 200000, 2.0);
-INSERT INTO TIER VALUES(5, 'level_5', 250000, 2.5);
-INSERT INTO TIER VALUES(6, 'level_6', 300000, 3.0);
-INSERT INTO TIER VALUES(7, 'level_7', 350000, 3.5);
-INSERT INTO TIER VALUES(8, 'level_8', 400000, 4.0);
-INSERT INTO TIER VALUES(9, 'level_9', 450000, 4.5);
-INSERT INTO TIER VALUES(10, 'level_10', 500000, 5.0);
-INSERT INTO TIER VALUES(11, 'level_11', 550000, 5.5);
-INSERT INTO TIER VALUES(12, 'level_12', 600000, 6.0);
-INSERT INTO TIER VALUES(13, 'level_13', 650000, 6.5);
-INSERT INTO TIER VALUES(14, 'level_14', 700000, 7.0);
-INSERT INTO TIER VALUES(15, 'level_15', 750000, 7.5);
-INSERT INTO TIER VALUES(16, 'level_16', 800000, 8.0);
-INSERT INTO TIER VALUES(17, 'level_17', 850000, 8.5);
-INSERT INTO TIER VALUES(18, 'level_18', 900000, 9.0);
-INSERT INTO TIER VALUES(19, 'level_19', 950000, 9.5);
-INSERT INTO TIER VALUES(20, 'level_20', 1000000, 10.0);
-INSERT INTO TIER VALUES(21, 'level_21', 1050000, 10.5);
-INSERT INTO TIER VALUES(22, 'level_22', 1100000, 11.0);
-INSERT INTO TIER VALUES(23, 'level_23', 1150000, 11.5);
-INSERT INTO TIER VALUES(24, 'level_24', 1200000, 12.0);
-INSERT INTO TIER VALUES(25, 'level_25', 1250000, 12.5);
-INSERT INTO TIER VALUES(26, 'level_26', 1300000, 13.0);
-INSERT INTO TIER VALUES(27, 'level_27', 1350000, 13.5);
-INSERT INTO TIER VALUES(28, 'level_28', 1400000, 14.0);
-INSERT INTO TIER VALUES(29, 'level_29', 1450000, 14.5);
-INSERT INTO TIER VALUES(30, 'level_30', 1500000, 15.0);
-INSERT INTO TIER VALUES(31, 'level_31', 1550000, 15.5);
-INSERT INTO TIER VALUES(32, 'level_32', 1600000, 16.0);
-INSERT INTO TIER VALUES(33, 'level_33', 1650000, 16.5);
-INSERT INTO TIER VALUES(34, 'level_34', 1700000, 17.0);
-INSERT INTO TIER VALUES(35, 'level_35', 1750000, 17.5);
-INSERT INTO TIER VALUES(36, 'level_36', 1800000, 18.0);
-INSERT INTO TIER VALUES(37, 'level_37', 1850000, 18.5);
-INSERT INTO TIER VALUES(38, 'level_38', 1900000, 19.0);
-INSERT INTO TIER VALUES(39, 'level_39', 1950000, 19.5);
-INSERT INTO TIER VALUES(40, 'level_40', 2000000, 20.0);
-INSERT INTO TIER VALUES(41, 'level_41', 2050000, 20.5);
-INSERT INTO TIER VALUES(42, 'level_42', 2100000, 21.0);
-INSERT INTO TIER VALUES(43, 'level_43', 2150000, 21.5);
-INSERT INTO TIER VALUES(44, 'level_44', 2200000, 22.0);
-INSERT INTO TIER VALUES(45, 'level_45', 2250000, 22.5);
-INSERT INTO TIER VALUES(46, 'level_46', 2300000, 23.0);
-INSERT INTO TIER VALUES(47, 'level_47', 2350000, 23.5);
-INSERT INTO TIER VALUES(48, 'level_48', 2400000, 24.0);
-INSERT INTO TIER VALUES(49, 'level_49', 2450000, 24.5);
-INSERT INTO TIER VALUES(50, 'level_50', 2500000, 25.0);
-INSERT INTO TIER VALUES(51, 'level_51', 2550000, 25.5);
-INSERT INTO TIER VALUES(52, 'level_52', 2600000, 26.0);
-INSERT INTO TIER VALUES(53, 'level_53', 2650000, 26.5);
-INSERT INTO TIER VALUES(54, 'level_54', 2700000, 27.0);
-INSERT INTO TIER VALUES(55, 'level_55', 2750000, 27.5);
-INSERT INTO TIER VALUES(56, 'level_56', 2800000, 28.0);
-INSERT INTO TIER VALUES(57, 'level_57', 2850000, 28.5);
-INSERT INTO TIER VALUES(58, 'level_58', 2900000, 29.0);
-INSERT INTO TIER VALUES(59, 'level_59', 2950000, 29.5);
-INSERT INTO TIER VALUES(60, 'level_60', 3000000, 30.0);
-INSERT INTO TIER VALUES(61, 'level_61', 3050000, 30.5);
-INSERT INTO TIER VALUES(62, 'level_62', 3100000, 31.0);
-INSERT INTO TIER VALUES(63, 'level_63', 3150000, 31.5);
-INSERT INTO TIER VALUES(64, 'level_64', 3200000, 32.0);
-INSERT INTO TIER VALUES(65, 'level_65', 3250000, 32.5);
-INSERT INTO TIER VALUES(66, 'level_66', 3300000, 33.0);
-INSERT INTO TIER VALUES(67, 'level_67', 3350000, 33.5);
-INSERT INTO TIER VALUES(68, 'level_68', 3400000, 34.0);
-INSERT INTO TIER VALUES(69, 'level_69', 3450000, 34.5);
-INSERT INTO TIER VALUES(70, 'level_70', 3500000, 35.0);
-INSERT INTO TIER VALUES(71, 'level_71', 3550000, 35.5);
-INSERT INTO TIER VALUES(72, 'level_72', 3600000, 36.0);
-INSERT INTO TIER VALUES(73, 'level_73', 3650000, 36.5);
-INSERT INTO TIER VALUES(74, 'level_74', 3700000, 37.0);
-INSERT INTO TIER VALUES(75, 'level_75', 3750000, 37.5);
-INSERT INTO TIER VALUES(76, 'level_76', 3800000, 38.0);
-INSERT INTO TIER VALUES(77, 'level_77', 3850000, 38.5);
-INSERT INTO TIER VALUES(78, 'level_78', 3900000, 39.0);
-INSERT INTO TIER VALUES(79, 'level_79', 3950000, 39.5);
-INSERT INTO TIER VALUES(80, 'level_80', 4000000, 40.0);
-INSERT INTO TIER VALUES(81, 'level_81', 4050000, 40.5);
-INSERT INTO TIER VALUES(82, 'level_82', 4100000, 41.0);
-INSERT INTO TIER VALUES(83, 'level_83', 4150000, 41.5);
-INSERT INTO TIER VALUES(84, 'level_84', 4200000, 42.0);
-INSERT INTO TIER VALUES(85, 'level_85', 4250000, 42.5);
-INSERT INTO TIER VALUES(86, 'level_86', 4300000, 43.0);
-INSERT INTO TIER VALUES(87, 'level_87', 4350000, 43.5);
-INSERT INTO TIER VALUES(88, 'level_88', 4400000, 44.0);
-INSERT INTO TIER VALUES(89, 'level_89', 4450000, 44.5);
-INSERT INTO TIER VALUES(90, 'level_90', 4500000, 45.0);
-INSERT INTO TIER VALUES(91, 'level_91', 4550000, 45.5);
-INSERT INTO TIER VALUES(92, 'level_92', 4600000, 46.0);
-INSERT INTO TIER VALUES(93, 'level_93', 4650000, 46.5);
-INSERT INTO TIER VALUES(94, 'level_94', 4700000, 47.0);
-INSERT INTO TIER VALUES(95, 'level_95', 4750000, 47.5);
-INSERT INTO TIER VALUES(96, 'level_96', 4800000, 48.0);
-INSERT INTO TIER VALUES(97, 'level_97', 4850000, 48.5);
-INSERT INTO TIER VALUES(98, 'level_98', 4900000, 49.0);
-INSERT INTO TIER VALUES(99, 'level_99', 4950000, 49.5);
-INSERT INTO TIER VALUES(100, 'level_100', 5000000, 50.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES (1, 'level_1', 50000, 0.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(2, 'level_2', 100000, 1.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(3, 'level_3', 150000, 1.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(4, 'level_4', 200000, 2.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(5, 'level_5', 250000, 2.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(6, 'level_6', 300000, 3.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(7, 'level_7', 350000, 3.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(8, 'level_8', 400000, 4.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(9, 'level_9', 450000, 4.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(10, 'level_10', 500000, 5.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(11, 'level_11', 550000, 5.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(12, 'level_12', 600000, 6.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(13, 'level_13', 650000, 6.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(14, 'level_14', 700000, 7.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(15, 'level_15', 750000, 7.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(16, 'level_16', 800000, 8.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(17, 'level_17', 850000, 8.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(18, 'level_18', 900000, 9.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(19, 'level_19', 950000, 9.5);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(20, 'level_20', 1000000, 10.0);
+INSERT INTO TIER (tierid, name, amount, benefit) VALUES(21, 'level_21', 1050000, 10.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(22, 'level_22', 1100000, 11.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(23, 'level_23', 1150000, 11.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(24, 'level_24', 1200000, 12.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(25, 'level_25', 1250000, 12.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(26, 'level_26', 1300000, 13.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(27, 'level_27', 1350000, 13.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(28, 'level_28', 1400000, 14.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(29, 'level_29', 1450000, 14.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(30, 'level_30', 1500000, 15.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(31, 'level_31', 1550000, 15.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(32, 'level_32', 1600000, 16.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(33, 'level_33', 1650000, 16.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(34, 'level_34', 1700000, 17.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(35, 'level_35', 1750000, 17.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(36, 'level_36', 1800000, 18.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(37, 'level_37', 1850000, 18.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(38, 'level_38', 1900000, 19.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(39, 'level_39', 1950000, 19.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(40, 'level_40', 2000000, 20.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(41, 'level_41', 2050000, 20.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(42, 'level_42', 2100000, 21.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(43, 'level_43', 2150000, 21.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(44, 'level_44', 2200000, 22.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(45, 'level_45', 2250000, 22.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(46, 'level_46', 2300000, 23.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(47, 'level_47', 2350000, 23.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(48, 'level_48', 2400000, 24.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(49, 'level_49', 2450000, 24.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(50, 'level_50', 2500000, 25.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(51, 'level_51', 2550000, 25.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(52, 'level_52', 2600000, 26.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(53, 'level_53', 2650000, 26.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(54, 'level_54', 2700000, 27.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(55, 'level_55', 2750000, 27.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(56, 'level_56', 2800000, 28.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(57, 'level_57', 2850000, 28.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(58, 'level_58', 2900000, 29.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(59, 'level_59', 2950000, 29.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(60, 'level_60', 3000000, 30.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(61, 'level_61', 3050000, 30.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(62, 'level_62', 3100000, 31.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(63, 'level_63', 3150000, 31.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(64, 'level_64', 3200000, 32.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(65, 'level_65', 3250000, 32.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(66, 'level_66', 3300000, 33.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(67, 'level_67', 3350000, 33.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(68, 'level_68', 3400000, 34.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(69, 'level_69', 3450000, 34.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(70, 'level_70', 3500000, 35.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(71, 'level_71', 3550000, 35.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(72, 'level_72', 3600000, 36.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(73, 'level_73', 3650000, 36.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(74, 'level_74', 3700000, 37.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(75, 'level_75', 3750000, 37.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(76, 'level_76', 3800000, 38.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(77, 'level_77', 3850000, 38.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(78, 'level_78', 3900000, 39.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(79, 'level_79', 3950000, 39.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(80, 'level_80', 4000000, 40.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(81, 'level_81', 4050000, 40.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(82, 'level_82', 4100000, 41.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(83, 'level_83', 4150000, 41.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(84, 'level_84', 4200000, 42.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(85, 'level_85', 4250000, 42.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(86, 'level_86', 4300000, 43.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(87, 'level_87', 4350000, 43.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(88, 'level_88', 4400000, 44.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(89, 'level_89', 4450000, 44.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(90, 'level_90', 4500000, 45.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(91, 'level_91', 4550000, 45.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(92, 'level_92', 4600000, 46.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(93, 'level_93', 4650000, 46.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(94, 'level_94', 4700000, 47.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(95, 'level_95', 4750000, 47.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(96, 'level_96', 4800000, 48.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(97, 'level_97', 4850000, 48.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(98, 'level_98', 4900000, 49.0);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(99, 'level_99', 4950000, 49.5);
+INSERT INTO TIER (tierid, name, amount, benefit)  VALUES(100, 'level_100', 5000000, 50.0);
 
 
 -- COUPON
@@ -131,412 +131,812 @@ END;
 
 -- CUSTOMER
 
-INSERT INTO CUSTOMER VALUES(1, 1, 'Olivia Martinez', 'GhY9M', '16777', '890-5544', 'Denver', 64994, 0, NULL);
-INSERT INTO CUSTOMER VALUES(2, 1, 'Liam Smith', '1YJCf', '70266', '942-8332', 'Austin', 58766, 0, NULL);
-INSERT INTO CUSTOMER VALUES(3, 1, 'Emma Davis', 'w0p14', '28550', '380-2950', 'Denver', 90476, 0, NULL);
-INSERT INTO CUSTOMER VALUES(4, 1, 'Noah Anderson', '1KYIV', '91216', '823-4318', 'Portland', 63263, 0, NULL);
-INSERT INTO CUSTOMER VALUES(5, 1, 'Sophia Wilson', 'yv9X3', '89154', '738-1645', 'Los Angeles', 92225, 0, NULL);
-INSERT INTO CUSTOMER VALUES(6, 1, 'Aiden Lee', 'AKPME', '45690', '506-1052', 'Chicago', 70407, 0, NULL);
-INSERT INTO CUSTOMER VALUES(7, 1, 'Ava Taylor', 'W3uLW', '15451', '659-2400', 'Las Vegas', 96534, 0, NULL);
-INSERT INTO CUSTOMER VALUES(8, 1, 'Mason Brown', '9FNcX', '44998', '142-1110', 'Boston', 24996, 0, NULL);
-INSERT INTO CUSTOMER VALUES(9, 1, 'Isabella Garcia', 'cPhYX', '67012', '305-4931', 'Denver', 24490, 0, NULL);
-INSERT INTO CUSTOMER VALUES(10, 1, 'Lucas Miller', 'PeCIM', '79973', '844-9342', 'Los Angeles', 34766, 0, NULL);
-INSERT INTO CUSTOMER VALUES(11, 1, 'Mia Moore', 'FpF8Q', '59505', '497-6945', 'Charlotte', 27765, 0, NULL);
-INSERT INTO CUSTOMER VALUES(12, 1, 'Logan White', 'ezHiu', '79853', '165-3475', 'Austin', 80228, 0, NULL);
-INSERT INTO CUSTOMER VALUES(13, 1, 'Harper Jackson', 'Wig9u', '23179', '840-7822', 'Houston', 28313, 0, NULL);
-INSERT INTO CUSTOMER VALUES(14, 1, 'Oliver Thomas', '7qasM', '65595', '153-3259', 'Houston', 90167, 0, NULL);
-INSERT INTO CUSTOMER VALUES(15, 1, 'Amelia Robinson', 'VjnY9', '79083', '491-6750', 'Nashville', 56022, 0, NULL);
-INSERT INTO CUSTOMER VALUES(16, 1, 'Jackson Hall', 'kyPWv', '87007', '357-4466', 'Austin', 68491, 0, NULL);
-INSERT INTO CUSTOMER VALUES(17, 1, 'Charlotte Harris', 'nnkw5', '73740', '367-2369', 'San Diego', 65801, 0, NULL);
-INSERT INTO CUSTOMER VALUES(18, 1, 'Elijah Clark', 'M5pkC', '81008', '778-1874', 'Dallas', 36707, 0, NULL);
-INSERT INTO CUSTOMER VALUES(19, 1, 'Grace Adams', 'Q8UBs', '70861', '983-9224', 'Orlando', 29155, 0, NULL);
-INSERT INTO CUSTOMER VALUES(20, 1, 'Caleb Scott', 'qFV1L', '46140', '669-7089', 'Seattle', 50450, 0, NULL);
-INSERT INTO CUSTOMER VALUES(21, 1, 'Abigail Turner', 'vCiRz', '96172', '550-6789', 'Atlanta', 12575, 0, NULL);
-INSERT INTO CUSTOMER VALUES(22, 1, 'Carter Baker', 'w2ovr', '16691', '515-6794', 'Dallas', 53811, 0, NULL);
-INSERT INTO CUSTOMER VALUES(23, 1, 'Scarlett King', 'g3XdM', '17466', '670-9882', 'New York', 38510, 0, NULL);
-INSERT INTO CUSTOMER VALUES(24, 1, 'Benjamin Lewis', 'dVIyl', '65235', '823-2741', 'Nashville', 66245, 0, NULL);
-INSERT INTO CUSTOMER VALUES(25, 1, 'Zoey Nelson', 'KJPMJ', '65760', '670-8647', 'Phoenix', 31564, 0, NULL);
-INSERT INTO CUSTOMER VALUES(26, 1, 'William Walker', '2Y7QA', '73559', '840-1492', 'Charlotte', 88996, 0, NULL);
-INSERT INTO CUSTOMER VALUES(27, 1, 'Chloe Young', '3Fk9K', '94908', '553-8534', 'Atlanta', 60380, 0, NULL);
-INSERT INTO CUSTOMER VALUES(28, 1, 'Henry Green', 'L9nz6', '60116', '688-1439', 'Atlanta', 67794, 0, NULL);
-INSERT INTO CUSTOMER VALUES(29, 1, 'Riley Hall', 'zoGum', '75576', '929-2760', 'Seattle', 68492, 0, NULL);
-INSERT INTO CUSTOMER VALUES(30, 1, 'Samuel Parker', 'F9S1t', '23955', '652-5794', 'Austin', 18436, 0, NULL);
-INSERT INTO CUSTOMER VALUES(31, 1, 'Aubrey Lewis', 'Ys0cI', '65181', '584-9491', 'Las Vegas', 59267, 0, NULL);
-INSERT INTO CUSTOMER VALUES(32, 1, 'Owen Johnson', 'me9LH', '22246', '630-8427', 'Chicago', 56595, 0, NULL);
-INSERT INTO CUSTOMER VALUES(33, 1, 'Ella Mitchell', '43xNI', '18499', '399-7232', 'Las Vegas', 62203, 0, NULL);
-INSERT INTO CUSTOMER VALUES(34, 1, 'Jack Adams', 'w6rnX', '28030', '841-8778', 'Boston', 19546, 0, NULL);
-INSERT INTO CUSTOMER VALUES(35, 1, 'Lily Wilson', 'WEGJN', '20883', '965-1802', 'Boston', 64084, 0, NULL);
-INSERT INTO CUSTOMER VALUES(36, 1, 'Andrew Turner', 'YdrF1', '81921', '979-8008', 'New York', 76234, 0, NULL);
-INSERT INTO CUSTOMER VALUES(37, 1, 'Addison Thompson', 'tCdDu', '36765', '805-3392', 'Phoenix', 35398, 0, NULL);
-INSERT INTO CUSTOMER VALUES(38, 1, 'Daniel Wright', 'frlNh', '53225', '213-9073', 'Charlotte', 76314, 0, NULL);
-INSERT INTO CUSTOMER VALUES(39, 1, 'Sofia Davis', 'JC2uD', '17019', '408-7995', 'Boston', 62201, 0, NULL);
-INSERT INTO CUSTOMER VALUES(40, 1, 'Matthew Hall', 'ULe64', '37178', '834-1902', 'San Diego', 90091, 0, NULL);
-INSERT INTO CUSTOMER VALUES(41, 1, 'Victoria Martinez', 'GnVek', '21555', '761-5366', 'Dallas', 32802, 0, NULL);
-INSERT INTO CUSTOMER VALUES(42, 1, 'David Turner', '7gw2m', '45447', '424-3201', 'Las Vegas', 94219, 0, NULL);
-INSERT INTO CUSTOMER VALUES(43, 1, 'Grace Roberts', 'nMXhO', '12029', '942-7726', 'Philadelphia', 16904, 0, NULL);
-INSERT INTO CUSTOMER VALUES(44, 1, 'Michael Martin', 'Dkydh', '73709', '142-9899', 'Chicago', 37969, 0, NULL);
-INSERT INTO CUSTOMER VALUES(45, 1, 'Madison Perez', 'gk3PN', '49553', '439-9036', 'Philadelphia', 14945, 0, NULL);
-INSERT INTO CUSTOMER VALUES(46, 1, 'Joseph Hall', 'qbFvP', '38026', '635-8619', 'Charlotte', 44056, 0, NULL);
-INSERT INTO CUSTOMER VALUES(47, 1, 'Harper Adams', 'AsDRX', '26214', '316-9782', 'Nashville', 19948, 0, NULL);
-INSERT INTO CUSTOMER VALUES(48, 1, 'James Anderson', 'sxq1Y', '68229', '670-7315', 'Austin', 63261, 0, NULL);
-INSERT INTO CUSTOMER VALUES(49, 1, 'Aria Moore', '8BC64', '13153', '927-3193', 'Miami', 56797, 0, NULL);
-INSERT INTO CUSTOMER VALUES(50, 1, 'Alexander Carter', 'dFQFI', '73627', '285-3999', 'Houston', 78782, 0, NULL);
-INSERT INTO CUSTOMER VALUES(51, 1, 'Penelope Turner', 'REsYK', '62213', '759-4716', 'Orlando', 30858, 0, NULL);
-INSERT INTO CUSTOMER VALUES(52, 1, 'Nicholas Brown', 'o3E9h', '43745', '546-8678', 'Austin', 12377, 0, NULL);
-INSERT INTO CUSTOMER VALUES(53, 1, 'Evelyn Smith', 'yLDyw', '59363', '169-1785', 'San Francisco', 89350, 0, NULL);
-INSERT INTO CUSTOMER VALUES(54, 1, 'William Foster', 'AWpKh', '50462', '453-4590', 'Chicago', 98861, 0, NULL);
-INSERT INTO CUSTOMER VALUES(55, 1, 'Lily Parker', 'lncpW', '44169', '188-5678', 'Phoenix', 42546, 0, NULL);
-INSERT INTO CUSTOMER VALUES(56, 1, 'Joseph Adams', 'Lqvmv', '43270', '646-6833', 'Seattle', 94598, 0, NULL);
-INSERT INTO CUSTOMER VALUES(57, 1, 'Sofia Perez', 'JN1pd', '59690', '792-2824', 'Nashville', 95503, 0, NULL);
-INSERT INTO CUSTOMER VALUES(58, 1, 'Daniel Jackson', 'DI3R0', '92274', '183-2057', 'Miami', 45729, 0, NULL);
-INSERT INTO CUSTOMER VALUES(59, 1, 'Scarlett Lewis', 'tYpeG', '47490', '397-4673', 'Phoenix', 97887, 0, NULL);
-INSERT INTO CUSTOMER VALUES(60, 1, 'Christopher Martin', '3hWeR', '43456', '847-3056', 'New York', 43957, 0, NULL);
-INSERT INTO CUSTOMER VALUES(61, 1, 'Avery Wright', '7Etfc', '79382', '343-1743', 'Houston', 67172, 0, NULL);
-INSERT INTO CUSTOMER VALUES(62, 1, 'Ethan Harris', 'e33sU', '33389', '925-4072', 'Phoenix', 57150, 0, NULL);
-INSERT INTO CUSTOMER VALUES(63, 1, 'Grace Mitchell', 'MpDvp', '88030', '104-6247', 'Boston', 40770, 0, NULL);
-INSERT INTO CUSTOMER VALUES(64, 1, 'Ryan Thomas', '6eHVx', '23001', '465-3552', 'Los Angeles', 70568, 0, NULL);
-INSERT INTO CUSTOMER VALUES(65, 1, 'Mia White', 'Gpjsb', '92449', '120-7456', 'Boston', 91181, 0, NULL);
-INSERT INTO CUSTOMER VALUES(66, 1, 'John Wilson', '5WBnV', '63093', '913-1667', 'Charlotte', 49072, 0, NULL);
-INSERT INTO CUSTOMER VALUES(67, 1, 'Abigail Reed', 'X0hRI', '83801', '701-6185', 'New York', 92214, 0, NULL);
-INSERT INTO CUSTOMER VALUES(68, 1, 'Gabriel Garcia', 'B1BPM', '80071', '411-4192', 'Chicago', 36853, 0, NULL);
-INSERT INTO CUSTOMER VALUES(69, 1, 'Zoe Robinson', 'r0MQC', '72117', '873-1695', 'Seattle', 21062, 0, NULL);
-INSERT INTO CUSTOMER VALUES(70, 1, 'Dylan King', '7gDGG', '82616', '704-4013', 'Houston', 41867, 0, NULL);
-INSERT INTO CUSTOMER VALUES(71, 1, 'Avery Young', 'Q0XTU', '62166', '392-2304', 'New York', 82736, 0, NULL);
-INSERT INTO CUSTOMER VALUES(72, 1, 'Samuel Johnson', 'MWK3O', '15399', '723-4844', 'Denver', 25759, 0, NULL);
-INSERT INTO CUSTOMER VALUES(73, 1, 'Ella Turner', '0Owto', '84253', '509-4256', 'Austin', 67924, 0, NULL);
-INSERT INTO CUSTOMER VALUES(74, 1, 'David Martinez', 'PLpAn', '37539', '130-8336', 'Charlotte', 89614, 0, NULL);
-INSERT INTO CUSTOMER VALUES(75, 1, 'Aria Thomas', '23Eop', '57793', '844-8338', 'Denver', 73432, 0, NULL);
-INSERT INTO CUSTOMER VALUES(76, 1, 'Jack Anderson', 'T5BKI', '82030', '158-6223', 'Phoenix', 15579, 0, NULL);
-INSERT INTO CUSTOMER VALUES(77, 1, 'Charlotte Allen', '7ZSqZ', '23048', '796-5551', 'Austin', 54779, 0, NULL);
-INSERT INTO CUSTOMER VALUES(78, 1, 'Luke Scott', 'xhb7m', '10235', '150-2407', 'Seattle', 69702, 0, NULL);
-INSERT INTO CUSTOMER VALUES(79, 1, 'Penelope Lewis', 'cvev2', '38203', '714-5751', 'Houston', 91019, 0, NULL);
-INSERT INTO CUSTOMER VALUES(80, 1, 'Jackson Walker', 'u1iSB', '82579', '967-2039', 'Phoenix', 46338, 0, NULL);
-INSERT INTO CUSTOMER VALUES(81, 1, 'Aubrey Foster', 'CPAMR', '40996', '843-2080', 'Charlotte', 32556, 0, NULL);
-INSERT INTO CUSTOMER VALUES(82, 1, 'Caleb Davis', '3zhGS', '13309', '989-9456', 'Dallas', 21793, 0, NULL);
-INSERT INTO CUSTOMER VALUES(83, 1, 'Addison Taylor', 'jwl2G', '45365', '448-7486', 'San Diego', 88674, 0, NULL);
-INSERT INTO CUSTOMER VALUES(84, 1, 'Christopher Roberts', 'stzuS', '43894', '104-4695', 'Las Vegas', 69253, 0, NULL);
-INSERT INTO CUSTOMER VALUES(85, 1, 'Elizabeth Lee', '9tFwt', '29275', '671-5684', 'San Francisco', 64416, 0, NULL);
-INSERT INTO CUSTOMER VALUES(86, 1, 'Logan Baker', 'k3QCf', '10861', '448-8246', 'Charlotte', 16524, 0, NULL);
-INSERT INTO CUSTOMER VALUES(87, 1, 'Amelia Wright', 'SMQpd', '27328', '423-3705', 'Denver', 63497, 0, NULL);
-INSERT INTO CUSTOMER VALUES(88, 1, 'Benjamin Miller', 'zNkKU', '37728', '884-5061', 'Boston', 45921, 0, NULL);
-INSERT INTO CUSTOMER VALUES(89, 1, 'Victoria Wilson', 'Kma3w', '12886', '709-7964', 'Dallas', 53820, 0, NULL);
-INSERT INTO CUSTOMER VALUES(90, 1, 'Caleb Smith', 'sFaNn', '77074', '673-8009', 'Las Vegas', 55521, 0, NULL);
-INSERT INTO CUSTOMER VALUES(91, 1, 'Aubrey Harris', 'z2ElO', '46283', '606-8888', 'Las Vegas', 38881, 0, NULL);
-INSERT INTO CUSTOMER VALUES(92, 1, 'Samuel Turner', 'Y0nnS', '89854', '712-5938', 'Charlotte', 43863, 0, NULL);
-INSERT INTO CUSTOMER VALUES(93, 1, 'Sophia Taylor', 'PcNiI', '38926', '425-3125', 'Denver', 62153, 0, NULL);
-INSERT INTO CUSTOMER VALUES(94, 1, 'Owen Jackson', '1JXXQ', '36322', '319-3913', 'Philadelphia', 71707, 0, NULL);
-INSERT INTO CUSTOMER VALUES(95, 1, 'Zoey Robinson', 'us0Xb', '43052', '599-4241', 'Houston', 37420, 0, NULL);
-INSERT INTO CUSTOMER VALUES(96, 1, 'William White', 'pJb5K', '81912', '597-1747', 'New York', 33947, 0, NULL);
-INSERT INTO CUSTOMER VALUES(97, 1, 'Ava Clark', 'nkJ9A', '64251', '512-1845', 'Seattle', 75074, 0, NULL);
-INSERT INTO CUSTOMER VALUES(98, 1, 'Alexander Thomas', 'J2W0d', '47373', '672-1125', 'Seattle', 47176, 0, NULL);
-INSERT INTO CUSTOMER VALUES(99, 1, 'Scarlett Perez', 'PUZKk', '61472', '970-3149', 'New York', 49015, 0, NULL);
-INSERT INTO CUSTOMER VALUES(100, 1, 'Mason Martin', 'EPeyo', '42270', '808-4469', 'New York', 40966, 0, NULL);
-INSERT INTO CUSTOMER VALUES(101, 1, 'Emily Hall', 'dx26o', '25737', '994-2812', 'Chicago', 60454, 0, NULL);
-INSERT INTO CUSTOMER VALUES(102, 1, 'Daniel Davis', 'dJ5gy', '36927', '615-1140', 'San Francisco', 73449, 0, NULL);
-INSERT INTO CUSTOMER VALUES(103, 1, 'Olivia Moore', 'j5kCs', '52553', '767-4999', 'Charlotte', 12270, 0, NULL);
-INSERT INTO CUSTOMER VALUES(104, 1, 'Nicholas Young', '2WXAY', '92494', '370-5193', 'Los Angeles', 34691, 0, NULL);
-INSERT INTO CUSTOMER VALUES(105, 1, 'Mia Martinez', 'dHJPD', '59401', '181-9333', 'Atlanta', 28690, 0, NULL);
-INSERT INTO CUSTOMER VALUES(106, 1, 'Christopher Lewis', 'MzqTd', '69238', '114-9239', 'Boston', 25552, 0, NULL);
-INSERT INTO CUSTOMER VALUES(107, 1, 'Sophia Turner', 'QX0te', '73563', '937-6706', 'Houston', 27544, 0, NULL);
-INSERT INTO CUSTOMER VALUES(108, 1, 'Samuel Carter', '6Zh38', '47996', '543-4264', 'Austin', 42406, 0, NULL);
-INSERT INTO CUSTOMER VALUES(109, 1, 'Grace Anderson', 'pt0Xv', '63811', '655-5482', 'Boston', 19023, 0, NULL);
-INSERT INTO CUSTOMER VALUES(110, 1, 'Oliver Mitchell', '49iA8', '20174', '643-4650', 'Orlando', 89621, 0, NULL);
-INSERT INTO CUSTOMER VALUES(111, 1, 'Amelia King', 'O3BjN', '93825', '167-6837', 'Charlotte', 54359, 0, NULL);
-INSERT INTO CUSTOMER VALUES(112, 1, 'Jack Parker', 'NjyHj', '57247', '225-3314', 'Charlotte', 32427, 0, NULL);
-INSERT INTO CUSTOMER VALUES(113, 1, 'Isabella Moore', 'nU7nf', '54011', '229-2980', 'Miami', 67376, 0, NULL);
-INSERT INTO CUSTOMER VALUES(114, 1, 'Henry Foster', 'dzytY', '34583', '403-8171', 'Phoenix', 19192, 0, NULL);
-INSERT INTO CUSTOMER VALUES(115, 1, 'Ava Johnson', '5MPUD', '70100', '366-1040', 'Charlotte', 33494, 0, NULL);
-INSERT INTO CUSTOMER VALUES(116, 1, 'Elijah Davis', 'xaYpO', '49619', '634-4398', 'Portland', 33071, 0, NULL);
-INSERT INTO CUSTOMER VALUES(117, 1, 'Zoe Thompson', '2QSEj', '67277', '603-4699', 'Orlando', 97083, 0, NULL);
-INSERT INTO CUSTOMER VALUES(118, 1, 'Caleb Martin', 'pfOXT', '39011', '155-7302', 'New York', 28431, 0, NULL);
-INSERT INTO CUSTOMER VALUES(119, 1, 'Emily Wright', '7XFim', '69608', '363-8904', 'Miami', 54309, 0, NULL);
-INSERT INTO CUSTOMER VALUES(120, 1, 'Jackson Harris', '5BpmI', '78694', '749-5952', 'Los Angeles', 62337, 0, NULL);
-INSERT INTO CUSTOMER VALUES(121, 1, 'Charlotte Turner', 'aHROr', '43556', '381-5196', 'Orlando', 16518, 0, NULL);
-INSERT INTO CUSTOMER VALUES(122, 1, 'Daniel Robinson', 'mWFNa', '98258', '113-7072', 'Boston', 88760, 0, NULL);
-INSERT INTO CUSTOMER VALUES(123, 1, 'Mia Reed', 'eyfyY', '59468', '440-2228', 'Dallas', 75654, 0, NULL);
-INSERT INTO CUSTOMER VALUES(124, 1, 'Owen Smith', 'yqrXN', '23311', '727-6736', 'Boston', 84112, 0, NULL);
-INSERT INTO CUSTOMER VALUES(125, 1, 'Harper Clark', 'Kz5pN', '90174', '222-5844', 'Austin', 89467, 0, NULL);
-INSERT INTO CUSTOMER VALUES(126, 1, 'Michael Allen', 'pUWR0', '27919', '740-7654', 'Las Vegas', 62112, 0, NULL);
-INSERT INTO CUSTOMER VALUES(127, 1, 'Lily Walker', 'X07xz', '27177', '783-5770', 'San Diego', 51630, 0, NULL);
-INSERT INTO CUSTOMER VALUES(128, 1, 'Aiden Turner', 'Mb2tN', '78060', '791-6210', 'Dallas', 79407, 0, NULL);
-INSERT INTO CUSTOMER VALUES(129, 1, 'Abigail Perez', 'SfBe1', '29902', '633-4004', 'New York', 54125, 0, NULL);
-INSERT INTO CUSTOMER VALUES(130, 1, 'Joseph Scott', 'bcQ5r', '47006', '462-7229', 'Denver', 40078, 0, NULL);
-INSERT INTO CUSTOMER VALUES(131, 1, 'Addison Wilson', 'nJAxP', '85001', '860-4415', 'Philadelphia', 54087, 0, NULL);
-INSERT INTO CUSTOMER VALUES(132, 1, 'David Baker', '4akMX', '22969', '879-7943', 'Phoenix', 20992, 0, NULL);
-INSERT INTO CUSTOMER VALUES(133, 1, 'Madison Davis', 'di6oP', '87347', '701-7362', 'Houston', 26819, 0, NULL);
-INSERT INTO CUSTOMER VALUES(134, 1, 'Benjamin Johnson', 'Lo8AN', '72080', '930-1247', 'Portland', 27319, 0, NULL);
-INSERT INTO CUSTOMER VALUES(135, 1, 'Zoe Mitchell', 'wPasj', '66155', '256-5581', 'San Francisco', 31511, 0, NULL);
-INSERT INTO CUSTOMER VALUES(136, 1, 'Logan Reed', 'oE1qB', '86898', '200-8057', 'Los Angeles', 99304, 0, NULL);
-INSERT INTO CUSTOMER VALUES(137, 1, 'Olivia Roberts', 'hVJan', '92186', '251-3865', 'Phoenix', 17841, 0, NULL);
-INSERT INTO CUSTOMER VALUES(138, 1, 'Ethan Lewis', 'QJftF', '31086', '779-1923', 'Boston', 23429, 0, NULL);
-INSERT INTO CUSTOMER VALUES(139, 1, 'Harper Taylor', 'xB0Rd', '88445', '355-7852', 'Boston', 84201, 0, NULL);
-INSERT INTO CUSTOMER VALUES(140, 1, 'William Martinez', 'l5igh', '25195', '297-9254', 'Portland', 65918, 0, NULL);
-INSERT INTO CUSTOMER VALUES(141, 1, 'Charlotte Turner', '7BWWe', '86796', '662-5691', 'Austin', 65537, 0, NULL);
-INSERT INTO CUSTOMER VALUES(142, 1, 'Elijah Adams', '3fx4w', '70287', '347-3021', 'Charlotte', 38669, 0, NULL);
-INSERT INTO CUSTOMER VALUES(143, 1, 'Sofia Foster', 'lo0Oz', '66986', '938-4042', 'Phoenix', 18445, 0, NULL);
-INSERT INTO CUSTOMER VALUES(144, 1, 'Alexander Hall', 'bkDVW', '10027', '409-3916', 'Charlotte', 27593, 0, NULL);
-INSERT INTO CUSTOMER VALUES(145, 1, 'Grace Wright', 'Qnhiu', '57721', '341-2472', 'Los Angeles', 32469, 0, NULL);
-INSERT INTO CUSTOMER VALUES(146, 1, 'Caleb King', 'U4Xx8', '39823', '380-9269', 'Boston', 86276, 0, NULL);
-INSERT INTO CUSTOMER VALUES(147, 1, 'Addison Davis', 'qUjlR', '13208', '373-3664', 'Phoenix', 41219, 0, NULL);
-INSERT INTO CUSTOMER VALUES(148, 1, 'Jackson Thompson', 'vyXuU', '92816', '469-9791', 'New York', 51785, 0, NULL);
-INSERT INTO CUSTOMER VALUES(149, 1, 'Ava Martin', 'ZOijA', '51053', '320-6544', 'Atlanta', 78380, 0, NULL);
-INSERT INTO CUSTOMER VALUES(150, 1, 'Liam Scott', 'wuAeG', '23815', '765-2304', 'Dallas', 84955, 0, NULL);
-INSERT INTO CUSTOMER VALUES(151, 1, 'Emma Anderson', 'kV2Gx', '13382', '975-1701', 'San Diego', 25001, 0, NULL);
-INSERT INTO CUSTOMER VALUES(152, 1, 'Noah Baker', '2KAjE', '91042', '215-1042', 'Chicago', 16264, 0, NULL);
-INSERT INTO CUSTOMER VALUES(153, 1, 'Mia Harris', 'fzrv0', '89916', '904-8108', 'Dallas', 98921, 0, NULL);
-INSERT INTO CUSTOMER VALUES(154, 1, 'Olivia Turner', 'KmpLH', '19016', '966-7474', 'Atlanta', 38861, 0, NULL);
-INSERT INTO CUSTOMER VALUES(155, 1, 'Lucas Martinez', 'EMlJI', '32017', '680-2630', 'Chicago', 81689, 0, NULL);
-INSERT INTO CUSTOMER VALUES(156, 1, 'Sophia Lewis', 'K6JDG', '29492', '129-5914', 'Las Vegas', 86774, 0, NULL);
-INSERT INTO CUSTOMER VALUES(157, 1, 'Aiden Wright', 'p2gtK', '21668', '387-9350', 'Austin', 62852, 0, NULL);
-INSERT INTO CUSTOMER VALUES(158, 1, 'Emily Reed', 'UU7b8', '86720', '715-3913', 'Charlotte', 32429, 0, NULL);
-INSERT INTO CUSTOMER VALUES(159, 1, 'Oliver Taylor', 'FQzR1', '89232', '674-8840', 'San Francisco', 12709, 0, NULL);
-INSERT INTO CUSTOMER VALUES(160, 1, 'Isabella Davis', 'LLg7J', '32232', '161-2421', 'San Francisco', 93354, 0, NULL);
-INSERT INTO CUSTOMER VALUES(161, 1, 'Mason Jackson', 'QaZak', '60137', '416-7640', 'Atlanta', 81142, 0, NULL);
-INSERT INTO CUSTOMER VALUES(162, 1, 'Abigail Parker', 'p1AsM', '26437', '684-8132', 'New York', 26338, 0, NULL);
-INSERT INTO CUSTOMER VALUES(163, 1, 'Liam Moore', 'Xwj2K', '92570', '512-3533', 'Phoenix', 54117, 0, NULL);
-INSERT INTO CUSTOMER VALUES(164, 1, 'Harper Harris', 'NcCD0', '97992', '901-5637', 'Seattle', 33591, 0, NULL);
-INSERT INTO CUSTOMER VALUES(165, 1, 'Logan Turner', 'C2vNn', '65225', '917-1614', 'Atlanta', 91627, 0, NULL);
-INSERT INTO CUSTOMER VALUES(166, 1, 'Amelia Walker', 'MRBlZ', '96267', '531-3234', 'Seattle', 17507, 0, NULL);
-INSERT INTO CUSTOMER VALUES(167, 1, 'Noah Foster', 'Z4zbt', '14176', '852-9951', 'Houston', 67189, 0, NULL);
-INSERT INTO CUSTOMER VALUES(168, 1, 'Charlotte Martin', 'XgEXr', '49410', '741-5534', 'Seattle', 19386, 0, NULL);
-INSERT INTO CUSTOMER VALUES(169, 1, 'Ethan King', 'F60QS', '47631', '115-2218', 'Atlanta', 80689, 0, NULL);
-INSERT INTO CUSTOMER VALUES(170, 1, 'Zoe Roberts', '9WbGw', '19293', '244-3266', 'Dallas', 16495, 0, NULL);
-INSERT INTO CUSTOMER VALUES(171, 1, 'Caleb Clark', '8BTcO', '63094', '496-2813', 'San Francisco', 26877, 0, NULL);
-INSERT INTO CUSTOMER VALUES(172, 1, 'Mia Smith', 'v1k75', '47397', '824-6025', 'Austin', 72750, 0, NULL);
-INSERT INTO CUSTOMER VALUES(173, 1, 'Lucas Anderson', 'KdiNX', '68741', '828-6822', 'Philadelphia', 35135, 0, NULL);
-INSERT INTO CUSTOMER VALUES(174, 1, 'Olivia Davis', 'G2WZA', '93641', '144-4766', 'Phoenix', 36188, 0, NULL);
-INSERT INTO CUSTOMER VALUES(175, 1, 'Aiden Carter', '4dT8Q', '50072', '498-3925', 'Nashville', 33836, 0, NULL);
-INSERT INTO CUSTOMER VALUES(176, 1, 'Emily Foster', 'hHv3h', '17475', '113-7854', 'Chicago', 38560, 0, NULL);
-INSERT INTO CUSTOMER VALUES(177, 1, 'Owen Allen', 'qrnSz', '93739', '840-3010', 'Charlotte', 33354, 0, NULL);
-INSERT INTO CUSTOMER VALUES(178, 1, 'Sophia Young', 'gN8Yq', '31431', '305-5045', 'Seattle', 99074, 0, NULL);
-INSERT INTO CUSTOMER VALUES(179, 1, 'William Taylor', 'gl5o2', '56543', '919-3128', 'Phoenix', 84889, 0, NULL);
-INSERT INTO CUSTOMER VALUES(180, 1, 'Lily Turner', 'lcebS', '42344', '923-3439', 'New York', 32477, 0, NULL);
-INSERT INTO CUSTOMER VALUES(181, 1, 'Elijah Perez', 'PUFR0', '65645', '791-3305', 'Denver', 36562, 0, NULL);
-INSERT INTO CUSTOMER VALUES(182, 1, 'Addison Mitchell', '2psKp', '47693', '542-5991', 'Denver', 83637, 0, NULL);
-INSERT INTO CUSTOMER VALUES(183, 1, 'Jackson Lewis', 'JEuP4', '55100', '793-1493', 'Austin', 52638, 0, NULL);
-INSERT INTO CUSTOMER VALUES(184, 1, 'Mia Baker', 'vNThJ', '56296', '709-9878', 'New York', 67323, 0, NULL);
-INSERT INTO CUSTOMER VALUES(185, 1, 'Samuel Wilson', 'REvDx', '96432', '605-6687', 'Los Angeles', 88059, 0, NULL);
-INSERT INTO CUSTOMER VALUES(186, 1, 'Harper Adams', 'IJU56', '64496', '636-7200', 'Miami', 27945, 0, NULL);
-INSERT INTO CUSTOMER VALUES(187, 1, 'Benjamin Hall', 'JjQQi', '30505', '324-4249', 'Miami', 22898, 0, NULL);
-INSERT INTO CUSTOMER VALUES(188, 1, 'Ava Smith', 'VgFTz', '92710', '644-5760', 'Philadelphia', 68854, 0, NULL);
-INSERT INTO CUSTOMER VALUES(189, 1, 'Daniel Jackson', 'sHmto', '13269', '911-2167', 'Orlando', 84932, 0, NULL);
-INSERT INTO CUSTOMER VALUES(190, 1, 'Scarlett Moore', 'Mtyml', '34027', '844-1896', 'Atlanta', 73061, 0, NULL);
-INSERT INTO CUSTOMER VALUES(191, 1, 'James Parker', 'wGRcB', '35042', '523-9666', 'Seattle', 68035, 0, NULL);
-INSERT INTO CUSTOMER VALUES(192, 1, 'Amelia Turner', 'IKorF', '54732', '437-2723', 'Seattle', 99013, 0, NULL);
-INSERT INTO CUSTOMER VALUES(193, 1, 'David Wright', 'D4CaS', '96772', '824-4963', 'Los Angeles', 31055, 0, NULL);
-INSERT INTO CUSTOMER VALUES(194, 1, 'Penelope Martin', 'PUzw7', '75944', '124-9117', 'Boston', 69004, 0, NULL);
-INSERT INTO CUSTOMER VALUES(195, 1, 'Ethan Reed', 'T7a8x', '22294', '790-5773', 'Houston', 93009, 0, NULL);
-INSERT INTO CUSTOMER VALUES(196, 1, 'Victoria Garcia', 'ItVlq', '28797', '418-6070', 'Atlanta', 20111, 0, NULL);
-INSERT INTO CUSTOMER VALUES(197, 1, 'Logan Carter', 'rmmdW', '98582', '144-2170', 'San Diego', 31021, 0, NULL);
-INSERT INTO CUSTOMER VALUES(198, 1, 'Grace Turner', 'nfHsj', '32292', '279-3119', 'Los Angeles', 69281, 0, NULL);
-INSERT INTO CUSTOMER VALUES(199, 1, 'Oliver Allen', 'D6wYM', '19095', '927-3429', 'Seattle', 82571, 0, NULL);
-INSERT INTO CUSTOMER VALUES(200, 1, 'Son', 'wCzKv', '53668', '818-7401', 'Dallas', 58162, 0, NULL);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (1, 1, 'Olivia Martinez', 'GhY9M', '16777', '890-5544', 'Denver', 64994, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (2, 1, 'Liam Smith', '1YJCf', '70266', '942-8332', 'Austin', 58766, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (3, 1, 'Emma Davis', 'w0p14', '28550', '380-2950', 'Denver', 90476, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (4, 1, 'Noah Anderson', '1KYIV', '91216', '823-4318', 'Portland', 63263, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (5, 1, 'Sophia Wilson', 'yv9X3', '89154', '738-1645', 'Los Angeles', 92225, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (6, 1, 'Aiden Lee', 'AKPME', '45690', '506-1052', 'Chicago', 70407, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (7, 1, 'Ava Taylor', 'W3uLW', '15451', '659-2400', 'Las Vegas', 96534, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (8, 1, 'Mason Brown', '9FNcX', '44998', '142-1110', 'Boston', 24996, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (9, 1, 'Isabella Garcia', 'cPhYX', '67012', '305-4931', 'Denver', 24490, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (10, 1, 'Lucas Miller', 'PeCIM', '79973', '844-9342', 'Los Angeles', 34766, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (11, 1, 'Mia Moore', 'FpF8Q', '59505', '497-6945', 'Charlotte', 27765, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (12, 1, 'Logan White', 'ezHiu', '79853', '165-3475', 'Austin', 80228, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (13, 1, 'Harper Jackson', 'Wig9u', '23179', '840-7822', 'Houston', 28313, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (14, 1, 'Oliver Thomas', '7qasM', '65595', '153-3259', 'Houston', 90167, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (15, 1, 'Amelia Robinson', 'VjnY9', '79083', '491-6750', 'Nashville', 56022, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (16, 1, 'Jackson Hall', 'kyPWv', '87007', '357-4466', 'Austin', 68491, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (17, 1, 'Charlotte Harris', 'nnkw5', '73740', '367-2369', 'San Diego', 65801, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (18, 1, 'Elijah Clark', 'M5pkC', '81008', '778-1874', 'Dallas', 36707, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (19, 1, 'Grace Adams', 'Q8UBs', '70861', '983-9224', 'Orlando', 29155, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (20, 1, 'Caleb Scott', 'qFV1L', '46140', '669-7089', 'Seattle', 50450, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (21, 1, 'Abigail Turner', 'vCiRz', '96172', '550-6789', 'Atlanta', 12575, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (22, 1, 'Carter Baker', 'w2ovr', '16691', '515-6794', 'Dallas', 53811, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (23, 1, 'Scarlett King', 'g3XdM', '17466', '670-9882', 'New York', 38510, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (24, 1, 'Benjamin Lewis', 'dVIyl', '65235', '823-2741', 'Nashville', 66245, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (25, 1, 'Zoey Nelson', 'KJPMJ', '65760', '670-8647', 'Phoenix', 31564, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (26, 1, 'William Walker', '2Y7QA', '73559', '840-1492', 'Charlotte', 88996, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (27, 1, 'Chloe Young', '3Fk9K', '94908', '553-8534', 'Atlanta', 60380, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (28, 1, 'Henry Green', 'L9nz6', '60116', '688-1439', 'Atlanta', 67794, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (29, 1, 'Riley Hall', 'zoGum', '75576', '929-2760', 'Seattle', 68492, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (30, 1, 'Samuel Parker', 'F9S1t', '23955', '652-5794', 'Austin', 18436, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (31, 1, 'Aubrey Lewis', 'Ys0cI', '65181', '584-9491', 'Las Vegas', 59267, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (32, 1, 'Owen Johnson', 'me9LH', '22246', '630-8427', 'Chicago', 56595, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (33, 1, 'Ella Mitchell', '43xNI', '18499', '399-7232', 'Las Vegas', 62203, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (34, 1, 'Jack Adams', 'w6rnX', '28030', '841-8778', 'Boston', 19546, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (35, 1, 'Lily Wilson', 'WEGJN', '20883', '965-1802', 'Boston', 64084, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (36, 1, 'Andrew Turner', 'YdrF1', '81921', '979-8008', 'New York', 76234, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (37, 1, 'Addison Thompson', 'tCdDu', '36765', '805-3392', 'Phoenix', 35398, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (38, 1, 'Daniel Wright', 'frlNh', '53225', '213-9073', 'Charlotte', 76314, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (39, 1, 'Sofia Davis', 'JC2uD', '17019', '408-7995', 'Boston', 62201, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (40, 1, 'Matthew Hall', 'ULe64', '37178', '834-1902', 'San Diego', 90091, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (41, 1, 'Victoria Martinez', 'GnVek', '21555', '761-5366', 'Dallas', 32802, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (42, 1, 'David Turner', '7gw2m', '45447', '424-3201', 'Las Vegas', 94219, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (43, 1, 'Grace Roberts', 'nMXhO', '12029', '942-7726', 'Philadelphia', 16904, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (44, 1, 'Michael Martin', 'Dkydh', '73709', '142-9899', 'Chicago', 37969, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (45, 1, 'Madison Perez', 'gk3PN', '49553', '439-9036', 'Philadelphia', 14945, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (46, 1, 'Joseph Hall', 'qbFvP', '38026', '635-8619', 'Charlotte', 44056, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (47, 1, 'Harper Adams', 'AsDRX', '26214', '316-9782', 'Nashville', 19948, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (48, 1, 'James Anderson', 'sxq1Y', '68229', '670-7315', 'Austin', 63261, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (49, 1, 'Aria Moore', '8BC64', '13153', '927-3193', 'Miami', 56797, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (50, 1, 'Alexander Carter', 'dFQFI', '73627', '285-3999', 'Houston', 78782, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (51, 1, 'Penelope Turner', 'REsYK', '62213', '759-4716', 'Orlando', 30858, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (52, 1, 'Nicholas Brown', 'o3E9h', '43745', '546-8678', 'Austin', 12377, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (53, 1, 'Evelyn Smith', 'yLDyw', '59363', '169-1785', 'San Francisco', 89350, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (54, 1, 'William Foster', 'AWpKh', '50462', '453-4590', 'Chicago', 98861, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (55, 1, 'Lily Parker', 'lncpW', '44169', '188-5678', 'Phoenix', 42546, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (56, 1, 'Joseph Adams', 'Lqvmv', '43270', '646-6833', 'Seattle', 94598, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (57, 1, 'Sofia Perez', 'JN1pd', '59690', '792-2824', 'Nashville', 95503, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (58, 1, 'Daniel Jackson', 'DI3R0', '92274', '183-2057', 'Miami', 45729, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (59, 1, 'Scarlett Lewis', 'tYpeG', '47490', '397-4673', 'Phoenix', 97887, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (60, 1, 'Christopher Martin', '3hWeR', '43456', '847-3056', 'New York', 43957, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (61, 1, 'Avery Wright', '7Etfc', '79382', '343-1743', 'Houston', 67172, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (62, 1, 'Ethan Harris', 'e33sU', '33389', '925-4072', 'Phoenix', 57150, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (63, 1, 'Grace Mitchell', 'MpDvp', '88030', '104-6247', 'Boston', 40770, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (64, 1, 'Ryan Thomas', '6eHVx', '23001', '465-3552', 'Los Angeles', 70568, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (65, 1, 'Mia White', 'Gpjsb', '92449', '120-7456', 'Boston', 91181, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (66, 1, 'John Wilson', '5WBnV', '63093', '913-1667', 'Charlotte', 49072, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (67, 1, 'Abigail Reed', 'X0hRI', '83801', '701-6185', 'New York', 92214, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (68, 1, 'Gabriel Garcia', 'B1BPM', '80071', '411-4192', 'Chicago', 36853, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (69, 1, 'Zoe Robinson', 'r0MQC', '72117', '873-1695', 'Seattle', 21062, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (70, 1, 'Dylan King', '7gDGG', '82616', '704-4013', 'Houston', 41867, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (71, 1, 'Avery Young', 'Q0XTU', '62166', '392-2304', 'New York', 82736, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (72, 1, 'Samuel Johnson', 'MWK3O', '15399', '723-4844', 'Denver', 25759, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (73, 1, 'Ella Turner', '0Owto', '84253', '509-4256', 'Austin', 67924, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (74, 1, 'David Martinez', 'PLpAn', '37539', '130-8336', 'Charlotte', 89614, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (75, 1, 'Aria Thomas', '23Eop', '57793', '844-8338', 'Denver', 73432, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (76, 1, 'Jack Anderson', 'T5BKI', '82030', '158-6223', 'Phoenix', 15579, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (77, 1, 'Charlotte Allen', '7ZSqZ', '23048', '796-5551', 'Austin', 54779, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (78, 1, 'Luke Scott', 'xhb7m', '10235', '150-2407', 'Seattle', 69702, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (79, 1, 'Penelope Lewis', 'cvev2', '38203', '714-5751', 'Houston', 91019, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (80, 1, 'Jackson Walker', 'u1iSB', '82579', '967-2039', 'Phoenix', 46338, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (81, 1, 'Aubrey Foster', 'CPAMR', '40996', '843-2080', 'Charlotte', 32556, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (82, 1, 'Caleb Davis', '3zhGS', '13309', '989-9456', 'Dallas', 21793, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (83, 1, 'Addison Taylor', 'jwl2G', '45365', '448-7486', 'San Diego', 88674, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (84, 1, 'Christopher Roberts', 'stzuS', '43894', '104-4695', 'Las Vegas', 69253, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (85, 1, 'Elizabeth Lee', '9tFwt', '29275', '671-5684', 'San Francisco', 64416, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (86, 1, 'Logan Baker', 'k3QCf', '10861', '448-8246', 'Charlotte', 16524, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (87, 1, 'Amelia Wright', 'SMQpd', '27328', '423-3705', 'Denver', 63497, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (88, 1, 'Benjamin Miller', 'zNkKU', '37728', '884-5061', 'Boston', 45921, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (89, 1, 'Victoria Wilson', 'Kma3w', '12886', '709-7964', 'Dallas', 53820, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (90, 1, 'Caleb Smith', 'sFaNn', '77074', '673-8009', 'Las Vegas', 55521, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (91, 1, 'Aubrey Harris', 'z2ElO', '46283', '606-8888', 'Las Vegas', 38881, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (92, 1, 'Samuel Turner', 'Y0nnS', '89854', '712-5938', 'Charlotte', 43863, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (93, 1, 'Sophia Taylor', 'PcNiI', '38926', '425-3125', 'Denver', 62153, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (94, 1, 'Owen Jackson', '1JXXQ', '36322', '319-3913', 'Philadelphia', 71707, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (95, 1, 'Zoey Robinson', 'us0Xb', '43052', '599-4241', 'Houston', 37420, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (96, 1, 'William White', 'pJb5K', '81912', '597-1747', 'New York', 33947, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (97, 1, 'Ava Clark', 'nkJ9A', '64251', '512-1845', 'Seattle', 75074, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (98, 1, 'Alexander Thomas', 'J2W0d', '47373', '672-1125', 'Seattle', 47176, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (99, 1, 'Scarlett Perez', 'PUZKk', '61472', '970-3149', 'New York', 49015, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (100, 1, 'Mason Martin', 'EPeyo', '42270', '808-4469', 'New York', 40966, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (101, 1, 'Emily Hall', 'dx26o', '25737', '994-2812', 'Chicago', 60454, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (102, 1, 'Daniel Davis', 'dJ5gy', '36927', '615-1140', 'San Francisco', 73449, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (103, 1, 'Olivia Moore', 'j5kCs', '52553', '767-4999', 'Charlotte', 12270, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (104, 1, 'Nicholas Young', '2WXAY', '92494', '370-5193', 'Los Angeles', 34691, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (105, 1, 'Mia Martinez', 'dHJPD', '59401', '181-9333', 'Atlanta', 28690, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (106, 1, 'Christopher Lewis', 'MzqTd', '69238', '114-9239', 'Boston', 25552, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (107, 1, 'Sophia Turner', 'QX0te', '73563', '937-6706', 'Houston', 27544, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (108, 1, 'Samuel Carter', '6Zh38', '47996', '543-4264', 'Austin', 42406, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (109, 1, 'Grace Anderson', 'pt0Xv', '63811', '655-5482', 'Boston', 19023, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (110, 1, 'Oliver Mitchell', '49iA8', '20174', '643-4650', 'Orlando', 89621, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (111, 1, 'Amelia King', 'O3BjN', '93825', '167-6837', 'Charlotte', 54359, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (112, 1, 'Jack Parker', 'NjyHj', '57247', '225-3314', 'Charlotte', 32427, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (113, 1, 'Isabella Moore', 'nU7nf', '54011', '229-2980', 'Miami', 67376, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (114, 1, 'Henry Foster', 'dzytY', '34583', '403-8171', 'Phoenix', 19192, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (115, 1, 'Ava Johnson', '5MPUD', '70100', '366-1040', 'Charlotte', 33494, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (116, 1, 'Elijah Davis', 'xaYpO', '49619', '634-4398', 'Portland', 33071, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (117, 1, 'Zoe Thompson', '2QSEj', '67277', '603-4699', 'Orlando', 97083, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (118, 1, 'Caleb Martin', 'pfOXT', '39011', '155-7302', 'New York', 28431, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (119, 1, 'Emily Wright', '7XFim', '69608', '363-8904', 'Miami', 54309, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (120, 1, 'Jackson Harris', '5BpmI', '78694', '749-5952', 'Los Angeles', 62337, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (121, 1, 'Charlotte Turner', 'aHROr', '43556', '381-5196', 'Orlando', 16518, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (122, 1, 'Daniel Robinson', 'mWFNa', '98258', '113-7072', 'Boston', 88760, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (123, 1, 'Mia Reed', 'eyfyY', '59468', '440-2228', 'Dallas', 75654, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (124, 1, 'Owen Smith', 'yqrXN', '23311', '727-6736', 'Boston', 84112, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (125, 1, 'Harper Clark', 'Kz5pN', '90174', '222-5844', 'Austin', 89467, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (126, 1, 'Michael Allen', 'pUWR0', '27919', '740-7654', 'Las Vegas', 62112, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (127, 1, 'Lily Walker', 'X07xz', '27177', '783-5770', 'San Diego', 51630, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (128, 1, 'Aiden Turner', 'Mb2tN', '78060', '791-6210', 'Dallas', 79407, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (129, 1, 'Abigail Perez', 'SfBe1', '29902', '633-4004', 'New York', 54125, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (130, 1, 'Joseph Scott', 'bcQ5r', '47006', '462-7229', 'Denver', 40078, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (131, 1, 'Addison Wilson', 'nJAxP', '85001', '860-4415', 'Philadelphia', 54087, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (132, 1, 'David Baker', '4akMX', '22969', '879-7943', 'Phoenix', 20992, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (133, 1, 'Madison Davis', 'di6oP', '87347', '701-7362', 'Houston', 26819, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (134, 1, 'Benjamin Johnson', 'Lo8AN', '72080', '930-1247', 'Portland', 27319, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (135, 1, 'Zoe Mitchell', 'wPasj', '66155', '256-5581', 'San Francisco', 31511, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (136, 1, 'Logan Reed', 'oE1qB', '86898', '200-8057', 'Los Angeles', 99304, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (137, 1, 'Olivia Roberts', 'hVJan', '92186', '251-3865', 'Phoenix', 17841, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (138, 1, 'Ethan Lewis', 'QJftF', '31086', '779-1923', 'Boston', 23429, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (139, 1, 'Harper Taylor', 'xB0Rd', '88445', '355-7852', 'Boston', 84201, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (140, 1, 'William Martinez', 'l5igh', '25195', '297-9254', 'Portland', 65918, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (141, 1, 'Charlotte Turner', '7BWWe', '86796', '662-5691', 'Austin', 65537, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (142, 1, 'Elijah Adams', '3fx4w', '70287', '347-3021', 'Charlotte', 38669, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (143, 1, 'Sofia Foster', 'lo0Oz', '66986', '938-4042', 'Phoenix', 18445, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (144, 1, 'Alexander Hall', 'bkDVW', '10027', '409-3916', 'Charlotte', 27593, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (145, 1, 'Grace Wright', 'Qnhiu', '57721', '341-2472', 'Los Angeles', 32469, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (146, 1, 'Caleb King', 'U4Xx8', '39823', '380-9269', 'Boston', 86276, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (147, 1, 'Addison Davis', 'qUjlR', '13208', '373-3664', 'Phoenix', 41219, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (148, 1, 'Jackson Thompson', 'vyXuU', '92816', '469-9791', 'New York', 51785, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (149, 1, 'Ava Martin', 'ZOijA', '51053', '320-6544', 'Atlanta', 78380, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (150, 1, 'Liam Scott', 'wuAeG', '23815', '765-2304', 'Dallas', 84955, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (151, 1, 'Emma Anderson', 'kV2Gx', '13382', '975-1701', 'San Diego', 25001, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (152, 1, 'Noah Baker', '2KAjE', '91042', '215-1042', 'Chicago', 16264, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (153, 1, 'Mia Harris', 'fzrv0', '89916', '904-8108', 'Dallas', 98921, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (154, 1, 'Olivia Turner', 'KmpLH', '19016', '966-7474', 'Atlanta', 38861, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (155, 1, 'Lucas Martinez', 'EMlJI', '32017', '680-2630', 'Chicago', 81689, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (156, 1, 'Sophia Lewis', 'K6JDG', '29492', '129-5914', 'Las Vegas', 86774, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (157, 1, 'Aiden Wright', 'p2gtK', '21668', '387-9350', 'Austin', 62852, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (158, 1, 'Emily Reed', 'UU7b8', '86720', '715-3913', 'Charlotte', 32429, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (159, 1, 'Oliver Taylor', 'FQzR1', '89232', '674-8840', 'San Francisco', 12709, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (160, 1, 'Isabella Davis', 'LLg7J', '32232', '161-2421', 'San Francisco', 93354, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (161, 1, 'Mason Jackson', 'QaZak', '60137', '416-7640', 'Atlanta', 81142, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (162, 1, 'Abigail Parker', 'p1AsM', '26437', '684-8132', 'New York', 26338, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (163, 1, 'Liam Moore', 'Xwj2K', '92570', '512-3533', 'Phoenix', 54117, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (164, 1, 'Harper Harris', 'NcCD0', '97992', '901-5637', 'Seattle', 33591, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (165, 1, 'Logan Turner', 'C2vNn', '65225', '917-1614', 'Atlanta', 91627, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (166, 1, 'Amelia Walker', 'MRBlZ', '96267', '531-3234', 'Seattle', 17507, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (167, 1, 'Noah Foster', 'Z4zbt', '14176', '852-9951', 'Houston', 67189, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (168, 1, 'Charlotte Martin', 'XgEXr', '49410', '741-5534', 'Seattle', 19386, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (169, 1, 'Ethan King', 'F60QS', '47631', '115-2218', 'Atlanta', 80689, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (170, 1, 'Zoe Roberts', '9WbGw', '19293', '244-3266', 'Dallas', 16495, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (171, 1, 'Caleb Clark', '8BTcO', '63094', '496-2813', 'San Francisco', 26877, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (172, 1, 'Mia Smith', 'v1k75', '47397', '824-6025', 'Austin', 72750, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (173, 1, 'Lucas Anderson', 'KdiNX', '68741', '828-6822', 'Philadelphia', 35135, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (174, 1, 'Olivia Davis', 'G2WZA', '93641', '144-4766', 'Phoenix', 36188, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (175, 1, 'Aiden Carter', '4dT8Q', '50072', '498-3925', 'Nashville', 33836, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (176, 1, 'Emily Foster', 'hHv3h', '17475', '113-7854', 'Chicago', 38560, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (177, 1, 'Owen Allen', 'qrnSz', '93739', '840-3010', 'Charlotte', 33354, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (178, 1, 'Sophia Young', 'gN8Yq', '31431', '305-5045', 'Seattle', 99074, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (179, 1, 'William Taylor', 'gl5o2', '56543', '919-3128', 'Phoenix', 84889, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (180, 1, 'Lily Turner', 'lcebS', '42344', '923-3439', 'New York', 32477, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (181, 1, 'Elijah Perez', 'PUFR0', '65645', '791-3305', 'Denver', 36562, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (182, 1, 'Addison Mitchell', '2psKp', '47693', '542-5991', 'Denver', 83637, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (183, 1, 'Jackson Lewis', 'JEuP4', '55100', '793-1493', 'Austin', 52638, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (184, 1, 'Mia Baker', 'vNThJ', '56296', '709-9878', 'New York', 67323, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (185, 1, 'Samuel Wilson', 'REvDx', '96432', '605-6687', 'Los Angeles', 88059, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (186, 1, 'Harper Adams', 'IJU56', '64496', '636-7200', 'Miami', 27945, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (187, 1, 'Benjamin Hall', 'JjQQi', '30505', '324-4249', 'Miami', 22898, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (188, 1, 'Ava Smith', 'VgFTz', '92710', '644-5760', 'Philadelphia', 68854, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (189, 1, 'Daniel Jackson', 'sHmto', '13269', '911-2167', 'Orlando', 84932, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (190, 1, 'Scarlett Moore', 'Mtyml', '34027', '844-1896', 'Atlanta', 73061, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (191, 1, 'James Parker', 'wGRcB', '35042', '523-9666', 'Seattle', 68035, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (192, 1, 'Amelia Turner', 'IKorF', '54732', '437-2723', 'Seattle', 99013, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (193, 1, 'David Wright', 'D4CaS', '96772', '824-4963', 'Los Angeles', 31055, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (194, 1, 'Penelope Martin', 'PUzw7', '75944', '124-9117', 'Boston', 69004, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (195, 1, 'Ethan Reed', 'T7a8x', '22294', '790-5773', 'Houston', 93009, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (196, 1, 'Victoria Garcia', 'ItVlq', '28797', '418-6070', 'Atlanta', 20111, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (197, 1, 'Logan Carter', 'rmmdW', '98582', '144-2170', 'San Diego', 31021, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (198, 1, 'Grace Turner', 'nfHsj', '32292', '279-3119', 'Los Angeles', 69281, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (199, 1, 'Oliver Allen', 'D6wYM', '19095', '927-3429', 'Seattle', 82571, 0, NULL, 100);
+INSERT INTO CUSTOMER (customerid, tierid, name, userid, password, phone_number, address, postal_code, amount, couponid, money)
+VALUES (200, 1, 'Son', 'wCzKv', '53668', '818-7401', 'Dallas', 58162, 0, NULL, 100);
 
 
 
 
 -- CUSTOMER_SIZE
 
-INSERT INTO CUSTOMER_SIZE VALUES(1, 59, 70, 47, 112, 89, 100, 70, 74, 280, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(2, 64, 76, 49, 95, 83, 108, 62, 86, 230, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(3, 64, 80, 44, 110, 79, 108, 64, 85, 250, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(4, 61, 68, 46, 102, 83, 97, 66, 85, 265, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(5, 63, 74, 54, 98, 88, 111, 61, 70, 290, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(6, 60, 70, 52, 110, 83, 87, 56, 78, 225, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(7, 64, 71, 45, 99, 89, 107, 68, 82, 225, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(8, 62, 80, 45, 102, 88, 95, 56, 86, 240, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(9, 63, 78, 55, 90, 90, 94, 78, 77, 225, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(10, 61, 70, 41, 95, 82, 96, 69, 72, 295, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(11, 60, 70, 42, 102, 78, 105, 80, 82, 290, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(12, 59, 75, 59, 108, 91, 96, 66, 70, 295, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(13, 65, 75, 57, 99, 89, 91, 58, 76, 295, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(14, 59, 70, 55, 106, 84, 92, 67, 76, 255, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(15, 60, 71, 41, 110, 90, 84, 68, 78, 265, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(16, 60, 79, 47, 106, 80, 107, 57, 77, 265, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(17, 63, 68, 47, 103, 90, 91, 65, 89, 285, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(18, 61, 70, 41, 111, 82, 100, 52, 84, 290, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(19, 62, 72, 46, 99, 92, 106, 58, 84, 235, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(20, 63, 68, 50, 101, 77, 91, 64, 78, 275, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(21, 64, 70, 52, 105, 81, 109, 61, 85, 290, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(22, 60, 75, 48, 99, 82, 109, 75, 76, 230, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(23, 63, 80, 53, 98, 89, 97, 50, 79, 285, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(24, 59, 80, 51, 93, 93, 98, 61, 69, 275, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(25, 61, 79, 56, 92, 77, 94, 70, 87, 280, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(26, 59, 69, 53, 102, 85, 84, 71, 86, 275, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(27, 60, 78, 42, 90, 90, 107, 48, 82, 295, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(28, 61, 78, 47, 99, 81, 86, 70, 76, 260, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(29, 60, 70, 60, 97, 87, 100, 78, 73, 255, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(30, 65, 77, 54, 106, 81, 101, 75, 90, 230, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(31, 63, 80, 50, 91, 90, 83, 77, 85, 275, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(32, 59, 78, 41, 110, 91, 95, 72, 70, 255, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(33, 65, 75, 47, 112, 78, 83, 68, 85, 270, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(34, 60, 71, 42, 97, 86, 113, 66, 72, 225, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(35, 60, 79, 44, 96, 92, 86, 48, 82, 250, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(36, 60, 73, 57, 99, 78, 90, 63, 71, 300, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(37, 61, 75, 55, 101, 77, 93, 53, 86, 275, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(38, 62, 69, 42, 92, 79, 92, 48, 90, 245, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(39, 59, 74, 58, 104, 84, 107, 74, 83, 265, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(40, 62, 78, 54, 96, 81, 109, 60, 89, 285, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(41, 64, 79, 52, 109, 82, 110, 64, 83, 240, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(42, 60, 68, 59, 108, 88, 97, 60, 73, 275, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(43, 65, 78, 54, 112, 93, 95, 57, 76, 270, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(44, 61, 80, 60, 105, 83, 84, 69, 80, 285, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(45, 62, 69, 44, 92, 88, 86, 71, 69, 245, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(46, 61, 71, 60, 104, 91, 84, 61, 69, 255, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(47, 61, 69, 48, 104, 80, 113, 49, 89, 245, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(48, 62, 72, 54, 102, 81, 108, 74, 77, 225, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(49, 65, 79, 47, 107, 93, 96, 75, 88, 230, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(50, 60, 70, 60, 99, 86, 108, 67, 72, 255, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(51, 62, 68, 59, 95, 92, 89, 64, 90, 230, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(52, 60, 72, 54, 99, 81, 104, 49, 89, 255, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(53, 60, 68, 43, 103, 87, 95, 49, 88, 270, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(54, 63, 79, 52, 95, 77, 99, 64, 85, 290, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(55, 63, 74, 43, 110, 77, 88, 78, 79, 255, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(56, 65, 72, 53, 100, 85, 91, 63, 90, 295, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(57, 59, 69, 45, 91, 92, 100, 59, 70, 270, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(58, 64, 73, 56, 107, 83, 85, 72, 82, 220, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(59, 63, 71, 41, 101, 86, 111, 55, 69, 230, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(60, 64, 75, 41, 105, 91, 111, 73, 88, 265, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(61, 60, 72, 49, 111, 80, 97, 76, 79, 275, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(62, 60, 72, 48, 110, 88, 100, 61, 68, 230, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(63, 61, 74, 48, 101, 90, 92, 49, 79, 265, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(64, 63, 73, 44, 97, 85, 106, 76, 71, 300, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(65, 60, 78, 54, 93, 92, 90, 68, 76, 290, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(66, 61, 74, 49, 112, 78, 105, 70, 82, 220, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(67, 63, 70, 41, 96, 78, 108, 77, 74, 295, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(68, 61, 77, 58, 90, 84, 95, 67, 68, 270, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(69, 60, 69, 60, 101, 84, 100, 74, 77, 290, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(70, 61, 75, 57, 96, 86, 83, 76, 84, 270, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(71, 60, 80, 49, 99, 79, 109, 75, 88, 260, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(72, 62, 78, 42, 101, 88, 111, 78, 80, 260, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(73, 64, 78, 45, 109, 80, 102, 66, 89, 280, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(74, 59, 80, 41, 109, 77, 87, 64, 81, 265, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(75, 62, 76, 45, 105, 92, 83, 79, 77, 295, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(76, 62, 73, 54, 102, 92, 85, 52, 82, 290, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(77, 64, 78, 43, 109, 83, 107, 74, 69, 295, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(78, 63, 71, 43, 99, 91, 85, 71, 76, 230, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(79, 62, 78, 44, 98, 90, 111, 54, 84, 245, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(80, 64, 80, 44, 94, 82, 84, 58, 81, 270, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(81, 62, 79, 46, 109, 91, 84, 67, 68, 255, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(82, 65, 73, 47, 91, 92, 96, 62, 75, 275, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(83, 59, 77, 54, 91, 90, 97, 60, 74, 240, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(84, 64, 74, 51, 91, 93, 84, 69, 73, 300, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(85, 65, 79, 51, 111, 82, 84, 70, 86, 280, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(86, 65, 74, 50, 105, 79, 85, 73, 72, 255, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(87, 59, 77, 47, 96, 88, 91, 73, 72, 250, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(88, 60, 80, 53, 111, 82, 92, 68, 87, 280, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(89, 59, 71, 57, 107, 92, 88, 66, 88, 295, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(90, 63, 71, 60, 98, 90, 112, 76, 78, 260, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(91, 63, 76, 50, 94, 88, 111, 80, 81, 270, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(92, 65, 70, 49, 94, 84, 98, 55, 71, 220, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(93, 59, 79, 42, 93, 79, 100, 64, 89, 300, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(94, 64, 70, 57, 92, 79, 100, 80, 79, 295, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(95, 63, 78, 40, 96, 83, 105, 79, 83, 260, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(96, 61, 80, 48, 91, 90, 106, 62, 85, 230, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(97, 61, 77, 51, 100, 78, 97, 48, 76, 260, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(98, 65, 78, 43, 93, 93, 108, 63, 89, 235, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(99, 59, 74, 48, 91, 81, 100, 67, 69, 235, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(100, 60, 69, 42, 96, 78, 85, 67, 90, 225, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(101, 64, 74, 47, 102, 85, 111, 63, 70, 225, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(102, 63, 74, 55, 97, 86, 112, 71, 87, 265, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(103, 60, 71, 44, 97, 92, 100, 76, 82, 285, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(104, 59, 72, 52, 105, 78, 96, 75, 73, 270, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(105, 59, 68, 54, 110, 82, 104, 66, 88, 230, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(106, 64, 78, 59, 102, 85, 88, 55, 73, 240, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(107, 59, 72, 54, 104, 91, 85, 67, 84, 250, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(108, 65, 70, 59, 91, 79, 83, 48, 88, 260, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(109, 64, 78, 42, 96, 91, 96, 63, 82, 270, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(110, 64, 69, 48, 103, 79, 111, 74, 72, 275, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(111, 64, 75, 58, 97, 77, 100, 70, 82, 225, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(112, 61, 75, 46, 97, 80, 90, 70, 68, 295, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(113, 63, 70, 54, 90, 82, 86, 69, 84, 250, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(114, 63, 69, 57, 103, 85, 102, 80, 69, 275, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(115, 63, 76, 51, 109, 88, 89, 72, 87, 230, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(116, 63, 76, 57, 91, 77, 89, 70, 83, 260, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(117, 61, 77, 47, 94, 93, 91, 64, 83, 265, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(118, 64, 80, 52, 91, 81, 111, 68, 70, 245, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(119, 62, 79, 46, 96, 84, 92, 70, 77, 270, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(120, 59, 71, 43, 100, 88, 106, 66, 74, 255, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(121, 64, 77, 41, 112, 86, 108, 55, 82, 265, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(122, 60, 68, 54, 91, 85, 97, 65, 84, 260, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(123, 63, 80, 58, 111, 80, 87, 68, 79, 265, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(124, 63, 71, 42, 102, 78, 106, 66, 71, 240, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(125, 60, 72, 52, 90, 90, 85, 61, 73, 245, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(126, 61, 76, 45, 102, 84, 113, 62, 68, 255, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(127, 65, 75, 42, 104, 90, 102, 78, 75, 260, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(128, 62, 79, 57, 102, 78, 106, 73, 85, 270, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(129, 59, 70, 60, 104, 88, 107, 69, 77, 245, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(130, 64, 73, 41, 98, 90, 100, 63, 68, 295, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(131, 62, 75, 50, 112, 83, 97, 66, 78, 230, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(132, 62, 79, 59, 91, 92, 102, 48, 70, 250, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(133, 62, 77, 54, 99, 78, 105, 67, 74, 225, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(134, 59, 70, 52, 93, 79, 113, 53, 78, 245, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(135, 61, 79, 42, 91, 84, 89, 64, 90, 225, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(136, 62, 68, 44, 91, 82, 86, 53, 88, 230, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(137, 63, 73, 59, 103, 82, 105, 71, 74, 235, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(138, 62, 72, 57, 100, 91, 97, 53, 76, 275, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(139, 64, 80, 50, 103, 87, 100, 55, 88, 235, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(140, 65, 68, 56, 111, 78, 92, 67, 87, 270, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(141, 65, 72, 57, 106, 79, 103, 78, 75, 300, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(142, 62, 72, 54, 93, 88, 101, 68, 85, 260, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(143, 61, 71, 42, 102, 82, 92, 53, 86, 300, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(144, 62, 73, 42, 95, 77, 84, 52, 73, 270, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(145, 65, 80, 45, 94, 86, 99, 59, 71, 275, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(146, 59, 79, 43, 95, 88, 90, 57, 81, 255, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(147, 62, 76, 43, 93, 82, 90, 61, 84, 260, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(148, 61, 72, 51, 92, 79, 96, 50, 78, 235, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(149, 65, 73, 44, 104, 89, 96, 63, 77, 235, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(150, 59, 79, 60, 111, 92, 84, 55, 87, 230, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(151, 63, 72, 52, 97, 78, 96, 79, 81, 240, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(152, 64, 68, 55, 98, 81, 91, 72, 81, 260, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(153, 65, 78, 51, 93, 83, 88, 64, 85, 265, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(154, 59, 72, 44, 107, 84, 106, 64, 84, 220, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(155, 59, 69, 57, 90, 86, 96, 66, 69, 270, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(156, 64, 80, 45, 99, 84, 89, 75, 88, 230, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(157, 63, 69, 58, 101, 81, 86, 64, 89, 225, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(158, 62, 78, 43, 109, 85, 99, 78, 73, 290, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(159, 65, 79, 42, 93, 79, 110, 78, 88, 235, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(160, 62, 69, 54, 101, 77, 104, 73, 80, 275, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(161, 63, 73, 48, 94, 85, 102, 55, 76, 255, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(162, 62, 77, 49, 107, 91, 102, 68, 85, 275, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(163, 61, 80, 48, 103, 77, 86, 61, 86, 230, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(164, 59, 73, 41, 109, 86, 96, 60, 69, 240, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(165, 59, 69, 52, 99, 88, 98, 55, 79, 255, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(166, 63, 73, 43, 92, 91, 106, 67, 81, 255, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(167, 63, 79, 43, 112, 93, 113, 56, 86, 260, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(168, 59, 76, 56, 99, 79, 111, 51, 74, 285, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(169, 60, 74, 60, 101, 81, 94, 73, 79, 240, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(170, 59, 71, 60, 105, 92, 109, 51, 77, 245, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(171, 61, 77, 40, 96, 82, 103, 76, 69, 230, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(172, 64, 77, 48, 101, 79, 90, 59, 70, 230, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(173, 62, 80, 60, 94, 85, 108, 57, 74, 285, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(174, 62, 76, 54, 92, 91, 92, 75, 87, 225, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(175, 59, 75, 52, 112, 78, 86, 59, 85, 255, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(176, 61, 80, 51, 90, 92, 98, 73, 83, 285, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(177, 59, 73, 55, 108, 84, 104, 61, 84, 225, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(178, 59, 72, 56, 99, 88, 108, 55, 77, 275, 53);
-INSERT INTO CUSTOMER_SIZE VALUES(179, 60, 80, 42, 112, 93, 102, 78, 82, 230, 55);
-INSERT INTO CUSTOMER_SIZE VALUES(180, 63, 70, 41, 107, 77, 108, 55, 78, 270, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(181, 65, 71, 56, 107, 89, 92, 50, 86, 250, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(182, 63, 70, 43, 107, 87, 94, 57, 85, 275, 60);
-INSERT INTO CUSTOMER_SIZE VALUES(183, 62, 77, 41, 103, 85, 100, 59, 73, 270, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(184, 62, 69, 52, 105, 85, 107, 70, 75, 245, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(185, 65, 70, 60, 103, 93, 94, 61, 69, 245, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(186, 62, 74, 53, 100, 90, 93, 48, 72, 275, 65);
-INSERT INTO CUSTOMER_SIZE VALUES(187, 61, 78, 48, 92, 85, 100, 62, 74, 265, 59);
-INSERT INTO CUSTOMER_SIZE VALUES(188, 61, 77, 42, 102, 85, 111, 56, 75, 260, 61);
-INSERT INTO CUSTOMER_SIZE VALUES(189, 64, 70, 52, 99, 77, 107, 52, 78, 230, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(190, 59, 70, 58, 103, 85, 108, 65, 78, 290, 57);
-INSERT INTO CUSTOMER_SIZE VALUES(191, 61, 78, 44, 100, 93, 112, 57, 84, 270, 56);
-INSERT INTO CUSTOMER_SIZE VALUES(192, 62, 77, 40, 108, 88, 85, 71, 77, 270, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(193, 61, 70, 40, 93, 90, 104, 77, 80, 220, 52);
-INSERT INTO CUSTOMER_SIZE VALUES(194, 65, 71, 49, 94, 82, 86, 70, 78, 245, 54);
-INSERT INTO CUSTOMER_SIZE VALUES(195, 59, 72, 58, 97, 83, 91, 50, 77, 275, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(196, 59, 72, 50, 107, 79, 87, 62, 83, 220, 63);
-INSERT INTO CUSTOMER_SIZE VALUES(197, 63, 79, 46, 99, 90, 89, 54, 87, 230, 62);
-INSERT INTO CUSTOMER_SIZE VALUES(198, 61, 68, 51, 96, 79, 87, 74, 75, 300, 64);
-INSERT INTO CUSTOMER_SIZE VALUES(199, 63, 75, 58, 101, 82, 97, 70, 79, 230, 58);
-INSERT INTO CUSTOMER_SIZE VALUES(200, 60, 71, 40, 105, 92, 101, 54, 70, 250, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (1, 1, 59, 70, 47, 112, 89, 100, 70, 74, 280, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (2, 2, 64, 76, 49, 95, 83, 108, 62, 86, 230, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (3, 3, 64, 80, 44, 110, 79, 108, 64, 85, 250, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (4, 4, 61, 68, 46, 102, 83, 97, 66, 85, 265, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (5, 5, 63, 74, 54, 98, 88, 111, 61, 70, 290, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (6, 6, 60, 70, 52, 110, 83, 87, 56, 78, 225, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (7, 7, 64, 71, 45, 99, 89, 107, 68, 82, 225, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (8, 8, 62, 80, 45, 102, 88, 95, 56, 86, 240, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (9, 9, 63, 78, 55, 90, 90, 94, 78, 77, 225, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (10, 10, 61, 70, 41, 95, 82, 96, 69, 72, 295, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (11, 11, 60, 70, 42, 102, 78, 105, 80, 82, 290, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (12, 12, 59, 75, 59, 108, 91, 96, 66, 70, 295, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (13, 13, 65, 75, 57, 99, 89, 91, 58, 76, 295, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (14, 14, 59, 70, 55, 106, 84, 92, 67, 76, 255, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (15, 15, 60, 71, 41, 110, 90, 84, 68, 78, 265, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (16, 16, 60, 79, 47, 106, 80, 107, 57, 77, 265, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (17, 17, 63, 68, 47, 103, 90, 91, 65, 89, 285, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (18, 18, 61, 70, 41, 111, 82, 100, 52, 84, 290, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (19, 19, 62, 72, 46, 99, 92, 106, 58, 84, 235, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (20, 20, 63, 68, 50, 101, 77, 91, 64, 78, 275, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (21, 21, 64, 70, 52, 105, 81, 109, 61, 85, 290, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (22, 22, 60, 75, 48, 99, 82, 109, 75, 76, 230, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (23, 23, 63, 80, 53, 98, 89, 97, 50, 79, 285, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (24, 24, 59, 80, 51, 93, 93, 98, 61, 69, 275, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (25, 25, 61, 79, 56, 92, 77, 94, 70, 87, 280, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (26, 26, 59, 69, 53, 102, 85, 84, 71, 86, 275, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (27, 27, 60, 78, 42, 90, 90, 107, 48, 82, 295, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (28, 28, 61, 78, 47, 99, 81, 86, 70, 76, 260, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (29, 29, 60, 70, 60, 97, 87, 100, 78, 73, 255, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (30, 30, 65, 77, 54, 106, 81, 101, 75, 90, 230, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (31, 31, 63, 80, 50, 91, 90, 83, 77, 85, 275, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (32, 32, 59, 78, 41, 110, 91, 95, 72, 70, 255, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (33, 33, 65, 75, 47, 112, 78, 83, 68, 85, 270, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (34, 34, 60, 71, 42, 97, 86, 113, 66, 72, 225, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (35, 35, 60, 79, 44, 96, 92, 86, 48, 82, 250, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (36, 36, 60, 73, 57, 99, 78, 90, 63, 71, 300, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (37, 37, 61, 75, 55, 101, 77, 93, 53, 86, 275, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (38, 38, 62, 69, 42, 92, 79, 92, 48, 90, 245, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (39, 39, 59, 74, 58, 104, 84, 107, 74, 83, 265, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (40, 40, 62, 78, 54, 96, 81, 109, 60, 89, 285, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (41, 41, 64, 79, 52, 109, 82, 110, 64, 83, 240, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (42, 42, 60, 68, 59, 108, 88, 97, 60, 73, 275, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (43, 43, 65, 78, 54, 112, 93, 95, 57, 76, 270, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (44, 44, 61, 80, 60, 105, 83, 84, 69, 80, 285, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (45, 45, 62, 69, 44, 92, 88, 86, 71, 69, 245, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (46, 46, 61, 71, 60, 104, 91, 84, 61, 69, 255, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (47, 47, 61, 69, 48, 104, 80, 113, 49, 89, 245, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (48, 48, 62, 72, 54, 102, 81, 108, 74, 77, 225, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (49, 49, 65, 79, 47, 107, 93, 96, 75, 88, 230, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (50, 50, 60, 70, 60, 99, 86, 108, 67, 72, 255, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (51, 51, 62, 68, 59, 95, 92, 89, 64, 90, 230, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (52, 52, 60, 72, 54, 99, 81, 104, 49, 89, 255, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (53, 53, 60, 68, 43, 103, 87, 95, 49, 88, 270, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (54, 54, 63, 79, 52, 95, 77, 99, 64, 85, 290, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (55, 55, 63, 74, 43, 110, 77, 88, 78, 79, 255, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (56, 56, 65, 72, 53, 100, 85, 91, 63, 90, 295, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (57, 57, 59, 69, 45, 91, 92, 100, 59, 70, 270, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (58, 58, 64, 73, 56, 107, 83, 85, 72, 82, 220, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (59, 59, 63, 71, 41, 101, 86, 111, 55, 69, 230, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (60, 60, 64, 75, 41, 105, 91, 111, 73, 88, 265, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (61, 61, 60, 72, 49, 111, 80, 97, 76, 79, 275, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (62, 62, 60, 72, 48, 110, 88, 100, 61, 68, 230, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (63, 63, 61, 74, 48, 101, 90, 92, 49, 79, 265, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (64, 64, 63, 73, 44, 97, 85, 106, 76, 71, 300, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (65, 65, 60, 78, 54, 93, 92, 90, 68, 76, 290, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (66, 66, 61, 74, 49, 112, 78, 105, 70, 82, 220, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (67, 67, 63, 70, 41, 96, 78, 108, 77, 74, 295, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (68, 68, 61, 77, 58, 90, 84, 95, 67, 68, 270, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (69, 69, 60, 69, 60, 101, 84, 100, 74, 77, 290, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (70, 70, 61, 75, 57, 96, 86, 83, 76, 84, 270, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (71, 71, 60, 80, 49, 99, 79, 109, 75, 88, 260, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (72, 72, 62, 78, 42, 101, 88, 111, 78, 80, 260, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (73, 73, 64, 78, 45, 109, 80, 102, 66, 89, 280, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (74, 74, 59, 80, 41, 109, 77, 87, 64, 81, 265, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (75, 75, 62, 76, 45, 105, 92, 83, 79, 77, 295, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (76, 76, 62, 73, 54, 102, 92, 85, 52, 82, 290, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (77, 77, 64, 78, 43, 109, 83, 107, 74, 69, 295, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (78, 78, 63, 71, 43, 99, 91, 85, 71, 76, 230, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (79, 79, 62, 78, 44, 98, 90, 111, 54, 84, 245, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (80, 80, 64, 80, 44, 94, 82, 84, 58, 81, 270, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (81, 81, 62, 79, 46, 109, 91, 84, 67, 68, 255, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (82, 82, 65, 73, 47, 91, 92, 96, 62, 75, 275, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (83, 83, 59, 77, 54, 91, 90, 97, 60, 74, 240, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (84, 84, 64, 74, 51, 91, 93, 84, 69, 73, 300, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (85, 85, 65, 79, 51, 111, 82, 84, 70, 86, 280, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (86, 86, 65, 74, 50, 105, 79, 85, 73, 72, 255, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (87, 87, 59, 77, 47, 96, 88, 91, 73, 72, 250, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (88, 88, 60, 80, 53, 111, 82, 92, 68, 87, 280, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (89, 89, 59, 71, 57, 107, 92, 88, 66, 88, 295, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (90, 90, 63, 71, 60, 98, 90, 112, 76, 78, 260, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (91, 91, 63, 76, 50, 94, 88, 111, 80, 81, 270, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (92, 92, 65, 70, 49, 94, 84, 98, 55, 71, 220, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (93, 93, 59, 79, 42, 93, 79, 100, 64, 89, 300, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (94, 94, 64, 70, 57, 92, 79, 100, 80, 79, 295, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (95, 95, 63, 78, 40, 96, 83, 105, 79, 83, 260, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (96, 96, 61, 80, 48, 91, 90, 106, 62, 85, 230, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (97, 97, 61, 77, 51, 100, 78, 97, 48, 76, 260, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (98, 98, 65, 78, 43, 93, 93, 108, 63, 89, 235, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (99, 99, 59, 74, 48, 91, 81, 100, 67, 69, 235, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (100, 100, 60, 69, 42, 96, 78, 85, 67, 90, 225, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (101, 101, 64, 74, 47, 102, 85, 111, 63, 70, 225, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (102, 102, 63, 74, 55, 97, 86, 112, 71, 87, 265, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (103, 103, 60, 71, 44, 97, 92, 100, 76, 82, 285, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (104, 104, 59, 72, 52, 105, 78, 96, 75, 73, 270, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (105, 105, 59, 68, 54, 110, 82, 104, 66, 88, 230, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (106, 106, 64, 78, 59, 102, 85, 88, 55, 73, 240, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (107, 107, 59, 72, 54, 104, 91, 85, 67, 84, 250, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (108, 108, 65, 70, 59, 91, 79, 83, 48, 88, 260, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (109, 109, 64, 78, 42, 96, 91, 96, 63, 82, 270, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (110, 110, 64, 69, 48, 103, 79, 111, 74, 72, 275, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (111, 111, 64, 75, 58, 97, 77, 100, 70, 82, 225, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (112, 112, 61, 75, 46, 97, 80, 90, 70, 68, 295, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (113, 113, 63, 70, 54, 90, 82, 86, 69, 84, 250, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (114, 114, 63, 69, 57, 103, 85, 102, 80, 69, 275, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (115, 115, 63, 76, 51, 109, 88, 89, 72, 87, 230, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (116, 116, 63, 76, 57, 91, 77, 89, 70, 83, 260, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (117, 117, 61, 77, 47, 94, 93, 91, 64, 83, 265, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (118, 118, 64, 80, 52, 91, 81, 111, 68, 70, 245, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (119, 119, 62, 79, 46, 96, 84, 92, 70, 77, 270, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (120, 120, 59, 71, 43, 100, 88, 106, 66, 74, 255, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (121, 121, 64, 77, 41, 112, 86, 108, 55, 82, 265, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (122, 122, 60, 68, 54, 91, 85, 97, 65, 84, 260, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (123, 123, 63, 80, 58, 111, 80, 87, 68, 79, 265, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (124, 124, 63, 71, 42, 102, 78, 106, 66, 71, 240, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (125, 125, 60, 72, 52, 90, 90, 85, 61, 73, 245, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (126, 126, 61, 76, 45, 102, 84, 113, 62, 68, 255, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (127, 127, 65, 75, 42, 104, 90, 102, 78, 75, 260, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (128, 128, 62, 79, 57, 102, 78, 106, 73, 85, 270, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (129, 129, 59, 70, 60, 104, 88, 107, 69, 77, 245, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (130, 130, 64, 73, 41, 98, 90, 100, 63, 68, 295, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (131, 131, 62, 75, 50, 112, 83, 97, 66, 78, 230, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (132, 132, 62, 79, 59, 91, 92, 102, 48, 70, 250, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (133, 133, 62, 77, 54, 99, 78, 105, 67, 74, 225, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (134, 134, 59, 70, 52, 93, 79, 113, 53, 78, 245, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (135, 135, 61, 79, 42, 91, 84, 89, 64, 90, 225, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (136, 136, 62, 68, 44, 91, 82, 86, 53, 88, 230, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (137, 137, 63, 73, 59, 103, 82, 105, 71, 74, 235, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (138, 138, 62, 72, 57, 100, 91, 97, 53, 76, 275, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (139, 139, 64, 80, 50, 103, 87, 100, 55, 88, 235, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (140, 140, 65, 68, 56, 111, 78, 92, 67, 87, 270, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (141, 141, 65, 72, 57, 106, 79, 103, 78, 75, 300, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (142, 142, 62, 72, 54, 93, 88, 101, 68, 85, 260, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (143, 143, 61, 71, 42, 102, 82, 92, 53, 86, 300, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (144, 144, 62, 73, 42, 95, 77, 84, 52, 73, 270, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (145, 145, 65, 80, 45, 94, 86, 99, 59, 71, 275, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (146, 146, 59, 79, 43, 95, 88, 90, 57, 81, 255, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (147, 147, 62, 76, 43, 93, 82, 90, 61, 84, 260, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (148, 148, 61, 72, 51, 92, 79, 96, 50, 78, 235, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (149, 149, 65, 73, 44, 104, 89, 96, 63, 77, 235, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (150, 150, 59, 79, 60, 111, 92, 84, 55, 87, 230, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (151, 151, 63, 72, 52, 97, 78, 96, 79, 81, 240, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (152, 152, 64, 68, 55, 98, 81, 91, 72, 81, 260, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (153, 153, 65, 78, 51, 93, 83, 88, 64, 85, 265, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (154, 154, 59, 72, 44, 107, 84, 106, 64, 84, 220, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (155, 155, 59, 69, 57, 90, 86, 96, 66, 69, 270, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (156, 156, 64, 80, 45, 99, 84, 89, 75, 88, 230, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (157, 157, 63, 69, 58, 101, 81, 86, 64, 89, 225, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (158, 158, 62, 78, 43, 109, 85, 99, 78, 73, 290, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (159, 159, 65, 79, 42, 93, 79, 110, 78, 88, 235, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (160, 160, 62, 69, 54, 101, 77, 104, 73, 80, 275, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (161, 161, 63, 73, 48, 94, 85, 102, 55, 76, 255, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (162, 162, 62, 77, 49, 107, 91, 102, 68, 85, 275, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (163, 163, 61, 80, 48, 103, 77, 86, 61, 86, 230, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (164, 164, 59, 73, 41, 109, 86, 96, 60, 69, 240, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (165, 165, 59, 69, 52, 99, 88, 98, 55, 79, 255, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (166, 166, 63, 73, 43, 92, 91, 106, 67, 81, 255, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (167, 167, 63, 79, 43, 112, 93, 113, 56, 86, 260, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (168, 168, 59, 76, 56, 99, 79, 111, 51, 74, 285, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (169, 169, 60, 74, 60, 101, 81, 94, 73, 79, 240, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (170, 170, 59, 71, 60, 105, 92, 109, 51, 77, 245, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (171, 171, 61, 77, 40, 96, 82, 103, 76, 69, 230, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (172, 172, 64, 77, 48, 101, 79, 90, 59, 70, 230, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (173, 173, 62, 80, 60, 94, 85, 108, 57, 74, 285, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (174, 174, 62, 76, 54, 92, 91, 92, 75, 87, 225, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (175, 175, 59, 75, 52, 112, 78, 86, 59, 85, 255, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (176, 176, 61, 80, 51, 90, 92, 98, 73, 83, 285, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (177, 177, 59, 73, 55, 108, 84, 104, 61, 84, 225, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (178, 178, 59, 72, 56, 99, 88, 108, 55, 77, 275, 53);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (179, 179, 60, 80, 42, 112, 93, 102, 78, 82, 230, 55);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (180, 180, 63, 70, 41, 107, 77, 108, 55, 78, 270, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (181, 181, 65, 71, 56, 107, 89, 92, 50, 86, 250, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (182, 182, 63, 70, 43, 107, 87, 94, 57, 85, 275, 60);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (183, 183, 62, 77, 41, 103, 85, 100, 59, 73, 270, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (184, 184, 62, 69, 52, 105, 85, 107, 70, 75, 245, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (185, 185, 65, 70, 60, 103, 93, 94, 61, 69, 245, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (186, 186, 62, 74, 53, 100, 90, 93, 48, 72, 275, 65);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (187, 187, 61, 78, 48, 92, 85, 100, 62, 74, 265, 59);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (188, 188, 61, 77, 42, 102, 85, 111, 56, 75, 260, 61);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (189, 189, 64, 70, 52, 99, 77, 107, 52, 78, 230, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (190, 190, 59, 70, 58, 103, 85, 108, 65, 78, 290, 57);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (191, 191, 61, 78, 44, 100, 93, 112, 57, 84, 270, 56);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (192, 192, 62, 77, 40, 108, 88, 85, 71, 77, 270, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (193, 193, 61, 70, 40, 93, 90, 104, 77, 80, 220, 52);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (194, 194, 65, 71, 49, 94, 82, 86, 70, 78, 245, 54);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (195, 195, 59, 72, 58, 97, 83, 91, 50, 77, 275, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (196, 196, 59, 72, 50, 107, 79, 87, 62, 83, 220, 63);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (197, 197, 63, 79, 46, 99, 90, 89, 54, 87, 230, 62);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (198, 198, 61, 68, 51, 96, 79, 87, 74, 75, 300, 64);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (199, 199, 63, 75, 58, 101, 82, 97, 70, 79, 230, 58);
+INSERT INTO CUSTOMER_SIZE (SIZEID, customerid, Sleevelength, TopLength, Shoulder, Chestcircumference, Waist, Hipcircumference, Thighcircumference, Inseam, Footlength, Headcircumference)
+VALUES (200, 200, 60, 71, 40, 105, 92, 101, 54, 70, 250, 61);
 
 
 
@@ -4147,13 +4547,13 @@ BEGIN
                                ELSE 0 
                              END;
         BEGIN
-            DBMS_OUTPUT.PUT_LINE('Inserting record for Gifticon_id: ' || i);
-            DBMS_OUTPUT.PUT_LINE('Customer_id: ' || v_customer_id);
-            DBMS_OUTPUT.PUT_LINE('Product_id: ' || v_product_id);
-            DBMS_OUTPUT.PUT_LINE('Expiration_date: ' || TO_CHAR(v_expiration_date, 'YYYY-MM-DD'));
+            DBMS_OUTPUT.PUT_LINE('Inserting record for Gifticonid: ' || i);
+            DBMS_OUTPUT.PUT_LINE('Customerid: ' || v_customer_id);
+            DBMS_OUTPUT.PUT_LINE('Productid: ' || v_product_id);
+            DBMS_OUTPUT.PUT_LINE('Expirationdate: ' || TO_CHAR(v_expiration_date, 'YYYY-MM-DD'));
             DBMS_OUTPUT.PUT_LINE('Status: ' || v_status);
 
-            INSERT INTO GIFTICON (GIFTICON_ID, CUSTOMER_ID, PRODUCT_ID, EXPIRATION_DATE, STATUS)
+            INSERT INTO GIFTICON (GIFTICONID, CUSTOMERID, PRODUCTID, EXPIRATIONDATE, STATUS)
             VALUES (
                 gifticon_seq.NEXTVAL,
                 v_customer_id,

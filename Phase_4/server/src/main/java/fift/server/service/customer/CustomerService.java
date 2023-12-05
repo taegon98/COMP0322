@@ -9,6 +9,8 @@ import fift.server.repository.tier.TierRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
+import java.util.Random;
+import java.util.random.RandomGenerator;
 
 @Service
 @RequiredArgsConstructor
@@ -17,13 +19,13 @@ public class CustomerService {
     private final TierRepository tierRepository;
     private final CustomerSizeRepository customerSizeRepository;
 
-
     //회원가입
     public Customer registerCustomer(Customer customerDto) {
-
+        Random random = new Random();
         Optional<Tier> tier = tierRepository.findByName("level_1");
 
         Customer customer = new Customer();
+        customer.setCustomerId(random.nextLong(1001l) + 1000l);
         customer.setTier(tier.get());
         customer.setName(customerDto.getName());
         customer.setUserId(customerDto.getUserId());

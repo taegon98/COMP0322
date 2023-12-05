@@ -20,7 +20,6 @@ import java.util.List;
 public class Cart {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long cartId;
 
     @OneToOne(fetch = FetchType.EAGER)
