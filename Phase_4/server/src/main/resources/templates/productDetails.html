@@ -1,0 +1,27 @@
+<!-- resources/templates/productDetails.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+</head>
+<body>
+<h1>Product Details</h1>
+
+<dl>
+    <dt>Name:</dt>
+    <dd th:text="${product.productName}"></dd>
+
+    <dt>Description:</dt>
+    <dd th:text="${product.Description}"></dd>
+
+    <dt>Price:</dt>
+    <dd th:text="${product.Price}"></dd>
+
+    <dt>Photo:</dt>
+    <dd th:text="${product.Photo}"></dd>
+    <!-- Add more fields as needed -->
+
+</dl>
+</body>
+</html>

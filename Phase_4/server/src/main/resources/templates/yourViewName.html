@@ -8,6 +8,13 @@
 <body>
 <h1>All Products</h1>
 
+<!-- 검색 양식 추가 -->
+<form action="/product/search" method="get">
+    <label for="keyword">Search:</label>
+    <input type="text" id="keyword" name="keyword" />
+    <button type="submit">Search</button>
+</form>
+
 <table>
     <thead>
     <tr>
@@ -15,13 +22,14 @@
         <th>Description</th>
         <th>Price</th>
         <th>Photo</th>
-        <!-- Add more columns as needed -->
     </tr>
     </thead>
     <tbody>
     <!-- Iterate over the products and display each row -->
     <tr th:each="product : ${products}">
-        <td th:text="${product.productName}"></td>
+        <td>
+            <a th:href="@{/product/{id}(id=${product.productId})}" th:text="${product.productName}">View Details</a>
+        </td>
         <td th:text="${product.Description}"></td>
         <td th:text="${product.Price}"></td>
         <td th:text="${product.Photo}"></td>
