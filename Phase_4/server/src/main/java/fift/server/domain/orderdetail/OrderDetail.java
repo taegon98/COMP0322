@@ -1,5 +1,6 @@
 package fift.server.domain.orderdetail;
 
+import fift.server.domain.cartItem.CartItem;
 import fift.server.domain.order.Order;
 import fift.server.domain.product.Product;
 import jakarta.persistence.*;
@@ -27,28 +28,21 @@ public class OrderDetail {
     private Order order;
 
     private Integer Quantity;
-    private Integer total_Price;
+    private Long total_Price;
 
     @Builder
-    public OrderDetail(Product product, Order order, Integer quantity, Integer total_Price) {
+    public OrderDetail(Product product,CartItem cartItem) {
         this.product = product;
-        this.order = order;
-        Quantity = quantity;
-        this.total_Price = total_Price;
+        this.Quantity=cartItem.getCount();
+        this.total_Price=cartItem.getCount()*cartItem.getProduct().getPrice();
     }
 
-    public static OrderDetail createOrderItem(Product product,Order order,Integer Quantity,Integer price) {
+    public static OrderDetail createOrderDetail(Product product, CartItem cartItem) {
         OrderDetail build = OrderDetail.builder()
                 .product(product)
-                .order(order)
-                .quantity(Quantity)
-                .total_Price(price)
+                .cartItem(cartItem)
                 .build();
         return build;
     }
 
-    public void addDetail(Integer price) {
-        this.Quantity+=1;
-        this.total_Price+=price;
-    }
 }
