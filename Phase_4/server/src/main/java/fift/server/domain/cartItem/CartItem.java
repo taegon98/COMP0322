@@ -1,9 +1,7 @@
 package fift.server.domain.cartItem;
 
 import fift.server.domain.cart.Cart;
-import fift.server.domain.order.Order;
-import fift.server.domain.orderdetail.OrderDetail;
-import fift.server.domain.product.Product;
+import fift.server.domain.products.Products;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,27 +13,27 @@ public class CartItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long cartItem_Id;
+    private Long cartItemId;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="cart_id")
+    @JoinColumn(name="cartid")
     private Cart cart;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="product_id")
-    private Product product;
+    @JoinColumn(name="productid")
+    private Products products;
 
     private int count; // 상품 개수
 
 
     @Builder
-    public CartItem(Product product,Cart cart, Integer quantity) {
-        this.product = product;
+    public CartItem(Products product, Cart cart, Integer quantity) {
+        this.products = product;
         this.cart = cart;
         this.count = quantity;
     }
 
-    public static CartItem createCartItem(Cart setCart, Product setProduct, int setAmount) {
+    public static CartItem createCartItem(Cart setCart, Products setProduct, int setAmount) {
         CartItem build = CartItem.builder()
                 .cart(setCart)
                 .product(setProduct)

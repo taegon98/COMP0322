@@ -2,7 +2,6 @@ package fift.server.domain.cart;
 
 import fift.server.domain.cartItem.CartItem;
 import fift.server.domain.customer.Customer;
-import fift.server.domain.order.Order;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -22,13 +21,13 @@ public class Cart {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long cart_Id;
+    private Long cartId;
 
     @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="customer_id")
+    @JoinColumn(name="customerid")
     private Customer customer;
 
-    private Double total_price;
+    private Double totalPrice;
     private Integer count; // 카트에 담긴 총 상품 개수
 
     @OneToMany(mappedBy = "cart")
@@ -46,7 +45,7 @@ public class Cart {
     @Builder
     public Cart(Customer customer) {
         this.customer = customer;
-        this.total_price= Double.valueOf(0);
+        this.totalPrice= Double.valueOf(0);
     }
 
 
@@ -56,6 +55,6 @@ public class Cart {
     }
 
     public void add_Price(int price) {
-        this.total_price+=price;
+        this.totalPrice+=price;
     }
 }

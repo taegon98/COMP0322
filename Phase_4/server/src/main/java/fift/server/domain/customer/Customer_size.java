@@ -11,40 +11,40 @@ import lombok.Setter;
 public class Customer_size {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "size_id")
+    @Column(name = "sizeid")
     private Long sizeId;
 
     @OneToOne
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(name = "customerid")
     private Customer customer;
 
-    @Column(name = "sleeve_length")
+    @Column(name = "sleevelength")
     private Double sleeveLength;
 
-    @Column(name = "top_length")
+    @Column(name = "toplength")
     private Double topLength;
 
     @Column(name = "shoulder")
     private Double shoulder;
 
-    @Column(name = "chest_circumference")
+    @Column(name = "chestcircumference")
     private Double chestCircumference;
 
     @Column(name = "waist")
     private Double waist;
 
-    @Column(name = "hip_circumference")
+    @Column(name = "hipcircumference")
     private Double hipCircumference;
 
-    @Column(name = "thigh_circumference")
+    @Column(name = "thighcircumference")
     private Double thighCircumference;
 
     @Column(name = "inseam")
     private Double inseam;
 
-    @Column(name = "foot_length")
+    @Column(name = "footlength")
     private Double footLength;
 
-    @Column(name = "head_circumference")
+    @Column(name = "headcircumference")
     private Double headCircumference;
 }

@@ -1,7 +1,7 @@
 package fift.server.domain.customer;
 
 import fift.server.domain.gifticon.Gifticon;
-import fift.server.domain.order.Order;
+import fift.server.domain.orders.Orders;
 import fift.server.domain.tier.Tier;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -17,36 +17,36 @@ import java.util.List;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "customer_id")
+    @Column(name = "customerid")
     private Long customerId;
 
     @ManyToOne
-    @JoinColumn(name = "tier_id")
+    @JoinColumn(name = "tierid")
     private Tier tier;
 
     @OneToMany(mappedBy = "customer")
-    List<Order> orderList=new ArrayList<>();
+    List<Orders> orderList=new ArrayList<>();
 
     @Column(name = "name")
     private String name;
 
-    @Column(name = "user_id")
+    @Column(name = "userid")
     private String userId;
 
     @Column(name = "password")
     private String password;
 
-    @Column(name = "phone_number")
+    @Column(name = "phoneNumber")
     private String phoneNumber;
 
     @Column(name = "address")
     private String address;
 
-    @Column(name = "postal_code")
+    @Column(name = "postalCode")
     private Long postalCode;
 
 
-    @Column(name = "coupon_id")
+    @Column(name = "couponid")
     private Long couponId;
 
     @Column(name = "money")

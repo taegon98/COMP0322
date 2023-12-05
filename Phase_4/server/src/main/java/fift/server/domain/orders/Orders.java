@@ -1,8 +1,7 @@
-package fift.server.domain.order;
+package fift.server.domain.orders;
 
 import fift.server.domain.customer.Customer;
 import fift.server.domain.orderdetail.OrderDetail;
-import fift.server.domain.product.Product;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -17,37 +16,37 @@ import java.util.List;
 @RequiredArgsConstructor
 @Getter
 @Setter
-public class Order {
+public class Orders {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long order_Id;
+    private Long orderId;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "orders")
     private List<OrderDetail> orderDetailList = new ArrayList<>();
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="customer_id")
+    @JoinColumn(name="customerid")
     private Customer customer;
 
-    private Date order_Date;
-    private Date expected_Date;
-    private Date shipped_Date;
+    private Date orderDate;
+    private Date expectedDate;
+    private Date shippedDate;
     private Boolean Status;
 
     @Builder
-    public Order(Customer customer, Boolean status) {
+    public Orders(Customer customer, Boolean status) {
         this.customer = customer;
         Status = status;
     }
 
     public void addOrderDetail(OrderDetail orderDetail) {
         orderDetailList.add(orderDetail);
-        orderDetail.setOrder(this);
+        orderDetail.setOrders(this);
     }
 
-    public static Order createOrder(Customer customer,List<OrderDetail> orderDetailList) {
-        Order build = Order.builder()
+    public static Orders createOrder(Customer customer, List<OrderDetail> orderDetailList) {
+        Orders build = Orders.builder()
                 .customer(customer)
                 .status(false)
                 .build();

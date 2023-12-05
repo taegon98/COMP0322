@@ -1,7 +1,7 @@
 package fift.server.domain.gifticon;
 
 import fift.server.domain.customer.Customer;
-import fift.server.domain.product.Product;
+import fift.server.domain.products.Products;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,18 +14,18 @@ import java.util.Date;
 public class Gifticon {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "gifticon_id")
+    @Column(name = "gifticonid")
     private Long gifticonId;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(name = "customerid")
     private Customer customer;
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+    @JoinColumn(name = "productid")
+    private Products products;
 
-    @Column(name = "expiration_date")
+    @Column(name = "expirationdate")
     @Temporal(TemporalType.DATE)
     private Date expirationDate;
 

@@ -1,6 +1,6 @@
 package fift.server.service.product;
 
-import fift.server.domain.product.Product;
+import fift.server.domain.products.Products;
 import fift.server.repository.product.ProductRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +19,7 @@ public class ProductService {
      * 상품 전체 조회
      * @return
      */
-    public List<Product> getAllProducts() {
+    public List<Products> getAllProducts() {
         return productRepository.findAll();
     }
 
@@ -28,7 +28,7 @@ public class ProductService {
      * @param product_Id
      * @return
      */
-    public Product getProduct(Long product_Id) {
+    public Products getProduct(Long product_Id) {
         return productRepository.findById(product_Id)
                 .orElseThrow(()->new RuntimeException("Product Not Found"));
     }
@@ -38,7 +38,7 @@ public class ProductService {
      * @param product_Id
      */
     public void deleteProduct(Long product_Id) {
-        Product productToDelete = productRepository.findById(product_Id)
+        Products productToDelete = productRepository.findById(product_Id)
                 .orElseThrow(() -> new RuntimeException("Product Not Found"));
         productRepository.delete(productToDelete);
     }
@@ -48,8 +48,8 @@ public class ProductService {
      * @param keyword
      * @return
      */
-    public List<Product> searchProduct(String keyword) {
-        return productRepository.findByNameContaining(keyword);
+    public List<Products> searchProduct(String keyword) {
+        return productRepository.findByProductNameContaining(keyword);
     }
 
 }

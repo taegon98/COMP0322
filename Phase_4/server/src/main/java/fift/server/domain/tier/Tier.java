@@ -14,7 +14,7 @@ import java.util.List;
 public class Tier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "tier_id")
+    @Column(name = "tierid")
     private Long tierId;
 
     @Column(name = "name")

@@ -2,7 +2,7 @@ package fift.server.service.gifticon;
 
 import fift.server.domain.customer.Customer;
 import fift.server.domain.gifticon.Gifticon;
-import fift.server.domain.product.Product;
+import fift.server.domain.products.Products;
 import fift.server.repository.customer.CustomerRepository;
 import fift.server.repository.gifticon.GifticonRepository;
 import fift.server.repository.product.ProductRepository;
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class GifticonService {
     private final GifticonRepository gifticonRepository;
@@ -20,12 +21,11 @@ public class GifticonService {
     private final ProductRepository productRepository;
     private final TierService tierService;
 
-    @Transactional
     public Gifticon giftGifticonToUser(Long userId, Long productId) {
         Customer customer = customerRepository.findById(userId)
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
 
-        Product product = productRepository.findById(productId)
+        Products product = productRepository.findById(productId)
                 .orElseThrow(() -> new IllegalArgumentException("Product not found"));
 
         LocalDate currentDate = LocalDate.now();
@@ -43,7 +43,7 @@ public class GifticonService {
 
                 Gifticon gifticon = new Gifticon();
                 gifticon.setCustomer(customer);
-                gifticon.setProduct(product);
+                gifticon.setProducts(product);
                 gifticon.setExpirationDate(java.sql.Date.valueOf(expirationDate));
                 gifticon.setStatus(1);
 

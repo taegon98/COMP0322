@@ -1,8 +1,8 @@
 package fift.server.domain.orderdetail;
 
 import fift.server.domain.cartItem.CartItem;
-import fift.server.domain.order.Order;
-import fift.server.domain.product.Product;
+import fift.server.domain.orders.Orders;
+import fift.server.domain.products.Products;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -17,27 +17,27 @@ public class OrderDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long detail_Id;
+    private Long detailId;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="product_Id")
-    private Product product;
+    @JoinColumn(name="productId")
+    private Products products;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="order_Id")
-    private Order order;
+    @JoinColumn(name="orderId")
+    private Orders orders;
 
     private Integer Quantity;
-    private double total_Price;
+    private double totalPrice;
 
     @Builder
-    public OrderDetail(Product product,CartItem cartItem) {
-        this.product = product;
+    public OrderDetail(Products product, CartItem cartItem) {
+        this.products = product;
         this.Quantity=cartItem.getCount();
-        this.total_Price=cartItem.getCount()*cartItem.getProduct().getPrice();
+        this.totalPrice=cartItem.getCount()*cartItem.getProducts().getPrice();
     }
 
-    public static OrderDetail createOrderDetail(Product product, CartItem cartItem) {
+    public static OrderDetail createOrderDetail(Products product, CartItem cartItem) {
         OrderDetail build = OrderDetail.builder()
                 .product(product)
                 .cartItem(cartItem)

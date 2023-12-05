@@ -3,15 +3,13 @@ package fift.server.service.order;
 import fift.server.domain.cart.Cart;
 import fift.server.domain.cartItem.CartItem;
 import fift.server.domain.customer.Customer;
-import fift.server.domain.order.Order;
+import fift.server.domain.orders.Orders;
 import fift.server.domain.orderdetail.OrderDetail;
-import fift.server.domain.product.Product;
+import fift.server.domain.products.Products;
 import fift.server.repository.cart.CartRepository;
 import fift.server.repository.cartItem.CartItemRepository;
-import fift.server.repository.customer.CustomerRepository;
 import fift.server.repository.order.OrderRepository;
 import fift.server.repository.orderdetail.OrderdetailRepository;
-import fift.server.repository.product.ProductRepository;
 import fift.server.service.cart.CartService;
 import fift.server.service.tier.TierService;
 import jakarta.transaction.Transactional;
@@ -33,30 +31,30 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final TierService tierService;
 
-    public OrderDetail add_Cart_Item(Product product, CartItem cartItem) {
+    public OrderDetail add_Cart_Item(Products product, CartItem cartItem) {
         OrderDetail orderDetail = OrderDetail.createOrderDetail(product, cartItem);
         orderdetailRepository.save(orderDetail);
         return orderDetail;
     }
 
     public Long add_Cart_Order(Customer customer,List<OrderDetail> orderDetailList) {
-        Order order = Order.createOrder(customer, orderDetailList);
+        Orders order = Orders.createOrder(customer, orderDetailList);
         orderRepository.save(order);
-        return order.getOrder_Id();
+        return order.getOrderId();
     }
 
     public Long order_Cart(Customer customer) {
 
-        Cart byUserId = cartRepository.findByUserId(customer.getUserId());
+        Cart byUserId = cartRepository.findByCustomer(customer);
         List<CartItem> cartItemsByCart = cartItemRepository.findCartItemsByCart(byUserId);
 
-        if(byUserId.getTotal_price()<=customer.getMoney()) {
+        if(byUserId.getTotalPrice()<=customer.getMoney()) {
             List<OrderDetail> orderDetailList=new ArrayList<>();
 
             for(CartItem cartItem:cartItemsByCart) {
-                OrderDetail orderDetail = add_Cart_Item(cartItem.getProduct(), cartItem);
+                OrderDetail orderDetail = add_Cart_Item(cartItem.getProducts(), cartItem);
                 orderDetailList.add(orderDetail);
-                customer.setAmount(customer.getAmount()+orderDetail.getTotal_Price());
+                customer.setAmount(customer.getAmount()+orderDetail.getTotalPrice());
                 tierService.updateTierByAmount(customer);
             }
 
@@ -65,7 +63,7 @@ public class OrderService {
             return aLong;
         }
         else {
-            return byUserId.getCart_Id();
+            return byUserId.getCartId();
         }
     }
 }
