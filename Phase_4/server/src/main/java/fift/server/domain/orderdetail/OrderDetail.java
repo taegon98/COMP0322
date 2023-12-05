@@ -28,7 +28,7 @@ public class OrderDetail {
     private Order order;
 
     private Integer Quantity;
-    private Long total_Price;
+    private double total_Price;
 
     @Builder
     public OrderDetail(Product product,CartItem cartItem) {

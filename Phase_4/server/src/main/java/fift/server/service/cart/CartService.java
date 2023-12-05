@@ -44,9 +44,10 @@ public class CartService {
             CartItem update = CartItem.createCartItem(cartItem.getCart(),
                     cartItem.getProduct(),
                     cartItem.getCount());
+            cart.setTotal_price(cart.getTotal_price()+cartItem.getCount()*cartItem.getProduct().getPrice());
+            cart.setCount(cart.getCount()+cartItem.getCount());
             cartItemRepository.save(update);
         }
-        cart.setCount(cart.getCount()+amount);
 
     }
 

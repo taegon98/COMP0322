@@ -45,14 +45,15 @@ public class Customer {
     @Column(name = "postal_code")
     private Long postalCode;
 
-    @Column(name = "amount")
-    private Double amount;
 
     @Column(name = "coupon_id")
     private Long couponId;
 
     @Column(name = "money")
-    private Long money;
+    private Double money;
+
+    @Column(name = "amount")
+    private Double amount;
 
     @OneToMany(mappedBy = "customer")
     private List<Gifticon> gifticons = new ArrayList<>();
