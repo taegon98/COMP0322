@@ -13,7 +13,6 @@ import java.util.Date;
 @Setter
 public class Gifticon {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "gifticonid")
     private Long gifticonId;
 

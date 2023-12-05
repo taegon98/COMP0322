@@ -19,7 +19,6 @@ import java.util.List;
 public class Orders {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderId;
 
     @OneToMany(mappedBy = "orders")
@@ -32,12 +31,12 @@ public class Orders {
     private Date orderDate;
     private Date expectedDate;
     private Date shippedDate;
-    private Boolean Status;
+    private Integer Status;
 
     @Builder
-    public Orders(Customer customer, Boolean status) {
+    public Orders(Customer customer, Integer status) {
         this.customer = customer;
-        Status = status;
+        this.Status = status;
     }
 
     public void addOrderDetail(OrderDetail orderDetail) {
@@ -48,7 +47,7 @@ public class Orders {
     public static Orders createOrder(Customer customer, List<OrderDetail> orderDetailList) {
         Orders build = Orders.builder()
                 .customer(customer)
-                .status(false)
+                .status(0)
                 .build();
         for(OrderDetail orderDetail:orderDetailList) {
             build.addOrderDetail(orderDetail);

@@ -13,7 +13,6 @@ import java.util.List;
 @Setter
 public class Tier {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "tierid")
     private Long tierId;
 

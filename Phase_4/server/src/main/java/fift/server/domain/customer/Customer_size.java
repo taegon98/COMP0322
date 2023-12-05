@@ -10,7 +10,6 @@ import lombok.Setter;
 @Setter
 public class Customer_size {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "sizeid")
     private Long sizeId;
 
