@@ -43,7 +43,4 @@ public class ProductController {
         model.addAttribute("products", searchResults);
         return "yourViewName";
     }
-
-
-
 }
