@@ -11,6 +11,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 @Entity
 @RequiredArgsConstructor
@@ -35,6 +36,8 @@ public class Orders {
 
     @Builder
     public Orders(Customer customer, Integer status) {
+        Random random = new Random();
+        this.orderId = random.nextLong(10000);
         this.customer = customer;
         this.Status = status;
     }
