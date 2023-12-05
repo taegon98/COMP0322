@@ -16,7 +16,6 @@ import lombok.Setter;
 public class OrderDetail {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long detailId;
 
     @ManyToOne(fetch = FetchType.LAZY)
