@@ -13,6 +13,7 @@ import fift.server.repository.order.OrderRepository;
 import fift.server.repository.orderdetail.OrderdetailRepository;
 import fift.server.repository.product.ProductRepository;
 import fift.server.service.cart.CartService;
+import fift.server.service.tier.TierService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -29,9 +30,8 @@ public class OrderService {
     private final CartRepository cartRepository;
     private final CartItemRepository cartItemRepository;
     private final OrderdetailRepository orderdetailRepository;
-
-
     private final OrderRepository orderRepository;
+    private final TierService tierService;
 
     public OrderDetail add_Cart_Item(Product product, CartItem cartItem) {
         OrderDetail orderDetail = OrderDetail.createOrderDetail(product, cartItem);
@@ -57,6 +57,7 @@ public class OrderService {
                 OrderDetail orderDetail = add_Cart_Item(cartItem.getProduct(), cartItem);
                 orderDetailList.add(orderDetail);
                 customer.setAmount(customer.getAmount()+orderDetail.getTotal_Price());
+                tierService.updateTierByAmount(customer);
             }
 
             Long aLong = add_Cart_Order(customer, orderDetailList);
