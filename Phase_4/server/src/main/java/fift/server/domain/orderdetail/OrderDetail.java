@@ -9,6 +9,8 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+import java.util.Random;
+
 @Entity
 @RequiredArgsConstructor
 @Getter
@@ -31,6 +33,8 @@ public class OrderDetail {
 
     @Builder
     public OrderDetail(Product product, CartItem cartItem) {
+        Random random = new Random();
+        this.detailId = random.nextLong(2000,10000);
         this.product = product;
         this.Quantity=cartItem.getCount();
         this.totalPrice=cartItem.getCount()*cartItem.getProduct().getPrice();

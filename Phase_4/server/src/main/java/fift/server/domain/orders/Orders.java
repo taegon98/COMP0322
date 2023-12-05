@@ -11,6 +11,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 @Entity
 @RequiredArgsConstructor
@@ -31,12 +32,14 @@ public class Orders {
     private Date orderDate;
     private Date expectedDate;
     private Date shippedDate;
-    private Boolean Status;
+    private Integer Status;
 
     @Builder
-    public Orders(Customer customer, Boolean status) {
+    public Orders(Customer customer, Integer status) {
+        Random random = new Random();
+        this.orderId = random.nextLong(10000);
         this.customer = customer;
-        Status = status;
+        this.Status = status;
     }
 
     public void addOrderDetail(OrderDetail orderDetail) {
@@ -47,7 +50,7 @@ public class Orders {
     public static Orders createOrder(Customer customer, List<OrderDetail> orderDetailList) {
         Orders build = Orders.builder()
                 .customer(customer)
-                .status(false)
+                .status(0)
                 .build();
         for(OrderDetail orderDetail:orderDetailList) {
             build.addOrderDetail(orderDetail);
