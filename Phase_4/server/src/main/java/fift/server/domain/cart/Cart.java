@@ -20,6 +20,8 @@ import java.util.List;
 public class Cart {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "CART_ID")
     private Long cartId;
 
     @OneToOne(fetch = FetchType.EAGER)
