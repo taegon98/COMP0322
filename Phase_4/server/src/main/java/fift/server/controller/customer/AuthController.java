@@ -32,7 +32,6 @@ public class AuthController {
         String customerId = loginDto.getUserId();
         String password = loginDto.getPassword();
 
-
         if (customerId == null || customerId.trim().isEmpty() || password == null || password.trim().isEmpty()) {
             model.addAttribute("error", "Please provide valid credentials.");
             return "redirect:/";
@@ -54,6 +53,7 @@ public class AuthController {
             return "login/loginpage";
         }
 
+        session.setAttribute("loggedIn", true);
         session.setAttribute("customer", id.get());
 
         Cookie sessionCookie = new Cookie("sessionId", session.getId());

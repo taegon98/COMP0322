@@ -71,17 +71,20 @@
                         Cart
                         <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                     </button>
+                    <div th:if="${session.loggedIn}">
+                        <div>
+                            <span th:text="'Welcome, ' + ${session.customer.userId} + '!'" class="text-dark"></span>
+                            <a href="/logout" class="btn btn-outline-dark mx-2">Logout</a>
+                        </div>
+                    </div>
+                    <div th:unless="${session.loggedIn}">
+                        <div>
+                            <a href="/login" class="btn btn-outline-dark mx-2">Login</a>
+                            <a href="/signup" class="btn btn-outline-dark mx-2">Sign Up</a>
+                        </div>
+                    </div>
 
-                    <button class="btn btn-outline-dark mx-2" onclick="openLoginForm()">
-                        Login
-                    </button>
 
-                    <button
-                            class="btn btn-outline-dark mx-2"
-                            onclick="openSignupForm()"
-                    >
-                        Sign Up
-                    </button>
 
                     <button class="btn btn-outline-dark" onclick="openMypage()">
                         Mypage
