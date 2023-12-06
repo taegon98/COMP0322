@@ -8,12 +8,13 @@ import fift.server.repository.customer.CustomerSizeRepository;
 import fift.server.repository.tier.TierRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 import java.util.Random;
-import java.util.random.RandomGenerator;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class CustomerService {
     private final CustomerRepository customerRepository;
     private final TierRepository tierRepository;
@@ -36,7 +37,6 @@ public class CustomerService {
 
         return customerRepository.save(customer);
     }
-
 
     //사이즈 등록
     public Customer_size addCustomerSize(Long customerId, Customer_size customerSizeDto) {
