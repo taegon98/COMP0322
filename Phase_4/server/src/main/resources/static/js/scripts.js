@@ -23,9 +23,16 @@ function openLoginForm() {
 
     location.href = "/login";
 }
+
 function openCart() {
-    location.href = "/";
+    var sessionId = getCookie('sessionId');
+    if (sessionId) {
+        location.href = "/customer/"+ sessionId+ "/cartList";
+    } else {
+        console.log("sessionId not found");
+    }
 }
+
 function goToMain() {
     location.href = "/";
 }

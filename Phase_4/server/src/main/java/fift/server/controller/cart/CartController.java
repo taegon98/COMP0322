@@ -27,9 +27,8 @@ public class CartController {
 
     @PostMapping("/{id}/cart")
     public String cartItem(@PathVariable("id") Long id,
-                           @RequestParam("customerId") Long customerId,
+                           @RequestParam("customerId") String customerId,
                            @RequestParam("count") Integer count) {
-        System.out.println(1);
         Customer customer = customerService.getCustomer(customerId);
         Product product = productService.getProduct(id);
         cartService.addCart(customer, product, count);
