@@ -37,8 +37,25 @@ function openCart() {
     location.href = "/customer/1/cartList";
 }
 
-function addToCart(productId) {
-    // Assuming productId is a string or a number
-    window.location.href = productId + "/cart";
+// addToCart 함수 구현 (scripts.js 등에 위치)
+function addToCart(productId, count) {
+    // productId와 count를 사용하여 서버에 POST 요청을 보내는 로직 작성
+    // AJAX 또는 fetch를 사용하여 서버에 데이터 전송
+    // 예: jQuery를 사용하는 경우
+
+    $.ajax({
+        type: 'POST',
+        url: '/your-controller-path/' + productId + '/cart',
+        contentType: 'application/json',
+        data: JSON.stringify({ id: productId, count: count }),
+        success: function(response) {
+            // 성공 시 동작
+            console.log(response);
+        },
+        error: function(error) {
+            // 실패 시 동작
+            console.error(error);
+        }
+    });
 }
 
