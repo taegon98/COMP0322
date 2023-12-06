@@ -30,7 +30,7 @@ public class CartController {
                            @RequestParam("customerId") Long customerId,
                            @RequestParam("count") Integer count) {
         System.out.println(1);
-        Customer customer = customerService.getCustomer(customerId);
+        Customer customer = customerService.getCustomer(String.valueOf(customerId));
         Product product = productService.getProduct(id);
         cartService.addCart(customer, product, count);
         return "redirect:/";
