@@ -36,7 +36,7 @@ public class MyPageController {
     public String showAddSizeForm(@PathVariable Long customerId, Model model) {
         model.addAttribute("customerId", customerId);
         model.addAttribute("customerSizeDto", new Customer_size());
-        return "addSize";
+        return "/mypage/sizepage";
     }
 
     //사이즈 등록(POST)
