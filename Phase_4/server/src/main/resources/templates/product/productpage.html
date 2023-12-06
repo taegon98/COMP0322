@@ -38,7 +38,7 @@
                     <!-- product 객체가 null이 아닌 경우에만 내용을 표시하도록 조건 추가 -->
 
                     <form th:action="@{'/' + ${product.productId} + '/cart'}" method="post">
-                        <input type="hidden" name="customerId" th:value="${1}" />
+                        <input type="hidden" name="customerId" th:value="${session.customer.userId}" />
                         <input type="hidden" name="count" th:value="${1}" />
                         <button class="btn btn-outline-dark flex-shrink-0" type="submit">
                             <i class="bi-cart-fill me-1"></i>
