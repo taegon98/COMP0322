@@ -36,7 +36,7 @@ public class MyPageController {
     public String showAddSizeForm(@PathVariable Long customerId, Model model) {
         model.addAttribute("customerId", customerId);
         model.addAttribute("customerSizeDto", new Customer_size());
-        return "addSize";
+        return "/mypage/sizepage";
     }
 
     //사이즈 등록(POST)
@@ -54,7 +54,7 @@ public class MyPageController {
     public String showChangePasswordForm(@PathVariable Long customerId, Model model) {
         model.addAttribute("customerId", customerId);
         model.addAttribute("newPassword", "");
-        return "changePassword";
+        return "/mypage/passwordpage";
     }
 
     //비밀번호 변경 (POST)
@@ -64,18 +64,18 @@ public class MyPageController {
             @RequestParam("newPassword") String newPassword
     ) {
         customerService.changePassword(customerId, newPassword);
-        return "redirect:/customer/{customerId}/change-password";
+        return "redirect:/";
     }
 
 
     //장바구니 내역
-    @PostMapping("{customerId}/cartList")
+    @GetMapping("{customerId}/cartList")
     public String getCartList(@PathVariable Long customerId, Model model) {
         Customer customer = customerService.getCustomer(customerId);
         Cart cart = cartService.getCart(customer);
         List<CartItem> cartList = cartService.getCartList(cart);
         model.addAttribute("cartList",cartList);
-        return "장바구니";
+        return "cart/cartpage";
     }
 
     //장바구니 내역 다 삭제

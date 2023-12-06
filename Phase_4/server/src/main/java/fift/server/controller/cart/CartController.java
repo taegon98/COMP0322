@@ -7,6 +7,7 @@ import fift.server.dto.cart.CartDto;
 import fift.server.service.cart.CartService;
 import fift.server.service.customer.CustomerService;
 import fift.server.service.product.ProductService;
+import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -21,14 +22,17 @@ public class CartController {
     private final CartService cartService;
 
     // 장바구니 담기
-    @PostMapping("/product/{id}/cart")
-    public String cart_Item(@PathVariable("product_id") Long id,
-                          @RequestBody CartDto cartDto) {
-        Customer customer = customerService.getCustomer(cartDto.getId());
+
+    @PostMapping("/{id}/cart")
+    public String cart_Item(@PathVariable("id") Long id,
+                            @RequestParam("quantity") int quantity,
+                            HttpSession session) {
+        Customer customer = (Customer) session.getAttribute("customer");
         Product product = productService.getProduct(id);
-        cartService.addCart(customer,product, cartDto.getCount());
+        cartService.addCart(customer, product, quantity);
         return "redirect:/";
     }
+
 
 
 

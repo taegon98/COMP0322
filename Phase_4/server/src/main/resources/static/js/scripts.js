@@ -14,18 +14,26 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 // 페이지 열기 함수
-function openMypage() {
-
-    location.href = "mypage";
+function openMypage(customerId) {
+    location.href = "/customer/1";
 }
+
 function openSignupForm() {
 
-    location.href = "register";
+    location.href = "/register";
 }
 function openLoginForm() {
 
-    location.href = "login";
+    location.href = "/login";
+}
+function openCart() {
+    location.href = "/";
 }
 function goToMain() {
     location.href = "/";
 }
+
+function openCart() {
+    location.href = "/customer/1/cartList";
+}
+

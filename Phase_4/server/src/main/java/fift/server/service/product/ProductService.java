@@ -34,7 +34,7 @@ public class ProductService {
     }
 
     public List<Product> getTOP8Products() {
-        return productRepository.findTop8ByOrderByProductIdDesc();
+        return productRepository.findTop8ByOrderByProductIdAsc();
     }
 
     /**

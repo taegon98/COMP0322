@@ -9,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/customer")
 @RequiredArgsConstructor
 public class CustomerController {
     private final CustomerService customerService;
@@ -25,7 +24,7 @@ public class CustomerController {
     @PostMapping("/register")
     public String registerCustomer(@ModelAttribute("customerDto") Customer customerDto) {
         customerService.registerCustomer(customerDto);
-        return "login/loginpage";
+        return "redirect:/";
     }
 
 
