@@ -32,7 +32,7 @@ public class CartService {
             cartRepository.save(cart);
         }
 
-        Product product = productRepository.findByProductId(newProduct.getProductId());
+        Product product = productRepository.findByProduct_Id(newProduct.getProduct_Id());
         CartItem cartItem = cartItemRepository.findByCartAndProduct(cart, product);
 
         if(cartItem==null) {

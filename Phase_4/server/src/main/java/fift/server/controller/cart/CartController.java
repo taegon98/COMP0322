@@ -17,9 +17,10 @@ import org.springframework.web.bind.annotation.*;
 public class CartController {
 
     private final CustomerService customerService;
-    private final ProductService productService;
 
     private final CartService cartService;
+
+    private final ProductService productService;
 
     // 장바구니 담기
 
