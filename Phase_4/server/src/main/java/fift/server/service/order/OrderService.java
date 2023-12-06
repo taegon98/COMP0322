@@ -153,15 +153,20 @@ public class OrderService {
         orderDetail.setDetailId(random.nextLong(2000,10000));
         orderDetail.setProduct(product);
         orderDetail.setQuantity(1);
-        orderDetail.setTotalPrice(0.0);
+        orderDetail.setTotalPrice(product.getPrice());
 
         Orders orders = add_One_Order(customer, orderDetail);
         orderDetail.setOrders(orders);
 
         orderdetailRepository.save(orderDetail);
 
+        System.out.println(customer1.getMoney());
+
         customer1.setAmount(customer1.getAmount() + orderDetail.getTotalPrice());
         customer1.setMoney(customer1.getMoney() - orderDetail.getTotalPrice());
+
+        System.out.println(customer1.getMoney());
+
 
         customerRepository.save(customer1);
     }
