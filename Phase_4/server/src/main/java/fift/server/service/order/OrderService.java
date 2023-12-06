@@ -59,6 +59,7 @@ public class OrderService {
                 OrderDetail orderDetail = add_Cart_Item(cartItem.getProduct(), cartItem);
                 orderDetailList.add(orderDetail);
                 customer.setAmount(customer.getAmount()+orderDetail.getTotalPrice());
+                customer.setMoney(customer.getAmount()-orderDetail.getTotalPrice());
 
                 tierService.updateTierByAmount(customer);
                 customerRepository.save(customer);
