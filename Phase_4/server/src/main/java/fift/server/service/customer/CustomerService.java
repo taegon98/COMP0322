@@ -39,12 +39,13 @@ public class CustomerService {
     }
 
     //사이즈 등록
-    public Customer_size addCustomerSize(Long customerId, Customer_size customerSizeDto) {
-        Customer customer = customerRepository.findById(customerId)
-                .orElseThrow(() -> new IllegalArgumentException("Customer not found"));
+    public Customer_size addCustomerSize(String customerId, Customer_size customerSizeDto) {
+
+        Optional<Customer> customer = customerRepository.findByUserId(customerId);
+        Customer customer1 = customer.get();
 
         Customer_size customerSize = new Customer_size();
-        customerSize.setCustomer(customer);
+        customerSize.setCustomer(customer1);
         customerSize.setSleeveLength(customerSizeDto.getSleeveLength());
         customerSize.setTopLength(customerSizeDto.getTopLength());
         customerSize.setShoulder(customerSizeDto.getShoulder());
@@ -60,8 +61,8 @@ public class CustomerService {
     }
 
     // 비밀번호 변경
-    public Customer changePassword(Long customerId, String newPassword) {
-        Customer customer = customerRepository.findById(customerId)
+    public Customer changePassword(String customerId, String newPassword) {
+        Customer customer = customerRepository.findByUserId(customerId)
                 .orElseThrow(() -> new IllegalArgumentException("Customer not found"));
         customer.setPassword(newPassword);
         System.out.println(customer.getPassword());
