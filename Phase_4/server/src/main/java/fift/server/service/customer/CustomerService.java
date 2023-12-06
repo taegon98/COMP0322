@@ -30,7 +30,6 @@ public class CustomerService {
         customer.setName(customerDto.getName());
         customer.setUserId(customerDto.getUserId());
         customer.setPassword(customerDto.getPassword());
-        customer.setPassword(customerDto.getPassword());
         customer.setAddress(customerDto.getAddress());
         customer.setPostalCode(customerDto.getPostalCode());
         customer.setAmount(0.0);

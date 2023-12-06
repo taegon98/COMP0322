@@ -32,9 +32,10 @@ public class AuthController {
         String customerId = loginDto.getUserId();
         String password = loginDto.getPassword();
 
+
         if (customerId == null || customerId.trim().isEmpty() || password == null || password.trim().isEmpty()) {
             model.addAttribute("error", "Please provide valid credentials.");
-            return "index";
+            return "redirect:/";
         }
 
         Optional<Customer> id = customerRepository.findByUserId(customerId);
@@ -43,6 +44,7 @@ public class AuthController {
             model.addAttribute("error", "User does not exist.");
             return "login/loginpage";
         }
+
 
         Customer customer = id.get();
         String storedPassword = customer.getPassword();
@@ -58,7 +60,7 @@ public class AuthController {
         sessionCookie.setMaxAge(30 * 60);
         response.addCookie(sessionCookie);
 
-        return "redirect:/customer/dashboard";
+        return "redirect:/";
     }
 
 

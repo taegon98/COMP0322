@@ -16,15 +16,15 @@
 // 페이지 열기 함수
 function openMypage() {
 
-    location.href = "mypage";
+    location.href = "/mypage";
 }
 function openSignupForm() {
 
-    location.href = "register";
+    location.href = "/register";
 }
 function openLoginForm() {
 
-    location.href = "login";
+    location.href = "/login";
 }
 function goToMain() {
     location.href = "/";
