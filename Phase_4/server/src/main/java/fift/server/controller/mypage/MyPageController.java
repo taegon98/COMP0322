@@ -69,7 +69,7 @@ public class MyPageController {
 
 
     //장바구니 내역
-    @GetMapping("{customerId}/cartList")
+    @PostMapping("{customerId}/cartList")
     public String getCartList(@PathVariable Long customerId, Model model) {
         Customer customer = customerService.getCustomer(customerId);
         Cart cart = cartService.getCart(customer);
