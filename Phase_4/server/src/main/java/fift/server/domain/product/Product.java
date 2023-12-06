@@ -17,7 +17,7 @@ import java.util.List;
 public class Product {
 
     @Id
-    private Long productId;
+    private Long product_Id;
 
     @OneToMany(mappedBy = "product",cascade = CascadeType.ALL)
     private List<OrderDetail> orderDetailList=new ArrayList<>();
