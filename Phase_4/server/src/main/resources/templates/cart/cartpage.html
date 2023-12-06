@@ -15,11 +15,12 @@
 </head>
 <body>
 <!-- Navigation-->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container px-4 px-lg-5">
-        <a th:href="@{/}" class="navbar-brand btn">
+        <button type="button" class="navbar-brand btn" onclick="goToMain()">
             Fift
-        </a>
+        </button>
         <button
                 class="navbar-toggler"
                 type="button"
@@ -38,7 +39,7 @@
                             class="nav-link active"
                             aria-current="page"
                             href="#"
-                            th:onclick="|javascript:goToMain()|"
+                            onclick="goToMain()"
                     >Home</a
                     >
                 </li>
@@ -65,32 +66,31 @@
                 <button
                         class="btn btn-outline-dark"
                         type="button"
-                        th:onclick="|javascript:openCart()|"
+                        onclick="openCart()"
                 >
                     <i class="bi-cart-fill me-1"></i>
                     Cart
                     <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                 </button>
 
-                <button class="btn btn-outline-dark mx-2" th:onclick="|javascript:openLoginForm()|">
+                <button class="btn btn-outline-dark mx-2" onclick="openLoginForm()">
                     Login
                 </button>
 
                 <button
                         class="btn btn-outline-dark mx-2"
-                        th:onclick="|javascript:openSignupForm()|"
+                        onclick="openSignupForm()"
                 >
                     Sign Up
                 </button>
 
-                <button class="btn btn-outline-dark" th:onclick="|javascript:openMypage()|">
+                <button class="btn btn-outline-dark" onclick="openMypage()">
                     Mypage
                 </button>
             </div>
         </div>
     </div>
 </nav>
-
 <!-- Header-->
 <header class="bg-dark py-5">
     <div class="container px-4 px-lg-5 my-5">
@@ -145,5 +145,6 @@
 </nav>
 
 <!-- Bootstrap JS and other scripts go here -->
+<script src="/js/scripts.js"></script>
 </body>
 </html>
