@@ -49,13 +49,22 @@
             <a href="/register" class="btn btn-outline-dark mx-2">Sign Up</a>
           </div>
         </div>
+        <style>
+          .text-red {
+            color: red;
+            font-family: Arial, sans-serif;
+          }
+        </style>
+
         <div th:if="${session.loggedIn}">
           <div>
-            <span th:text="'Welcome, ' + ${session.customer.userId} + '!'" class="text-dark"></span>
-            <span th:text="'Your money: ' + ${session.customer.money}" class="text-dark"></span>
+            <span th:text="'Welcome, ' + ${session.customer.userId} + '! '" class="text-dark"></span>
+            <span th:text="'Balance: ' + ${session.customer.money} + '$  '" class="text-red"></span>
+            <span th:text="${session.customer.tier.name}" class="text-dark"></span>
             <a href="/logout" class="btn btn-outline-dark mx-2">Logout</a>
           </div>
         </div>
+
         <button class="btn btn-outline-dark" th:onclick="|javascript:openMypage()|">Mypage</button>
       </form>
     </div>
