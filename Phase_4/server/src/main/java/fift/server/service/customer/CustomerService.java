@@ -68,4 +68,10 @@ public class CustomerService {
         customer.setPassword(newPassword);
         return customerRepository.save(customer);
     }
+
+    public Customer getCustomer(Long customerId) {
+        Customer customer = customerRepository.findById(customerId)
+                .orElseThrow(() -> new IllegalArgumentException("Customer not found"));
+        return customer;
+    }
 }

@@ -1,4 +1,4 @@
-package fift.server.domain.login;
+package fift.server.dto.login;
 
 import lombok.Data;
 
