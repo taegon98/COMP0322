@@ -19,7 +19,7 @@ public class CartItem {
     private Cart cart;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="product_id")
+    @JoinColumn(name="productid")
     private Product product;
 
     private int count; // 상품 개수

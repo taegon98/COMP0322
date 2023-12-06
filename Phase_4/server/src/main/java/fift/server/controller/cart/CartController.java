@@ -17,13 +17,14 @@ import org.springframework.web.bind.annotation.*;
 public class CartController {
 
     private final CustomerService customerService;
-    private final ProductService productService;
 
     private final CartService cartService;
 
+    private final ProductService productService;
+
     // 장바구니 담기
 
-    @PostMapping("/{id}/cart")
+    @GetMapping("/{id}/cart")
     public String cart_Item(@PathVariable("id") Long id,
                             @RequestParam("quantity") int quantity,
                             HttpSession session) {
