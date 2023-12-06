@@ -33,8 +33,8 @@ public class ProductService {
                 .orElseThrow(()->new RuntimeException("Product Not Found"));
     }
 
-    public List<Product> getTOP10Products() {
-        return productRepository.findTop10ByOrderByProductIdDesc();
+    public List<Product> getTOP8Products() {
+        return productRepository.findTop8ByOrderByProductIdDesc();
     }
 
     /**
