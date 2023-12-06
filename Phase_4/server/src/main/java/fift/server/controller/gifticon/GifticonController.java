@@ -6,6 +6,7 @@ import fift.server.service.customer.CustomerService;
 import fift.server.service.gifticon.GifticonService;
 import fift.server.service.order.OrderService;
 import fift.server.service.product.ProductService;
+import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +20,8 @@ import java.util.List;
 public class GifticonController {
     private final GifticonService gifticonService;
     private final ProductService productService;
+
+    private final CustomerService customerService;
 
 
 
@@ -58,9 +61,11 @@ public class GifticonController {
     public String cartItem(@PathVariable("id") Long id,
                            @RequestParam("customerId") String customerId,
                            @RequestParam("count") Integer count,
-                           @RequestParam("giftRecipientName") String friendName) {
-
+                           @RequestParam("giftRecipientName") String friendName,
+                           HttpSession session) {
+        Customer customer = customerService.getCustomer(customerId);
         orderService.order_One(customerId,id,friendName);
+        session.setAttribute("customer", customer);
 
         return "redirect:/";
     }

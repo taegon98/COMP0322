@@ -1,6 +1,7 @@
 package fift.server.controller.product;
 
 
+import jakarta.servlet.http.HttpSession;
 import org.springframework.ui.Model;
 import fift.server.domain.product.Product;
 import fift.server.service.product.ProductService;

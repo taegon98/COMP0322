@@ -1,6 +1,7 @@
 package fift.server.controller.order;
 
 
+import jakarta.servlet.http.HttpSession;
 import org.springframework.ui.Model;
 import fift.server.domain.orderdetail.OrderDetail;
 import fift.server.domain.orders.Orders;
@@ -26,8 +27,9 @@ public class OrderController {
     private final OrderService orderService;
 
     @GetMapping("customer/{customerId}/cartList/order")
-    public String cart_Order(@PathVariable("customerId") String id) {
+    public String cart_Order(@PathVariable("customerId") String id, HttpSession session) {
         Customer customer = customerService.getCustomer(id);
+        session.setAttribute("customer", customer);
         orderService.order_Cart(customer);
         return "redirect:/";
     }
