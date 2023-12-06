@@ -69,13 +69,13 @@ public class MyPageController {
 
 
     //장바구니 내역
-    @PostMapping("{customerId}/cartList")
+    @GetMapping("{customerId}/cartList")
     public String getCartList(@PathVariable Long customerId, Model model) {
         Customer customer = customerService.getCustomer(customerId);
         Cart cart = cartService.getCart(customer);
         List<CartItem> cartList = cartService.getCartList(cart);
         model.addAttribute("cartList",cartList);
-        return "장바구니";
+        return "cart/cartpage";
     }
 
     //장바구니 내역 다 삭제

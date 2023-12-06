@@ -29,3 +29,8 @@ function openLoginForm() {
 function goToMain() {
     location.href = "/";
 }
+
+function openCart() {
+    location.href = "/customer/1/cartList";
+}
+
