@@ -26,6 +26,9 @@ function openLoginForm() {
 
     location.href = "/login";
 }
+function openCart() {
+    location.href = "/";
+}
 function goToMain() {
     location.href = "/";
 }
