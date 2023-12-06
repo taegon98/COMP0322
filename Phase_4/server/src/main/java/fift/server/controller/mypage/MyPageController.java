@@ -54,7 +54,7 @@ public class MyPageController {
     public String showChangePasswordForm(@PathVariable Long customerId, Model model) {
         model.addAttribute("customerId", customerId);
         model.addAttribute("newPassword", "");
-        return "changePassword";
+        return "/mypage/passwordpage";
     }
 
     //비밀번호 변경 (POST)
@@ -64,7 +64,7 @@ public class MyPageController {
             @RequestParam("newPassword") String newPassword
     ) {
         customerService.changePassword(customerId, newPassword);
-        return "redirect:/customer/{customerId}/change-password";
+        return "redirect:/";
     }
 
 

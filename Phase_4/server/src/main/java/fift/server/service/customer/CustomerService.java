@@ -63,8 +63,8 @@ public class CustomerService {
     public Customer changePassword(Long customerId, String newPassword) {
         Customer customer = customerRepository.findById(customerId)
                 .orElseThrow(() -> new IllegalArgumentException("Customer not found"));
-
         customer.setPassword(newPassword);
+        System.out.println(customer.getPassword());
         return customerRepository.save(customer);
     }
 

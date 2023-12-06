@@ -15,7 +15,7 @@
 // Use this file to add JavaScript to your project
 // 페이지 열기 함수
 function openMypage(customerId) {
-    location.href = "/customer/" + customerId;
+    location.href = "/customer/1";
 }
 
 function openSignupForm() {
