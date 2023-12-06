@@ -24,7 +24,7 @@ public class CartController {
 
     // 장바구니 담기
 
-    @PostMapping("/{id}/cart")
+    @GetMapping("/{id}/cart")
     public String cart_Item(@PathVariable("id") Long id,
                             @RequestParam("quantity") int quantity,
                             HttpSession session) {

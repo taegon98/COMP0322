@@ -37,3 +37,8 @@ function openCart() {
     location.href = "/customer/1/cartList";
 }
 
+function addToCart(productId) {
+    // Assuming productId is a string or a number
+    window.location.href = productId + "/cart";
+}
+
