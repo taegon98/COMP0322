@@ -14,10 +14,10 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 // 페이지 열기 함수
-function openMypage() {
-
-    location.href = "/mypage";
+function openMypage(customerId) {
+    location.href = "/customer/" + customerId;
 }
+
 function openSignupForm() {
 
     location.href = "/register";
