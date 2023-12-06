@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 @Service
@@ -36,16 +37,33 @@ public class OrderService {
 
     public OrderDetail add_Cart_Item(Product product, CartItem cartItem) {
         OrderDetail orderDetail = OrderDetail.createOrderDetail(product, cartItem);
+        orderDetail.setTotalPrice(cartItem.getProduct().getPrice());
         orderdetailRepository.save(orderDetail);
         return orderDetail;
     }
 
     public Long add_Cart_Order(Customer customer,List<OrderDetail> orderDetailList) {
+
         Orders order = Orders.createOrder(customer, orderDetailList);
-        orderRepository.save(order);
+
+        Calendar calendar = Calendar.getInstance();
+        order.setOrderDate(calendar.getTime());
+
+        calendar.add(Calendar.DAY_OF_MONTH, 3);
+        order.setShippedDate(calendar.getTime());
+
+        Orders saveOrder = orderRepository.save(order);
+
+        for(OrderDetail orderDetail:orderDetailList) {
+            orderDetail.setOrders(saveOrder);
+            orderdetailRepository.save(orderDetail);
+        }
+
         return order.getOrderId();
     }
     public Long order_Cart(Customer customer) {
+
+        Double temp=0.0;
 
         Cart byUserId = cartRepository.findByCustomer(customer);
         List<CartItem> cartItemsByCart = cartItemRepository.findCartItemsByCart(byUserId);
@@ -56,6 +74,7 @@ public class OrderService {
             List<OrderDetail> orderDetailList=new ArrayList<>();
 
             for(CartItem cartItem:cartItemsByCart) {
+                temp+=cartItem.getCart().getTotalPrice();
                 OrderDetail orderDetail = add_Cart_Item(cartItem.getProduct(), cartItem);
                 orderDetailList.add(orderDetail);
 
@@ -73,5 +92,24 @@ public class OrderService {
         else {
             return byUserId.getCartId();
         }
+    }
+
+
+
+    public List<Orders> getOrderList(Customer customer) {
+        List<Orders> ordersByCustomer = orderRepository.findOrdersByCustomer(customer);
+        return ordersByCustomer;
+    }
+
+    public List<OrderDetail> getOrderDetailList(List<Orders> orderList) {
+        List<OrderDetail> orderDetailList=new ArrayList<>();
+
+        for(Orders orders:orderList) {
+            List<OrderDetail> orderDetailsByOrders = orderdetailRepository.findOrderDetailsByOrders(orders);
+            for(OrderDetail orderDetail:orderDetailsByOrders) {
+                orderDetailList.add(orderDetail);
+            }
+        }
+        return orderDetailList;
     }
 }
