@@ -28,18 +28,8 @@ public class ProductController {
 
     @GetMapping("/{id}")
     public String getProductDetails(@PathVariable Long id, Model model) {
-        // 여기서 id를 사용하여 특정 상품의 상세 정보를 가져오는 로직을 작성
         Product product = productService.getProduct(id);
-        // 상세 정보를 모델에 추가
         model.addAttribute("product", product);
-        // 뷰의 이름을 반환
-        return "product/productpage"; // 실제 뷰의 이름은 "productDetails.html"이어야 함
-    }
-
-    @GetMapping("/search")
-    public String searchProduct(@RequestParam("keyword") String keyword, Model model) {
-        List<Product> searchResults = productService.searchProduct(keyword);
-        model.addAttribute("products", searchResults);
-        return "yourViewName";
+        return "product/productpage";
     }
 }

@@ -24,7 +24,6 @@
     </tr>
     </thead>
     <tbody>
-    <!-- Iterate over the products and display each row -->
     <tr th:each="product : ${products}">
         <td>
             <a th:href="@{/product/{id}(id=${product.productId})}" th:text="${product.productName}">View Details</a>

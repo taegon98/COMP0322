@@ -22,9 +22,10 @@
                     <form th:action="@{'/' + ${product.productId} + '/cart'}" method="post">
                         <input type="hidden" name="customerId" th:value="${session.customer.userId}" />
                         <input type="hidden" name="count" th:value="${1}" />
+                        
                         <button class="btn btn-outline-dark flex-shrink-0" type="submit">
                             <i class="bi-cart-fill me-1"></i>
-                            장바구니에 추가
+                            선물하기
                         </button>
                     </form>
                     <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1" style="max-width: 3rem" th:if="${product != null}" />
