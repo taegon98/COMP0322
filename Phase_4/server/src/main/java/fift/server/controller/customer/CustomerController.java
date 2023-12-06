@@ -1,7 +1,6 @@
 package fift.server.controller.customer;
 
 import fift.server.domain.customer.Customer;
-import fift.server.domain.customer.Customer_size;
 import fift.server.service.customer.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
