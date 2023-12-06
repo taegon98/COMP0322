@@ -12,6 +12,8 @@ import fift.server.repository.customer.CustomerRepository;
 import fift.server.repository.order.OrderRepository;
 import fift.server.repository.orderdetail.OrderdetailRepository;
 import fift.server.service.cart.CartService;
+import fift.server.service.customer.CustomerService;
+import fift.server.service.product.ProductService;
 import fift.server.service.tier.TierService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -21,6 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Random;
 
 @Service
 @RequiredArgsConstructor
@@ -33,7 +36,10 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final TierService tierService;
 
+    private final ProductService productService;
     private final CustomerRepository customerRepository;
+
+    private final CustomerService customerService;
 
     @Transactional
     public OrderDetail add_Cart_Item(Product product, CartItem cartItem) {
@@ -65,7 +71,7 @@ public class OrderService {
     }
 
     @Transactional(isolation = Isolation.SERIALIZABLE)
-    public Long order_Cart(Customer customer) {
+    public void order_Cart(Customer customer) {
 
         Double temp=0.0;
 
@@ -75,15 +81,15 @@ public class OrderService {
         System.out.println(customer.getMoney());
 
         if(byUserId.getTotalPrice()<=customer.getMoney()) {
-            List<OrderDetail> orderDetailList=new ArrayList<>();
+            List<OrderDetail> orderDetailList = new ArrayList<>();
 
-            for(CartItem cartItem:cartItemsByCart) {
-                temp+=cartItem.getCart().getTotalPrice();
+            for (CartItem cartItem : cartItemsByCart) {
+                temp += cartItem.getCart().getTotalPrice();
                 OrderDetail orderDetail = add_Cart_Item(cartItem.getProduct(), cartItem);
                 orderDetailList.add(orderDetail);
 
-                customer.setAmount(customer.getAmount()+orderDetail.getTotalPrice());
-                customer.setMoney(customer.getMoney()-orderDetail.getTotalPrice());
+                customer.setAmount(customer.getAmount() + orderDetail.getTotalPrice());
+                customer.setMoney(customer.getMoney() - orderDetail.getTotalPrice());
 
                 tierService.updateTierByAmount(customer);
                 customerRepository.save(customer);
@@ -91,10 +97,6 @@ public class OrderService {
 
             Long aLong = add_Cart_Order(customer, orderDetailList);
             cartService.subCart(customer);
-            return aLong;
-        }
-        else {
-            return byUserId.getCartId();
         }
     }
 
@@ -116,4 +118,52 @@ public class OrderService {
         }
         return orderDetailList;
     }
+
+
+    @Transactional
+    public Orders add_One_Order(Customer customer,OrderDetail orderDetailList) {
+
+        Orders order=new Orders();
+        Random random = new Random();
+        order.setOrderId( random.nextLong(10000));
+        order.setCustomer(customer);
+        order.setStatus(0);
+
+        Calendar calendar = Calendar.getInstance();
+        order.setOrderDate(calendar.getTime());
+
+        calendar.add(Calendar.DAY_OF_MONTH, 3);
+        order.setShippedDate(calendar.getTime());
+
+        orderRepository.save(order);
+
+        return order;
+    }
+
+    @Transactional
+    public void order_One(String userId,Long id,String friendId) {
+        Customer customer1 = customerService.getCustomer(userId);
+
+        Customer customer = customerService.getCustomer(friendId);
+
+        Product product = productService.getProduct(id);
+        Random random = new Random();
+
+        OrderDetail orderDetail=new OrderDetail();
+        orderDetail.setDetailId(random.nextLong(2000,10000));
+        orderDetail.setProduct(product);
+        orderDetail.setQuantity(1);
+        orderDetail.setTotalPrice(0.0);
+
+        Orders orders = add_One_Order(customer, orderDetail);
+        orderDetail.setOrders(orders);
+
+        orderdetailRepository.save(orderDetail);
+
+        customer1.setAmount(customer1.getAmount() + orderDetail.getTotalPrice());
+        customer1.setMoney(customer1.getMoney() - orderDetail.getTotalPrice());
+
+        customerRepository.save(customer1);
+    }
+
 }

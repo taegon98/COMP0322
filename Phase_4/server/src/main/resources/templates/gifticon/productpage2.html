@@ -19,17 +19,20 @@
                 </div>
                 <p class="lead" th:if="${product != null}" th:text="${product.description}"></p>
                 <div class="d-flex">
-                    <form th:action="@{'/' + ${product.productId} + '/cart'}" method="post">
+
+                    <form method="post" th:action="@{'/' + ${product.productId} + '/gift'}">
                         <input type="hidden" name="customerId" th:value="${session.customer.userId}" />
                         <input type="hidden" name="count" th:value="${1}" />
-                        
-                        <button class="btn btn-outline-dark flex-shrink-0" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            선물하기
-                        </button>
+
+                        <!-- Text Input -->
+                        <input type="text" name="giftRecipientName" placeholder="Gift Recipient's Name" />
+                        <br/>
+
+                        <!-- Button Input -->
+                        <button type="submit">친구에게 선물</button>
                     </form>
+
                     <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1" style="max-width: 3rem" th:if="${product != null}" />
-                    <input class="form-control text-center" id="inputText" type="text" placeholder="Enter text" th:if="${product != null}" />
                 </div>
             </div>
         </div>

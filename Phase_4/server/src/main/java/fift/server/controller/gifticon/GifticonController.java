@@ -1,12 +1,17 @@
 package fift.server.controller.gifticon;
 
+import fift.server.domain.customer.Customer;
 import fift.server.domain.product.Product;
+import fift.server.service.customer.CustomerService;
 import fift.server.service.gifticon.GifticonService;
+import fift.server.service.order.OrderService;
 import fift.server.service.product.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import javax.swing.border.Border;
 import java.util.List;
 
 @Controller
@@ -14,6 +19,10 @@ import java.util.List;
 public class GifticonController {
     private final GifticonService gifticonService;
     private final ProductService productService;
+
+
+
+    private final OrderService orderService;
 
     // Gifticon 선물하는 기능
     @PostMapping("/gifticon/gift")
@@ -42,5 +51,17 @@ public class GifticonController {
         Product product = productService.getProduct(id);
         model.addAttribute("product", product);
         return "gifticon/productpage2";
+    }
+
+
+    @PostMapping("/{id}/gift")
+    public String cartItem(@PathVariable("id") Long id,
+                           @RequestParam("customerId") String customerId,
+                           @RequestParam("count") Integer count,
+                           @RequestParam("giftRecipientName") String friendName) {
+
+        orderService.order_One(customerId,id,friendName);
+
+        return "redirect:/";
     }
 }
