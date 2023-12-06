@@ -29,7 +29,8 @@ public class CartController {
     public String cartItem(@PathVariable("id") Long id,
                            @RequestParam("customerId") String customerId,
                            @RequestParam("count") Integer count) {
-        Customer customer = customerService.getCustomer(customerId);
+
+        Customer customer = customerService.getCustomer(String.valueOf(customerId));
         Product product = productService.getProduct(id);
         cartService.addCart(customer, product, count);
         return "redirect:/";
