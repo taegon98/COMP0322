@@ -2,6 +2,7 @@ package fift.server.domain.cart;
 
 import fift.server.domain.cartItem.CartItem;
 import fift.server.domain.customer.Customer;
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;

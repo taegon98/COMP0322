@@ -74,7 +74,13 @@
       <div class="position-sticky">
         <ul class="nav flex-column">
           <li class="nav-item"><a class="nav-link active" href="#">나의쇼핑활동</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">주문내역조회</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{'/customer/' + ${customer.userId} + '/cartList/orderList'}">
+              주문 내역 조회
+            </a>
+          </li>
+
           <li class="nav-item"><a class="nav-link" href="#">구매후기</a></li>
           <li class="nav-item"><a class="nav-link" href="#">상품문의</a></li>
           <li class="nav-item"><a class="nav-link" href="#">1:1문의</a></li>

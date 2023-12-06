@@ -42,21 +42,23 @@ public class Orders {
         this.Status = status;
     }
 
-    public void addOrderDetail(OrderDetail orderDetail) {
-        orderDetailList.add(orderDetail);
-        orderDetail.setOrders(this);
-    }
 
     public static Orders createOrder(Customer customer, List<OrderDetail> orderDetailList) {
         Orders build = Orders.builder()
                 .customer(customer)
                 .status(0)
                 .build();
+
         for(OrderDetail orderDetail:orderDetailList) {
             build.addOrderDetail(orderDetail);
         }
         return build;
     }
+
+    public void addOrderDetail(OrderDetail orderDetail) {
+        this.orderDetailList.add(orderDetail);
+    }
+
 
 
 }
