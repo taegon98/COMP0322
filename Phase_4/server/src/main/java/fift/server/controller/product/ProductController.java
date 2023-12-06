@@ -14,17 +14,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
-@RequestMapping("/product")
 @RequiredArgsConstructor
 public class ProductController {
 
     private final ProductService productService;
 
-    @GetMapping
+    @GetMapping("/")
     public String getAllProduct(Model model) {
-        List<Product> top10Products = productService.getTOP10Products();
+        List<Product> top10Products = productService.getTOP8Products();
         model.addAttribute("products", top10Products);
-        return "yourViewName";
+        return "index";
     }
 
     @GetMapping("/{id}")
@@ -34,7 +33,7 @@ public class ProductController {
         // 상세 정보를 모델에 추가
         model.addAttribute("product", product);
         // 뷰의 이름을 반환
-        return "productDetails"; // 실제 뷰의 이름은 "productDetails.html"이어야 함
+        return "product/productpage"; // 실제 뷰의 이름은 "productDetails.html"이어야 함
     }
 
     @GetMapping("/search")

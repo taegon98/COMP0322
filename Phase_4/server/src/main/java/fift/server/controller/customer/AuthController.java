@@ -1,7 +1,7 @@
 package fift.server.controller.customer;
 
 import fift.server.domain.customer.Customer;
-import fift.server.domain.login.LoginDto;
+import fift.server.dto.login.LoginDto;
 import fift.server.repository.customer.CustomerRepository;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;

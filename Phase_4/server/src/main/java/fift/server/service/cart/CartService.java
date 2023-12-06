@@ -56,4 +56,27 @@ public class CartService {
         cartItemRepository.deleteAll(cartItemsByCart);
         cartRepository.delete(cart);
     }
+
+
+    public void cancelCart(Customer customer) {
+        Cart cart = getCart(customer);
+        List<CartItem> cartList = getCartList(cart);
+
+        for(CartItem cartItem:cartList) {
+            cartItemRepository.delete(cartItem);
+        }
+        cartRepository.delete(cart);
+    }
+
+
+    public Cart getCart(Customer customer) {
+        Cart byCustomer = cartRepository.findByCustomer(customer);
+        return byCustomer;
+    }
+
+    public List<CartItem> getCartList(Cart cart) {
+        List<CartItem> cartItemsByCart = cartItemRepository.findCartItemsByCart(cart);
+        return cartItemsByCart;
+    }
+
 }
