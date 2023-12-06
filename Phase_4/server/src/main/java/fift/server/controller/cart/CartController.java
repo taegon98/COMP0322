@@ -24,12 +24,16 @@ public class CartController {
 
     // 장바구니 담기
 
+
     @PostMapping("/{id}/cart")
-    public String cartItem(@PathVariable("id") Long id, @RequestBody CartDto cartDto) {
+    public String cartItem(@PathVariable("id") Long id,
+                           @RequestParam("customerId") Long customerId,
+                           @RequestParam("count") Integer count) {
         System.out.println(1);
-        Customer customer = customerService.getCustomer(cartDto.getId());
+        Customer customer = customerService.getCustomer(customerId);
         Product product = productService.getProduct(id);
-        cartService.addCart(customer, product, cartDto.getCount());
+        cartService.addCart(customer, product, count);
         return "redirect:/";
     }
+
 }

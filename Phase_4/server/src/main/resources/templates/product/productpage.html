@@ -37,14 +37,16 @@
                 <div class="d-flex">
                     <!-- product 객체가 null이 아닌 경우에만 내용을 표시하도록 조건 추가 -->
 
-                    <form th:action="@{'/' + ${product.productId}/cart}" method="post">
-                        <input type="hidden" th:name="id" th:value="${1}" />
-                        <input type="hidden" th:name="count" th:value="${1}" />
+                    <form th:action="@{'/' + ${product.productId} + '/cart'}" method="post">
+                        <input type="hidden" name="customerId" th:value="${1}" />
+                        <input type="hidden" name="count" th:value="${1}" />
                         <button class="btn btn-outline-dark flex-shrink-0" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             장바구니에 추가
                         </button>
                     </form>
+
+
 
                     <!-- product 객체가 null이 아닌 경우에만 내용을 표시하도록 조건 추가 -->
                     <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1" style="max-width: 3rem" th:if="${product != null}" />
