@@ -23,7 +23,7 @@ public class AuthController {
     @GetMapping("/login")
     public String showLoginForm(Model model) {
         model.addAttribute("loginDto", new LoginDto());
-        return "loginpage";
+        return "/login/loginpage";
     }
 
     //로그인
@@ -34,14 +34,14 @@ public class AuthController {
 
         if (customerId == null || customerId.trim().isEmpty() || password == null || password.trim().isEmpty()) {
             model.addAttribute("error", "Please provide valid credentials.");
-            return "mainpage";
+            return "index";
         }
 
         Optional<Customer> id = customerRepository.findByUserId(customerId);
 
         if (customerId == null) {
             model.addAttribute("error", "User does not exist.");
-            return "login";
+            return "login/loginpage";
         }
 
         Customer customer = id.get();
@@ -49,7 +49,7 @@ public class AuthController {
 
         if (!password.equals(storedPassword)) {
             model.addAttribute("error", "Invalid credentials.");
-            return "login";
+            return "login/loginpage";
         }
 
         session.setAttribute("customer", id.get());

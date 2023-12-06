@@ -63,4 +63,6 @@ public class CustomerController {
         customerService.changePassword(customerId, newPassword);
         return "redirect:/customer/{customerId}/change-password";
     }
+
+
 }
