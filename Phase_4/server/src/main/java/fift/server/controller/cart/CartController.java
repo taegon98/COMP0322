@@ -3,11 +3,9 @@ package fift.server.controller.cart;
 
 import fift.server.domain.customer.Customer;
 import fift.server.domain.product.Product;
-import fift.server.dto.cart.CartDto;
 import fift.server.service.cart.CartService;
 import fift.server.service.customer.CustomerService;
 import fift.server.service.product.ProductService;
-import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -23,8 +21,6 @@ public class CartController {
     private final ProductService productService;
 
     // 장바구니 담기
-
-
     @PostMapping("/{id}/cart")
     public String cartItem(@PathVariable("id") Long id,
                            @RequestParam("customerId") String customerId,
@@ -35,5 +31,4 @@ public class CartController {
         cartService.addCart(customer, product, count);
         return "redirect:/";
     }
-
 }
