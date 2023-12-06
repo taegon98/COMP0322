@@ -25,7 +25,7 @@ public class TierService {
     }
 
     public Tier determineTierByAmount(double amount) {
-        int tierNumber = (int) (amount / 50000) + 1;
+        int tierNumber = (int) (amount / 5) + 1;
 
         if (tierNumber < 1 || tierNumber > 100) {
             throw new IllegalArgumentException("Invalid tier number");
