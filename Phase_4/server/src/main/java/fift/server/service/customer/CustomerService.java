@@ -68,8 +68,8 @@ public class CustomerService {
         return customerRepository.save(customer);
     }
 
-    public Customer getCustomer(Long customerId) {
-        Customer customer = customerRepository.findById(customerId)
+    public Customer getCustomer(String customerId) {
+        Customer customer = customerRepository.findByUserId(customerId)
                 .orElseThrow(() -> new IllegalArgumentException("Customer not found"));
         return customer;
     }

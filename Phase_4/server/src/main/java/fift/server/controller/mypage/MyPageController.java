@@ -24,7 +24,7 @@ public class MyPageController {
 
     // Mypage
     @GetMapping("/{customerId}")
-    public String getMyPage(@PathVariable Long customerId,Model model) {
+    public String getMyPage(@PathVariable String customerId,Model model) {
         Customer customer = customerService.getCustomer(customerId);
         model.addAttribute("customer",customer);
         return "/mypage/mypage";
@@ -70,7 +70,7 @@ public class MyPageController {
 
     //장바구니 내역
     @GetMapping("{customerId}/cartList")
-    public String getCartList(@PathVariable Long customerId, Model model) {
+    public String getCartList(@PathVariable String customerId, Model model) {
         Customer customer = customerService.getCustomer(customerId);
         Cart cart = cartService.getCart(customer);
         List<CartItem> cartList = cartService.getCartList(cart);
@@ -80,7 +80,7 @@ public class MyPageController {
 
     //장바구니 내역 다 삭제
     @PostMapping("{customerId}/cartList/deleteAll")
-    public String deleteAll_Cart(@PathVariable Long customerId) {
+    public String deleteAll_Cart(@PathVariable String customerId) {
         Customer customer = customerService.getCustomer(customerId);
         cartService.cancelCart(customer);
         return "redirect:/";

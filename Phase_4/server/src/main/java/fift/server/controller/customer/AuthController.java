@@ -44,7 +44,6 @@ public class AuthController {
             return "login/loginpage";
         }
 
-
         Customer customer = id.get();
         String storedPassword = customer.getPassword();
 
@@ -54,9 +53,9 @@ public class AuthController {
         }
 
         session.setAttribute("loggedIn", true);
-        session.setAttribute("customer", id.get());
+        session.setAttribute("customer", customer);
 
-        Cookie sessionCookie = new Cookie("sessionId", session.getId());
+        Cookie sessionCookie = new Cookie("sessionId", customerId);
         sessionCookie.setMaxAge(30 * 60);
         response.addCookie(sessionCookie);
 

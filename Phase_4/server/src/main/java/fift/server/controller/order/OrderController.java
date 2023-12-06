@@ -18,7 +18,7 @@ public class OrderController {
     private final OrderService orderService;
 
     @PostMapping("customer/{customerId}/cartList/order")
-    public String cart_Order(@PathVariable("customerId") Long id) {
+    public String cart_Order(@PathVariable("customerId") String id) {
         Customer customer = customerService.getCustomer(id);
         orderService.order_Cart(customer);
         return "redirect:/";

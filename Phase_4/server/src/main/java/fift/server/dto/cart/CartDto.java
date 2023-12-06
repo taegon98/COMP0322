@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 public class CartDto {
 
-    private Long id;
+    private String id;
     private int count;
 }
