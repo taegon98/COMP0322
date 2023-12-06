@@ -95,7 +95,7 @@
 <header class="bg-dark py-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">Fift</h1>
+            <h1 class="display-4 fw-bolder">장바구니 내역</h1>
             <p class="lead fw-normal text-white-50 mb-0">
                 With this shop homepage template
             </p>
@@ -110,13 +110,13 @@
             <table width="100%" style="margin: 10px">
                 <tr>
                     <td style="padding-left: 10px">
-                        <input type="checkbox" id="allChk" checked />&nbsp;<b>전체</b>
+                    <td th:text="${cart.totalPrice}">장바구니 금액</td>
                     </td>
                     <td></td>
                     <td align="right" style="padding-right: 35px">
                         <!-- 주석 처리된 부분 수정 -->
-                        <a th:href="'/deleteCart/' + ${cartId}" class="btn btn-danger">삭제하기</a>
-                        <a th:href="'/shippingInfo/' + ${cartId}" class="btn btn-success">주문하기</a>
+                        <a th:href="@{'/customer/'+${customer.userId} + '/cartList/deleteAll'}" class="btn btn-danger">전체 삭제하기</a>
+                        <a th:href="@{'/customer/'+${customer.userId} + '/cartList/order'}" class="btn btn-success">주문 하기</a>
                     </td>
                 </tr>
             </table>

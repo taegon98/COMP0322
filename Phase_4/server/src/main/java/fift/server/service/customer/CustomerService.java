@@ -33,6 +33,7 @@ public class CustomerService {
         customer.setPassword(customerDto.getPassword());
         customer.setAddress(customerDto.getAddress());
         customer.setPostalCode(customerDto.getPostalCode());
+        customer.setMoney(10000.0);
         customer.setAmount(0.0);
 
         return customerRepository.save(customer);

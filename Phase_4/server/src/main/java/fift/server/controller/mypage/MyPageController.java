@@ -74,12 +74,14 @@ public class MyPageController {
         Customer customer = customerService.getCustomer(customerId);
         Cart cart = cartService.getCart(customer);
         List<CartItem> cartList = cartService.getCartList(cart);
+        model.addAttribute("customer",customer);
+        model.addAttribute("cart",cart);
         model.addAttribute("cartList",cartList);
         return "cart/cartpage";
     }
 
     //장바구니 내역 다 삭제
-    @PostMapping("{customerId}/cartList/deleteAll")
+    @GetMapping("{customerId}/cartList/deleteAll")
     public String deleteAll_Cart(@PathVariable String customerId) {
         Customer customer = customerService.getCustomer(customerId);
         cartService.cancelCart(customer);

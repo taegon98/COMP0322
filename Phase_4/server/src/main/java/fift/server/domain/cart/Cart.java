@@ -47,6 +47,7 @@ public class Cart {
     public Cart(Customer customer) {
         this.customer = customer;
         this.totalPrice= Double.valueOf(0);
+        this.count=0;
     }
 
 

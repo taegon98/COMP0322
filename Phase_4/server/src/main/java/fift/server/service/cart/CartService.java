@@ -35,18 +35,24 @@ public class CartService {
         Product product = productRepository.findByProductId(newProduct.getProductId());
         CartItem cartItem = cartItemRepository.findByCartAndProduct(cart, product);
 
+        System.out.println(product.getProductName());
+
         if(cartItem==null) {
             cartItem = CartItem.createCartItem(cart, product, amount);
-            cartItemRepository.save(cartItem);
         }
         else {
-            CartItem update = CartItem.createCartItem(cartItem.getCart(),
+            cartItem = CartItem.createCartItem(cartItem.getCart(),
                     cartItem.getProduct(),
                     cartItem.getCount());
-            cart.setTotalPrice(cart.getTotalPrice()+cartItem.getCount()*cartItem.getProduct().getPrice());
-            cart.setCount(cart.getCount()+cartItem.getCount());
-            cartItemRepository.save(update);
         }
+        cartItemRepository.save(cartItem);
+
+        cart.setTotalPrice(cart.getTotalPrice()+cartItem.getCount()*cartItem.getProduct().getPrice());
+        cart.setCount(cart.getCount()+cartItem.getCount());
+
+        System.out.println(cart.getTotalPrice());
+        System.out.println(cart.getCount());
+        cartRepository.save(cart);
 
     }
 
