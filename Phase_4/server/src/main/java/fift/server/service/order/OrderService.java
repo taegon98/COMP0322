@@ -15,6 +15,7 @@ import fift.server.service.cart.CartService;
 import fift.server.service.tier.TierService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
@@ -22,7 +23,6 @@ import java.util.Calendar;
 import java.util.List;
 
 @Service
-@Transactional
 @RequiredArgsConstructor
 public class OrderService {
 
@@ -35,6 +35,7 @@ public class OrderService {
 
     private final CustomerRepository customerRepository;
 
+    @Transactional
     public OrderDetail add_Cart_Item(Product product, CartItem cartItem) {
         OrderDetail orderDetail = OrderDetail.createOrderDetail(product, cartItem);
         orderDetail.setTotalPrice(cartItem.getProduct().getPrice());
@@ -42,6 +43,7 @@ public class OrderService {
         return orderDetail;
     }
 
+    @Transactional
     public Long add_Cart_Order(Customer customer,List<OrderDetail> orderDetailList) {
 
         Orders order = Orders.createOrder(customer, orderDetailList);
@@ -61,6 +63,8 @@ public class OrderService {
 
         return order.getOrderId();
     }
+
+    @Transactional(isolation = Isolation.SERIALIZABLE)
     public Long order_Cart(Customer customer) {
 
         Double temp=0.0;
